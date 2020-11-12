@@ -77,27 +77,178 @@ Manage cost recovery
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-one-third">
 
-              Test
-
 
             </div>
 
 
           </div>
 
-          <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
+<table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
 
-              <a href="search-results">
+                      <!-- TABLE START -->
+                      <thead class="nhsuk-table__head">
+                        <tr class="nhsuk-table__row">
 
-                <button class="nhsuk-button nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2" type="submit">
-                  Search
-                </button>
 
-              </a>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            <button type="button" data-index="0">First name</button>
 
-            </div>
-          </div>
+                          </th>
+
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            <button onclick="sortTable()" type="button" data-index="0">Surname</button>
+
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            <button onclick="sortTable()" type="button" data-index="0">Email address</button>
+
+                          </th>
+
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            <button onclick="sortTable()" type="button" data-index="0">Phone number</button>
+
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            <button onclick="sortTable()" type="button" data-index="0">Region</button>
+                          </th>
+                            <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            <button onclick="sortTable()" type="button" data-index="0">Trust</button>
+                          </th>
+                            <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            Action
+                          </th>
+
+                        </tr>
+                      </thead>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+                        <!-- -->
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+                          <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+                          <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+                          <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+                          <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+                          <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+                          <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+                          <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+                          <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+                          <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+                          <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Ben</td>
+                          <td class="nhsuk-table__cell">Green</td>
+                          <td class="nhsuk-table__cell">ben.green@nhs.net</td>
+                          <td class="nhsuk-table__cell">0918 292929</td>
+                          <td class="nhsuk-table__cell">North East</td>
+                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+              
+              <nav class="nhsuk-pagination" id="pagination-label">
+
+              <p class="nhsuk-u-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+              <ul class="nhsuk-pagination__list">
+                <li class="nhsuk-pagination__item  nhsuk-pagination__item--prev">
+                  <a class="nhsuk-pagination__link" href="">Previous<span class="nhsuk-u-visually-hidden"> set of
+                      pages</span></a>
+                </li>
+
+                <li class="nhsuk-pagination__item nhsuk-pagination__item--active">1</li>
+
+                <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="/page=2">2</a></li>
+
+                <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="/page=3">3</a></li>
+
+                <li class="nhsuk-pagination__item  nhsuk-pagination__item--next">
+                  <a class="nhsuk-pagination__link" href="">Next<span class="nhsuk-u-visually-hidden"> set of
+                      pages</span></a>
+                </li>
+              </ul>
+              <p class="nhsuk-pagination__results">Showing <b>1</b> to <b>10</b> of <b>2,142</b> results</p>
+            </nav>
 
 
           </div>
