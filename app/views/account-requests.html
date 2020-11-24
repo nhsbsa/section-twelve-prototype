@@ -64,6 +64,7 @@ Manage cost recovery
                 <h1 class="nhsuk-heading-xl">
                   Account requests
                 </h1>
+                  
               </div>
               <div class="nhsuk-grid-column-one-third">
              
@@ -72,7 +73,24 @@ Manage cost recovery
                 
                 
             </div>
-            <hr style="border-bottom:4px solid #005eb8; margin:0">
+              
+              <nav class="nhsuk-secondary-navigation" aria-label="Primary navigation" style="background-color:#f0f4f5;">
+					<ul class="nhsuk-secondary-navigation__list">
+						<li class="nhsuk-secondary-navigation__item">
+							<a class="nhsuk-secondary-navigation__link" aria-current="page" href="#1">Pending</a>
+						</li>
+
+						<li class="nhsuk-secondary-navigation__item">
+							<a class="nhsuk-secondary-navigation__link" href="#2">Approved</a>
+						</li>
+
+						<li class="nhsuk-secondary-navigation__item">
+							<a class="nhsuk-secondary-navigation__link" href="#3">Rejected</a>
+						</li>
+					</ul>
+				</nav>
+              
+            <hr style="border-bottom:1px solid #ccc; margin:0">
 <br><br>
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-one-third">
@@ -82,6 +100,8 @@ Manage cost recovery
 
 
           </div>
+              
+              
 
 <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
 
@@ -96,7 +116,7 @@ Manage cost recovery
                           </th>
 
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            <button onclick="sortTable()" type="button" data-index="0">Surname</button>
+                            <button onclick="sortTable()" type="button" data-index="0">Last name</button>
 
                           </th>
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
@@ -115,6 +135,9 @@ Manage cost recovery
                             <button onclick="sortTable()" type="button" data-index="0">Trust</button>
                           </th>
                             <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            <button onclick="sortTable()" type="button" data-index="0">Request date</button>
+                          </th>
+                            <th class="nhsuk-table__header" aria-sort="none" scope="col">
                             Action
                           </th>
 
@@ -130,7 +153,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
                           <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell">Ben</td>
@@ -139,7 +163,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
                           <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell">Ben</td>
@@ -148,7 +173,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
                           <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell">Ben</td>
@@ -157,7 +183,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
                           <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell">Ben</td>
@@ -166,7 +193,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
                           <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell">Ben</td>
@@ -175,7 +203,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
                           <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell">Ben</td>
@@ -184,7 +213,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
                           <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell">Ben</td>
@@ -193,7 +223,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
                           <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell">Ben</td>
@@ -202,7 +233,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
                           <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell">Ben</td>
@@ -211,7 +243,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
                           <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell">Ben</td>
@@ -220,7 +253,8 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">0918 292929</td>
                           <td class="nhsuk-table__cell">North East</td>
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Decline</a></td>
+                              <td class="nhsuk-table__cell">11/08/2020</td>
+                  <td class="nhsuk-table__cell"><a href="">Approve</a> / <a href="">Reject</a></td>
                         </tr>
 
                       </tbody>
@@ -266,17 +300,17 @@ Manage cost recovery
                 <li>
                 <a href="index">Search</a>
               </li>
-                <li>
-                <a href="trusts">NHS trusts</a>
-              </li>
+              
                 
                    <h3 class="nhsuk-heading-xs">Actions</h3>
                 
                 <li>
                 <a href="account-requests" class="active">Account requests<span class="notification-badge" style="background-color: #005eb8">2 </span></a>
-                    <a href="treatments">Treatments<span class="notification-badge" style="background-color: #005eb8">2</span></a>
+                    <a href="all-treatments">All treatments<span class="notification-badge" style="background-color: #005eb8">2</span></a>
               </li>
-               
+                 <li>
+                <a href="trusts">Trust summary</a>
+              </li>
               
             </div>
           </ul>
