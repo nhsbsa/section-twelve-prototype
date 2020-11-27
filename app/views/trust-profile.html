@@ -27,9 +27,8 @@ Manage cost recovery
         <div class="nhsuk-grid-column-full">
       
           <ol class="nhsuk-breadcrumb__list">
-              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="index">Search</a></li>
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search-results">Search results</a></li>
-      <li class="nhsuk-breadcrumb__item">Create new patient record (Person details)</li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="trusts">Trust summary</a></li>
+      <li class="nhsuk-breadcrumb__item">Airedale NHS Foundation Trust (Summary)</li>
           </ol>
 
         </div>
@@ -62,7 +61,7 @@ Manage cost recovery
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-two-thirds">
                 <h1 class="nhsuk-heading-xl">
-                  Person details
+                  Summary
                 </h1>
               </div>
               <div class="nhsuk-grid-column-one-third">
@@ -74,74 +73,30 @@ Manage cost recovery
             <div class="nhsuk-scrollable-pane">
                 <br>
                 <div class="nhsuk-grid-row">
-                        <div class="nhsuk-grid-column-full">
-                       <div class="nhsuk-form-group">
-                                <label class="nhsuk-label" for="1">
-                                  Personal Identification Number
-                                </label>
-                                <input class="nhsuk-input nhsuk-u-width-one-third" id="1" name="1" type="text" value="">
-                              </div>     
-            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label" for="1">
-                                  Forenames
-                                </label>
-                                <input class="nhsuk-input nhsuk-u-width-one-third" id="1" name="1" type="text" value="">
-                              </div>
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label" for="1">
-                                  Surname
-                                </label>
-                                <input class="nhsuk-input nhsuk-u-width-one-third" id="1" name="1" type="text" value="">
-                              </div>
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label" for="1">
-                                 Date of birth
-                                </label>
-                                <input class="nhsuk-input nhsuk-u-width-one-third" id="1" name="1" type="text" value="">                            </div>
-                            <h2 class="nhsuk-heading-m">Current address</h2>
+                        <div class="nhsuk-grid-column-one-third">
+                       
+       <h2 class="nhsuk-heading-xl"  style="margin-bottom:0;">
+                  55,212
+                </h2>
+                            <p>patients</p>
             
-                            <div class="nhsuk-form-group">
-                                <label class="nhsuk-label" for="1">
-                                  Address line 1
-                                </label >
-                                <input class="nhsuk-input nhsuk-u-width-one-third" id="1" name="1" type="text" value="">
-                              </div>
-                              <div class="nhsuk-form-group">
-                                  <label class="nhsuk-label" for="2">
-                                    Address line 2
-                                  </label>
-                                  <input class="nhsuk-input nhsuk-u-width-one-third" id="2" name="2" type="text">
-                                </div>
-                                <div class="nhsuk-form-group">
-                                    <label class="nhsuk-label" for="3">
-                                      Town or city
-                                    </label>
-                                    <input class="nhsuk-input nhsuk-u-width-one-third" id="3" name="3" type="text" value="">
-                                  </div>
-                                  <div class="nhsuk-form-group">
-                                      <label class="nhsuk-label" for="4">
-                                        Postcode
-                                      </label>
-                                      <input class="nhsuk-input nhsuk-u-width-one-third" id="4" name="4" type="text" value="">
-                                    </div>
-                            <div class="nhsuk-form-group">
-                                      <label class="nhsuk-label" for="4">
-                                        Country code
-                                      </label>
-                                      <input class="nhsuk-input nhsuk-u-width-one-third" id="4" name="4" type="text" value="">
-                                    </div>
-         
+                        </div>
+                    
+                    <div class="nhsuk-grid-column-one-third">
+                       
+        <h2 class="nhsuk-heading-xl"  style="margin-bottom:0;">
+                  81,292
+                </h2>
+                            <p>entitlements</p>
             
-                                <a href="create-person-entitlement">
-                                <button class="nhsuk-button nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2" type="submit">
-                                    Continue
-                                </button>
-                                </a>
-
-                                <p class="nhsuk-u-margin-top-4"><a href="applicant-view-contact-details">Cancel</a></p>
-
-            
-            
+                        </div>
+                    
+                    <div class="nhsuk-grid-column-one-third">
+                       
+        <h2 class="nhsuk-heading-xl"  style="margin-bottom:0;">
+                  631
+                </h2>
+                            <p>treatments</p>
             
                         </div>
             
@@ -272,26 +227,34 @@ Manage cost recovery
         </div>
 
       </div>
-        
-        <!--
       <div class="nhsBSA-sidebar-nav">
 
         <div class="side-nav">
 
-            <h3>New patient record</h3><span class="nhsuk-caption-m nhsuk-caption--bottom"></span>
-              <span class="nhsuk-u-visually-hidden">
-              </span>
-            
-                 <p>Patient</p>
-                <p><a href="">Entitlement</a></p>
-                  <p><a href="">Institution</a></p>
-          
+          <h3>Airedale NHS Foundation Trust<span class="nhsuk-caption-m nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden"></span>
+                  </h3>
+
+          <ul>
+            <div id="options" class="options">
+              <li>
+                <a class="active" href="trust-profile">Summary</a>
+              </li>
+              <li>
+
+    </li>
+              <li>
+                <a href="trust-profile-ovm">OVM list</a>
+              </li>
+              
+            </div>
+          </ul>
 
           <!-- <div class="action-buttons">
                 <button class="nhsuk-button nhsuk-button--secondary" type="submit">Add note</button>
             </div> -->
         </div>
-            
+
       </div>
     </div>
 
