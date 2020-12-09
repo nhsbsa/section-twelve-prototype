@@ -12,34 +12,25 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-Manage cost recovery
+Manage your Pharmacy Services - Home
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
-{% block beforeContent %}{% endblock %}
+{% block beforeContent %}
+
+{% endblock %}
 
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
-    <div class="nhsuk-width-container-fluid">
-      <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-full">
-      
-          <ol class="nhsuk-breadcrumb__list">
-              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="index">Search</a></li>
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="account-requests">Account request</a></li>
-      <li class="nhsuk-breadcrumb__item">Account request (Ben Green)</li>
-          </ol>
-
-        </div>
-      </div>
-  
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
-
-    </div>
+<nav class="nhsuk-grey-background patient-info" style="background-color:#d8dde0">
+  <ul role="navigation">
+    <li><span style="margin-left: 20px"><strong>NHS number: </strong> 3452 1007 6779</span></li>
+    <li><strong>Patient: </strong>SMITH, Mark (Mr)</li>
+    <li><strong>Gender: </strong> Male</li>
+    <li><strong>Age at death:</strong> 64 years (02 April 1956)</li>
+  </ul>
 </nav>
-
   <div class="nhsBSA-sidebar-container">
 
     <div class="nhsBSA-sidebar-wrapper">
@@ -62,129 +53,17 @@ Manage cost recovery
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-two-thirds">
                 <h1 class="nhsuk-heading-xl">
-                  Account request
+                  Your cases
                 </h1>
               </div>
               <div class="nhsuk-grid-column-one-third">
-            
-                  
-                
+             <button class="nhsuk-button" type="submit" style="float:right">
+  Create new case
+</button>
 </div>
             </div>
             <hr style="border-bottom:4px solid #005eb8; margin:0">
-              <br><br>
-                 <div class="nhsuk-grid-row">
-                        <div class="nhsuk-grid-column-one-third" >
-                            <div style="border: 5px solid grey; padding:20px 20px 1px 20px;">
-                            <h2 class="nhsuk-heading-m">
-                  Ben Francis
-                </h2>
-              <dl class="nhsuk-summary-list">
-
-                  <div class="nhsuk-summary-list__row">
-    <dt class="nhsuk-summary-list__key">
-      Email address:
-    </dt>
-    <dd class="nhsuk-summary-list__value">
-      ben.francis@nhs.net
-    </dd>
-
-  </div>
-                  <div class="nhsuk-summary-list__row">
-    <dt class="nhsuk-summary-list__key">
-      Phone number
-    </dt>
-    <dd class="nhsuk-summary-list__value">
-      0191  8383939
-    </dd>
-
-  </div>
-                       <div class="nhsuk-summary-list__row">
-    <dt class="nhsuk-summary-list__key">
-    Region
-    </dt>
-    <dd class="nhsuk-summary-list__value">
-      North East
-    </dd>
-
-  </div>
-                                     <div class="nhsuk-summary-list__row">
-    <dt class="nhsuk-summary-list__key">
-    Trust
-    </dt>
-    <dd class="nhsuk-summary-list__value">
-       	Airedale NHS Foundation Trust
-    </dd>
-
-  </div>
-                                                  <div class="nhsuk-summary-list__row">
-    <dt class="nhsuk-summary-list__key">
-    Request date
-    </dt>
-    <dd class="nhsuk-summary-list__value">
-       	 	11/08/2020
-    </dd>
-
-  </div>
-                            </dl>
-                            </div>
-                  </div>
-              </div>
             <div class="nhsuk-scrollable-pane">
-                <br>
-                <div class="nhsuk-grid-row">
-                        <div class="nhsuk-grid-column-one-half">
-                       <div class="nhsuk-form-group">
-
-  <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
-    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-      <h1 class="nhsuk-fieldset__heading">
-        Select decision
-      </h1>
-    </legend>
-
-    <div class="nhsuk-hint" id="contact-hint">
-    </div>
-
-    <div class="nhsuk-radios nhsuk-radios--conditional">
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
-        <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
-          Approve
-        </label>
-      </div>
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-          Reject
-        </label>
-      </div>
-        
-        
-
-    </div>
-  </fieldset>
-
-</div>
-         
-            
-                                <a href="account-requests-process-reason">
-                                <button class="nhsuk-button nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2" type="submit">
-                                    Continue
-                                </button>
-                                </a>
-
-                                <p class="nhsuk-u-margin-top-4"><a href="applicant-view-contact-details">Cancel</a></p>
-
-            
-            
-            
-                        </div>
-            
-                      </div>
-            
-                    
 
               <div class="nhsuk-scrollable-pane__wrapper">
                 <div class="nhsuk-tabs-container">
@@ -194,10 +73,9 @@ Manage cost recovery
 
                 <div id="table-scroll" class="table-scroll">
                   <div class="nhsuk-table-responsive nhsuk-u-margin-top-0 table-wrap">
-                      
-                      <!--
                     <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
 
+                      <!-- TABLE START -->
                       <thead class="nhsuk-table__head">
                         <tr class="nhsuk-table__row">
 
@@ -236,7 +114,7 @@ Manage cost recovery
                       </thead>
 
                       <tbody class="nhsuk-table__body nhsuk-body-">
-     
+                        <!-- -->
                         <tr class="nhsuk-table__row">
                           <td class="nhsuk-table__cell"><a href="case-1">Mark Smith</a></td>
                           <td class="nhsuk-table__cell">02 April 1956</td>
@@ -293,7 +171,6 @@ Manage cost recovery
                         </tr>
                       </tbody>
                     </table>
--->
 
                   </div>
 
@@ -309,26 +186,43 @@ Manage cost recovery
         </div>
 
       </div>
-        
-        <!--
       <div class="nhsBSA-sidebar-nav">
 
         <div class="side-nav">
 
-            <h3>New patient record</h3><span class="nhsuk-caption-m nhsuk-caption--bottom"></span>
+          {# <h3>Lloyds Pharmacy - Benton Road<span class="nhsuk-caption-m nhsuk-caption--bottom">
               <span class="nhsuk-u-visually-hidden">
-              </span>
-            
-                 <p>Patient</p>
-                <p><a href="">Entitlement</a></p>
-                  <p><a href="">Institution</a></p>
-          
+                  -
+                </span>NI No. QQ123456C</span></h3> #}
+
+          <ul>
+            <div id="options" class="options">
+              <li>
+                <a class="active" href="summary">Overview</a>
+              </li>
+              <li>
+      <h3 class="nhsuk-heading-s" style="font-size: 19px; color:#4c6272">Cases</h3>
+    </li>
+              <li>
+                <a href="disallowed-item">Open cases</a>
+              </li>
+              <li>
+                <a href="applicant-view-benefit-details">Urgent and priority</a>
+              </li>
+              <li>
+                <a href="applicant-view-transaction-details">Awaiting coronor feedback</a>
+              </li>
+              <li>
+                <a href="applicant-view-note-details">Closed cases</a>
+              </li>
+            </div>
+          </ul>
 
           <!-- <div class="action-buttons">
                 <button class="nhsuk-button nhsuk-button--secondary" type="submit">Add note</button>
             </div> -->
         </div>
-            
+
       </div>
     </div>
 

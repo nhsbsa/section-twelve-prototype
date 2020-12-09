@@ -28,8 +28,8 @@ Manage cost recovery
       
           <ol class="nhsuk-breadcrumb__list">
               <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="index">Search</a></li>
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="account-requests">Account request</a></li>
-      <li class="nhsuk-breadcrumb__item">Account request (Ben Green)</li>
+            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="account-requests">All treatments</a></li>
+      <li class="nhsuk-breadcrumb__item">Treatment (62999)</li>
           </ol>
 
         </div>
@@ -62,7 +62,7 @@ Manage cost recovery
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-two-thirds">
                 <h1 class="nhsuk-heading-xl">
-                  Account request
+                 Treatment 62999
                 </h1>
               </div>
               <div class="nhsuk-grid-column-one-third">
@@ -74,58 +74,51 @@ Manage cost recovery
             <hr style="border-bottom:4px solid #005eb8; margin:0">
               <br><br>
                  <div class="nhsuk-grid-row">
-                        <div class="nhsuk-grid-column-one-third" >
-                            <div style="border: 5px solid grey; padding:20px 20px 1px 20px;">
+                        <div class="nhsuk-grid-column-one-third">
+                            <div style="background-color:#005eb8; padding:20px 20px 1px 20px; color:white">
                             <h2 class="nhsuk-heading-m">
-                  Ben Francis
+                  Summary
                 </h2>
               <dl class="nhsuk-summary-list">
 
-                  <div class="nhsuk-summary-list__row">
+  <div class="nhsuk-summary-list__row">
     <dt class="nhsuk-summary-list__key">
-      Email address:
+      Patient name
     </dt>
     <dd class="nhsuk-summary-list__value">
-      ben.francis@nhs.net
+      Ben Francis
     </dd>
 
   </div>
                   <div class="nhsuk-summary-list__row">
     <dt class="nhsuk-summary-list__key">
-      Phone number
+      Start date:
     </dt>
     <dd class="nhsuk-summary-list__value">
-      0191  8383939
+       	20/10/2020
+    </dd>
+
+  </div>
+                  <div class="nhsuk-summary-list__row">
+    <dt class="nhsuk-summary-list__key">
+      End date
+    </dt>
+    <dd class="nhsuk-summary-list__value">
+       	20/10/2020
     </dd>
 
   </div>
                        <div class="nhsuk-summary-list__row">
     <dt class="nhsuk-summary-list__key">
-    Region
+    Cost
     </dt>
     <dd class="nhsuk-summary-list__value">
-      North East
+       	£2321.01
     </dd>
 
   </div>
-                                     <div class="nhsuk-summary-list__row">
-    <dt class="nhsuk-summary-list__key">
-    Trust
-    </dt>
-    <dd class="nhsuk-summary-list__value">
-       	Airedale NHS Foundation Trust
-    </dd>
-
-  </div>
-                                                  <div class="nhsuk-summary-list__row">
-    <dt class="nhsuk-summary-list__key">
-    Request date
-    </dt>
-    <dd class="nhsuk-summary-list__value">
-       	 	11/08/2020
-    </dd>
-
-  </div>
+                               
+                                                
                             </dl>
                             </div>
                   </div>
@@ -139,11 +132,12 @@ Manage cost recovery
   <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
     <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
       <h1 class="nhsuk-fieldset__heading">
-        Select decision
+        Would you like to approve or reject this treatment?
       </h1>
     </legend>
 
     <div class="nhsuk-hint" id="contact-hint">
+      Select one option
     </div>
 
     <div class="nhsuk-radios nhsuk-radios--conditional">
@@ -154,14 +148,36 @@ Manage cost recovery
           Approve
         </label>
       </div>
+
+
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
+        <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
           Reject
         </label>
       </div>
-        
-        
+
+      <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-2">
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="phone">
+           Reason for rejection
+          </label>
+          <input class="nhsuk-input nhsuk-u-width-two-thirds" id="phone" name="phone" type="text">
+        </div>
+
+      </div>
+
+      <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-3">
+
+        <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="mobile">
+            Mobile phone number
+          </label>
+          <input class="nhsuk-input nhsuk-u-width-two-thirds" id="mobile" name="mobile" type="text">
+        </div>
+
+      </div>
 
     </div>
   </fieldset>
@@ -169,7 +185,7 @@ Manage cost recovery
 </div>
          
             
-                                <a href="account-requests-process-reason">
+                                <a href="all-treatments-accepted">
                                 <button class="nhsuk-button nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2" type="submit">
                                     Continue
                                 </button>

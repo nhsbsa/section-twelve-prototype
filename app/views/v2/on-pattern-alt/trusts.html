@@ -1,0 +1,200 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-sidebar.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Manage cost recovery
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container-fluid">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+      
+          <ol class="nhsuk-breadcrumb__list">
+    
+   <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="index">Home</a></li>
+               <li class="nhsuk-breadcrumb__item">NHS trusts</li>
+          </ol>
+
+        </div>
+      </div>
+  
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
+
+    </div>
+</nav>
+  <div class="nhsBSA-sidebar-container">
+
+    <div class="nhsBSA-sidebar-wrapper">
+      <div class="nhsBSA-sidebar-content">
+
+        <div class="nhsuk-width-container-fluid">
+
+          <div class="nhsuk-main-wrapper" id="maincontent">
+
+            {# <div class="nhsuk-grid-row">
+                    <div class="nhsuk-grid-column-full">
+
+                        <div class="panel panel-border-wide alert-default">
+                            <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3">English is their second language. May require an interpreter.</h2>
+                        </div>
+
+                    </div>
+                </div> #}
+
+            <div class="nhsuk-grid-row">
+              <div class="nhsuk-grid-column-two-thirds">
+                <h1 class="nhsuk-heading-xl">
+                  NHS trusts
+                </h1>
+              </div>
+              <div class="nhsuk-grid-column-one-third">
+                
+</div>
+                
+                
+            </div>
+            <hr style="border-bottom:4px solid #005eb8; margin:0">
+<br><br>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+                
+                <div class="nhsuk-form-group">
+  <label class="nhsuk-label" for="select-1">
+   Filter by region
+  </label>
+  <select class="nhsuk-select" id="select-1" name="select-1">
+    <option value="1" selected>Select a region</option>
+    <option value="2" >Scotland</option>
+    <option value="3" >Northern Ireland</option>
+      <option value="4" >Wales</option>
+       <option value="5" >North East</option>
+      <option value="6" >North West</option>
+      <option value="6" >Yorkshire and the Humber</option>
+      <option value="6" >West Midlands</option>
+      <option value="6" >East Midlands</option>
+      <option value="6" >South West</option>
+       <option value="6" >South East</option>
+      <option value="6" >East of England</option>
+      <option value="6" >Greater London</option>
+  </select>
+</div>
+                <h3 class="nhsuk-heading-m">Select a letter</h3>
+                <p> <a href="">A</a> │ 
+                    <a href="">B</a> │ 
+                    <a href="">C</a> │ 
+                    <a href="">D</a> │ 
+                    <a href="">E</a> │ 
+                    <a href="">F</a> │ 
+                    <a href="">G</a> │ 
+                    <a href="">H</a> │ 
+                    <a href="">I</a> │ 
+                    <a href="">J</a> │ 
+                    <a href="">K</a> │ 
+                    <a href="">L</a> │ 
+                    <a href="">M</a> │ 
+                    <a href="">N</a> │ 
+                    <a href="">O</a> │ 
+                    <a href="">P</a> │ 
+                    <a href="">Q</a> │ 
+                    <a href="">R</a> │ 
+                    <a href="">S</a> │ 
+                    <a href="">T</a> │ 
+                    <a href="">U</a> │ 
+                    <a href="">V</a> │ 
+                    <a href="">W</a> │
+                    <a href="">X</a> │
+                    <a href="">W</a> │
+                    <a href="">Z</a></p>
+
+              
+<h3 class="nhsuk-heading-m">A</h3>
+                
+                <ul>
+                <li><a href="ovm-list">Airedale NHS Foundation Trust</a></li>
+                <li><a href="">Alder Hey Children’s NHS Foundation Trust</a></li>
+                </ul>
+
+                <h3 class="nhsuk-heading-m">B</h3>
+                
+                <ul>
+                <li><a href="">Barking, Havering and Redbridge University Hospitals NHS Trust</a></li>
+                <li><a href="">Barnet, Enfield and Haringey Mental Health NHS Trust</a></li>
+                </ul>
+                
+                 <h3 class="nhsuk-heading-m">C</h3>
+                
+                <ul>
+                <li><a href="">Calderdale and Huddersfield NHS Foundation Trust</a></li>
+                <li><a href="">Cambridge University Hospitals NHS Foundation Trust</a></li>
+                </ul>
+                
+                <h3 class="nhsuk-heading-m">D</h3>
+                
+                <ul>
+                <li><a href="">Dartford and Gravesham NHS Trust</a></li>
+                <li><a href="">Derbyshire Community Health Services NHS Foundation Trust</a></li>
+                </ul>
+
+            </div>
+          </div>
+
+
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="nhsBSA-sidebar-nav">
+
+        <div class="side-nav">
+  
+              <ul>
+            <div id="options" class="options">
+              <h3 class="nhsuk-heading-xs">Browse</h3>
+                <li>
+                <a href="search">Search</a>
+              </li>
+                <li>
+                <a href="trusts" class="active">NHS trusts</a>
+              </li>
+                
+                   <h3 class="nhsuk-heading-xs">Pending</h3>
+                
+                <li>
+                <a href="disallowed-item">Account requests<span class="notification-badge" style="background-color: #005eb8">2 </span></a>
+                    <a href="disallowed-item">Treatments<span class="notification-badge" style="background-color: #005eb8">2</span></a>
+              </li>
+               
+              
+            </div>
+          </ul>
+
+          <!-- <div class="action-buttons">
+                <button class="nhsuk-button nhsuk-button--secondary" type="submit">Add note</button>
+            </div> -->
+                  
+        </div>
+    </div>
+
+  </div>
+
+{% endblock %}
