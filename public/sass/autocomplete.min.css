@@ -10,7 +10,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     margin-bottom: 0;
-    max-width: 41ex;;
+    max-width: 100%;
 }
 .autocomplete__input {
     background-color: white;
