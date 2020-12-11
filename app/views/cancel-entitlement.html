@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-Add new entitlement
+Cancel entitlement
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -21,21 +21,6 @@ Add new entitlement
 <!-- Your page content goes inside the content block -->
 <!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
 {% block content %}
-<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
-  <div class="nhsuk-width-container-fluid">
-     <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-full">
-           <ol class="nhsuk-breadcrumb__list">
-              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="index">Search</a></li>
-              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search-results">Search results</a></li>
-              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="entitlements">Tony Smith (Entilements and treatments)</a></li>
-              <li class="nhsuk-breadcrumb__item">Add new entitlement</li>
-           </ol>
-        </div>
-     </div>
-     <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
-  </div>
-</nav>
 <div class="nhsBSA-sidebar-container">
   <div class="nhsBSA-sidebar-wrapper">
      <div class="nhsBSA-sidebar-content">
@@ -43,8 +28,15 @@ Add new entitlement
            <div class="nhsuk-main-wrapper" id="maincontent">
               <div class="nhsuk-grid-row">
                  <div class="nhsuk-grid-column-two-thirds">
+                  <div class="nhsuk-back-link">
+                     <a class="nhsuk-back-link__link" href="javascript:history.back()">
+                       <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+                         <path d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z"></path>
+                       </svg>
+                       Go back</a>
+                   </div> 
                     <h1 class="nhsuk-heading-xl">
-                       Add new entitlement for Tony Smith
+                       Cancel entitlement
                     </h1>
                  </div>
                  <div class="nhsuk-grid-column-one-third">
@@ -60,32 +52,25 @@ Add new entitlement
                              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
                              </legend>
                              <div class="nhsuk-hint" id="contact-hint">
-                                Select one option
+                              The data that you have entered will not be saved.
                              </div>
                              <div class="nhsuk-radios">
                                 <div class="nhsuk-radios__item">
                                    <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
                                    <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
-                                   S2
+                                   Yes
                                    </label>
                                 </div>
                                 <div class="nhsuk-radios__item">
                                    <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
                                    <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
-                                   EHIC
-                                   </label>
-                                </div>
-                                <div class="nhsuk-radios__item">
-                                   <input class="nhsuk-radios__input" id="contact-3" name="contact" type="radio" value="text" aria-controls="conditional-contact-3" aria-expanded="false">
-                                   <label class="nhsuk-label nhsuk-radios__label" for="contact-3">
-                                   PRC
+                                   No
                                    </label>
                                 </div>
                                  <br>
                                    <div class="action-buttons">
-                                      <a class="nhsuk-button nhsuk-button--primary" href="s2-details">Continue</a>
+                                      <a class="nhsuk-button nhsuk-button--primary" href="entitlements">Submit</a>
                                    </div>
-                                   <p><a href="cancel-entitlement">Cancel</a></p>
                              </div>
                           </fieldset>
                        </div>
