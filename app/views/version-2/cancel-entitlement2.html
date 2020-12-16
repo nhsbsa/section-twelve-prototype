@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-Manage cost recovery
+Cancel entitlement
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -30,8 +30,7 @@ Manage cost recovery
             <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
           <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search-results">Search results</a></li>
           <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="entitlements">Tony Smith (Entilements and treatments)</a></li>
-          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="edit-treatment-info">Treatment details (62999)</a></li>
-    <li class="nhsuk-breadcrumb__item">Reason for updating</li>
+    <li class="nhsuk-breadcrumb__item">Cancel entitlement</li>
         </ol>
 
       </div>
@@ -64,7 +63,7 @@ Manage cost recovery
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-two-thirds">
                 <h1 class="nhsuk-heading-xl">
-                 Reason for updating
+                 Cancel entitlement
                 </h1>
               </div>
               <div class="nhsuk-grid-column-one-third">
@@ -77,14 +76,12 @@ Manage cost recovery
                 <br>
                 <div class="nhsuk-grid-row">
                         <div class="nhsuk-grid-column-one-half">
-                     <!--<div class="nhsuk-form-group">
+                     <div class="nhsuk-form-group">
 
   <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
-    <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-      <h1 class="nhsuk-fieldset__heading">
+    <div class="nhsuk-hint" id="example-hint">
         Select a reason
-      </h1>
-    </legend>
+      </div>
 
     <div class="nhsuk-hint" id="contact-hint">
     </div>
@@ -94,71 +91,29 @@ Manage cost recovery
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
         <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
-          Additional costs added
+          Duplicate entitlement found
         </label>
       </div>
       <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-          Treatment dates have changed
+          Replaced with another entitlement having different dates
         </label>
       </div>
         
          <div class="nhsuk-radios__item">
         <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
         <label class="nhsuk-label nhsuk-radios__label" for="example-hints-1">
-          Missing or inaccurate information 
+          Other
         </label>
       </div>
 
     </div>
   </fieldset>
-</div> -->
-  <div class="nhsuk-form-group">
-      
-    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-
-      <div class="nhsuk-hint" id="example-hint">
-        Select all reasons that apply
-      </div>
+</div> 
   
-      <div class="nhsuk-checkboxes">
-  
-        <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-            Additional costs added
-          </label>
-        </div>
-  
-        <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
-            Treatment dates have changed
-          </label>
-        </div>
-  
-        <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
-            Missing or inaccurate information 
-          </label>
-        </div>
-
-        <div class="nhsuk-checkboxes__item">
-          <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
-          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
-            Other
-          </label>
-        </div>
-  
-      </div>
-    </fieldset>
-  
-  </div>
-         
             
-                                <a href="treatment-edited-confirmation">
+                                <a href="cancel-entitlement-confirmation">
                                 <button class="nhsuk-button nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2" type="submit">
                                     Submit
                                 </button>
