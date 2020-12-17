@@ -25,19 +25,18 @@ Manage cost recovery
 <nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
     <div class="nhsuk-width-container-fluid">
       <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-two-thirds">
+        <div class="nhsuk-grid-column-full">
       
           <ol class="nhsuk-breadcrumb__list">
 
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
-              <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="account-requests">Account requests (Pending)</a></li>
-                <li class="nhsuk-breadcrumb__item">Airedale NHS Foundation Trust</li>
+                <li class="nhsuk-breadcrumb__item">Account requests (Rejected)</li>
             </ol>
         </div>
-          <div class=""></div>
       </div>
+        
   
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="account-requests">Back to Account requests (Pending)</a></p>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
 
     </div>
 </nav>
@@ -60,23 +59,32 @@ Manage cost recovery
 
                     </div>
                 </div> #}
+              
+              <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Account request rejected for Ben green
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">Email confirmation sent to ben.francis@nhs.net</p>
+  </div>
+</div>
 
             <div class="nhsuk-grid-row">
-              <div class="nhsuk-grid-column-one-half">
+              <div class="nhsuk-grid-column-two-thirds">
+                  
+                
                 <h1 class="nhsuk-heading-xl">
                   Account requests
                 </h1>
                   
               </div>
-              <div class="nhsuk-grid-column-two-half">
-                  
-                  <a href="account-requests"><button class="nhsuk-button nhsuk-button--secondary" type="submit" style="float:right; margin-left:20px;">
-  Remove trust filter
-</button></a>
-             <a href="trusts"><button  class="nhsuk-button" type="submit" style="float:right">
-  Select a different trust
-</button></a>
-                  
+        
+                <div class="nhsuk-grid-column-one-third">
+                  <a href="#"><button  class="nhsuk-button" type="submit" style="float:right">
+       Filter by trust
+     </button></a>
                 
 </div>
                 
@@ -86,7 +94,7 @@ Manage cost recovery
               <nav class="nhsuk-secondary-navigation" aria-label="Primary navigation" style="background-color:#f0f4f5;">
 					<ul class="nhsuk-secondary-navigation__list">
 						<li class="nhsuk-secondary-navigation__item">
-							<a class="nhsuk-secondary-navigation__link" aria-current="page" href="#1">Pending</a>
+							<a class="nhsuk-secondary-navigation__link" href="#1">Pending</a>
 						</li>
 
 						<li class="nhsuk-secondary-navigation__item">
@@ -94,7 +102,7 @@ Manage cost recovery
 						</li>
 
 						<li class="nhsuk-secondary-navigation__item">
-							<a class="nhsuk-secondary-navigation__link" href="#3">Rejected</a>
+							<a class="nhsuk-secondary-navigation__link" aria-current="page"  href="#3">Rejected</a>
 						</li>
 					</ul>
 				</nav>
@@ -102,9 +110,9 @@ Manage cost recovery
             <hr style="border-bottom:1px solid #ccc; margin:0">
 <br><br>
           <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-grid-column-one-third">
 
-<h2 class="nhsuk-heading-s">Showing results for <span class="nhsuk-tag nhsuk-tag--green" style="color: #354550; margin-right:20px; margin-left:5px;">Airedale NHS Foundation Trust</span></h2>
+
             </div>
 
 
@@ -120,18 +128,24 @@ Manage cost recovery
 
 
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                           Name
+                            Name
 
                           </th>
+
+                       
                             <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                           Trust
+                            Trust
                           </th>
                             <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                           Request date
+                            Request date
                           </th>
                             <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            Action
+                           Processed date
                           </th>
+                            <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                           Action
+                          </th>
+                            
 
                         </tr>
                       </thead>
@@ -142,49 +156,9 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">Ben Green</td> 
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
                             <td class="nhsuk-table__cell">11/08/2020</td>
-                  <td class="nhsuk-table__cell"><a href="account-requests-process">Make decision</a></td>
-                        </tr>
-                           <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Ben Green</td> 
-                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                            <td class="nhsuk-table__cell">11/08/2020</td>
-                  <td class="nhsuk-table__cell"><a href="account-requests-process">Make decision</a></td>
-                        </tr>
-                           <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Ben Green</td> 
-                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                            <td class="nhsuk-table__cell">11/08/2020</td>
-                  <td class="nhsuk-table__cell"><a href="account-requests-process">Make decision</a></td>
-                        </tr>
-                           <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Ben Green</td> 
-                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                            <td class="nhsuk-table__cell">11/08/2020</td>
-                  <td class="nhsuk-table__cell"><a href="account-requests-process">Make decision</a></td>
-                        </tr>
-                           <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Ben Green</td> 
-                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                            <td class="nhsuk-table__cell">11/08/2020</td>
-                  <td class="nhsuk-table__cell"><a href="account-requests-process">Make decision</a></td>
-                        </tr>
-                           <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Ben Green</td> 
-                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                            <td class="nhsuk-table__cell">11/08/2020</td>
-                  <td class="nhsuk-table__cell"><a href="account-requests-process">Make decision</a></td>
-                        </tr>
-                           <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Ben Green</td> 
-                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                            <td class="nhsuk-table__cell">11/08/2020</td>
-                  <td class="nhsuk-table__cell"><a href="account-requests-process">Make decision</a></td>
-                        </tr>
-                           <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Ben Green</td> 
-                          <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
-                            <td class="nhsuk-table__cell">11/08/2020</td>
-                  <td class="nhsuk-table__cell"><a href="account-requests-process">Make decision</a></td>
+                           <td class="nhsuk-table__cell">20/08/2020</td>
+                             <td class="nhsuk-table__cell"><a href="account-requests-view">View request</a></td>
+                  
                         </tr>
                       </tbody>
                     </table>
@@ -237,6 +211,7 @@ Manage cost recovery
                 <a href="account-requests" class="active">Account requests<span class="notification-badge" style="background-color: #005eb8">2 </span></a>
                     <a href="all-treatments">All treatments<span class="notification-badge" style="background-color: #005eb8">2</span></a>
               </li>
+                
               
             </div>
           </ul>

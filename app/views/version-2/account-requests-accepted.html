@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-Manage cost recovery
+Account request accepted
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -30,13 +30,13 @@ Manage cost recovery
           <ol class="nhsuk-breadcrumb__list">
 
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
-                <li class="nhsuk-breadcrumb__item">Account requests (Approved)</li>
+                <li class="nhsuk-breadcrumb__item">Account requests (Accepted)</li>
             </ol>
         </div>
       </div>
         
   
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="account-request-accepted">Back to Account requests (Accepted)</a></p>
 
     </div>
 </nav>
@@ -60,16 +60,6 @@ Manage cost recovery
                     </div>
                 </div> #}
               
-              <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
-  <div class="govuk-notification-banner__header">
-    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
-      Account request rejected for Ben green
-    </h2>
-  </div>
-  <div class="govuk-notification-banner__content">
-    <p class="govuk-notification-banner__heading">Email confirmation sent to ben.francis@nhs.net</p>
-  </div>
-</div>
 
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-two-thirds">
@@ -80,8 +70,11 @@ Manage cost recovery
                 </h1>
                   
               </div>
-              <div class="nhsuk-grid-column-one-third">
-             
+        
+                <div class="nhsuk-grid-column-one-third">
+                  <a href="#"><button  class="nhsuk-button" type="submit" style="float:right">
+       Filter by trust
+     </button></a>
                 
 </div>
                 
@@ -91,15 +84,15 @@ Manage cost recovery
               <nav class="nhsuk-secondary-navigation" aria-label="Primary navigation" style="background-color:#f0f4f5;">
 					<ul class="nhsuk-secondary-navigation__list">
 						<li class="nhsuk-secondary-navigation__item">
-							<a class="nhsuk-secondary-navigation__link" href="#1">Pending</a>
+							<a class="nhsuk-secondary-navigation__link" href="account-requests">Pending</a>
 						</li>
 
 						<li class="nhsuk-secondary-navigation__item">
-							<a class="nhsuk-secondary-navigation__link" href="#2">Approved</a>
+							<a class="nhsuk-secondary-navigation__link" aria-current="page"  href="account-requests-accepted">Approved</a>
 						</li>
 
 						<li class="nhsuk-secondary-navigation__item">
-							<a class="nhsuk-secondary-navigation__link" aria-current="page"  href="#3">Rejected</a>
+							<a class="nhsuk-secondary-navigation__link"  href="account-requests-rejected">Rejected</a>
 						</li>
 					</ul>
 				</nav>
@@ -154,7 +147,7 @@ Manage cost recovery
                           <td class="nhsuk-table__cell">Airedale NHS Foundation Trust</td>
                             <td class="nhsuk-table__cell">11/08/2020</td>
                            <td class="nhsuk-table__cell">20/08/2020</td>
-                             <td class="nhsuk-table__cell"><a href="account-requests-view">View request</a></td>
+                             <td class="nhsuk-table__cell"><a href="account-requests-view-accepted">View request</a></td>
                   
                         </tr>
                       </tbody>
