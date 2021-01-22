@@ -46,63 +46,23 @@ File upload
                  <div class="nhsuk-grid-row">
                     <div class="nhsuk-grid-column-one-half">
                      <div class="nhsuk-form-group">
-                        <dl class="nhsuk-summary-list">
-                           <h2 class="nhsuk-heading-m">Files added</h2>
-                           <div class="nhsuk-summary-list__row">
-                             <dt class="nhsuk-summary-list__key">
-                               File 1
-                             </dt>
-                             <dd class="nhsuk-summary-list__value">
-                               s2file1.jpg
-                             </dd>
+                      <table class="nhsuk-table">
+                        <caption class="nhsuk-table__caption">File added</caption>
+                        <thead role="rowgroup" class="nhsuk-table__head">
+                        <h3>Check file</h3>
+                        <tbody class="nhsuk-table__body">
+                          <tr role="row" class="nhsuk-table__row">
+                            <td class="nhsuk-table__cell">s2.jpg</td>
+                            <td class="nhsuk-table__cell"> <a href="s2-form">
+                              View<span class="nhsuk-u-visually-hidden"> file</span>
+                            </a></td>
+                            <td class="nhsuk-table__cell"> <a href="upload-s2-deleted-conf">
+                              Delete<span class="nhsuk-u-visually-hidden"> file</span>
+                            </a></td>
+                          </tr>
+                        </tbody>
+                      </table>
                      
-                             <dd class="nhsuk-summary-list__value">
-                         
-                               <a href="s2-form">
-                                 View<span class="nhsuk-u-visually-hidden"> file</span>
-                               </a>
-                         
-                             </dd>
-                         
-                             <dd class="nhsuk-summary-list__actions">
-                         
-                               <a href="#">
-                                 Delete<span class="nhsuk-u-visually-hidden"> file</span>
-                               </a>
-                         
-                             </dd>
-                         
-                           </div>
-                         
-                         </dl>
-                     
-                         <form action="upload-file" method="post">
-                           {% call fieldset({
-                             legend: {
-                               "text": "Do you want to upload a copy of another S2 that covers the treatment?",
-                               "classes": "nhsuk-fieldset__legend--m",
-                               "isPageHeading": true
-                             }
-                             }) %}
-                           
-                           {{ radios({
-                              "idPrefix": "file",
-                              "name": "file",
-                              "items": [
-                                {
-                                  "value": "yes",
-                                  "text": "Yes"
-                                },
-                                {
-                                  "value": "no",
-                                  "text": "No"
-                                }
-                              ]
-                            }) }}
-                     
-                            {% endcall %}
-                            <br>
-  
                         <div class="action-buttons">
                            <a class="nhsuk-button nhsuk-button--primary" href="check-your-answers-s2">Continue</a>
                         </div>
