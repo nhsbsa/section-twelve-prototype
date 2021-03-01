@@ -1,0 +1,269 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-sidebar.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+View flagged record cancelled
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container-fluid">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+    
+        <ol class="nhsuk-breadcrumb__list">
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="flagged-records-cancelled">Flagged-records (cancelled)</a></li>
+          <li class="nhsuk-breadcrumb__item">View flagged record (62999)</li>
+        </ol>
+
+      </div>
+    </div>
+
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
+
+  </div>
+</nav>
+
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+     <div class="nhsBSA-sidebar-content">
+        <div class="nhsuk-width-container-fluid">
+           <div class="nhsuk-main-wrapper" id="maincontent">
+              <div class="nhsuk-grid-row">
+                 <div class="nhsuk-grid-column-full">
+               
+                    <h1 class="nhsuk-heading-xl">
+                       Cancelled record (62999)
+                    </h1>
+                 </div>
+              </div>
+              <hr style="border-bottom:4px solid #005eb8; margin:0">
+              <div class="nhsuk-scrollable-pane">
+        
+               <div class="nhsuk-inset-text">
+                <span class="nhsuk-u-visually-hidden">Information: </span>
+                <p>This record is cancelled as the OVM had entered the costs in error.</p>
+              </div>
+
+               <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-one-half" >
+                   <div style="border: 5px solid grey; padding:20px 20px 1px 20px;">
+                      <h2 class="nhsuk-heading-m">
+                         OVM contact details
+                      </h2>
+                      <dl class="nhsuk-summary-list">
+                        <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                             Name
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                            Harry Adams
+                          </dd>
+                       </div>
+                         <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                               Email address:
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                              harry.adams@nhs.net
+                            </dd>
+                         </div>
+                         <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                               Phone number
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                              07466871403
+                            </dd>
+                         </div>
+                         <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                               Trust
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                               Airedale NHS Foundation Trust
+                            </dd>
+                         </div>
+                        </dl>
+
+                   </div>
+                </div>
+             </div>
+             <br>
+             <div class="nhsuk-grid-column-one-half">
+
+              <dl class="nhsuk-summary-list">
+                <h2 class="nhsuk-label--m">EHIC details</h2>
+                 <div class="nhsuk-summary-list__row">
+                   <dt class="nhsuk-summary-list__key">
+                     Issuing member state
+                   </dt>
+                   <dd class="nhsuk-summary-list__value">
+                     Belgium
+                   </dd>
+                 </div>
+           
+                 <div class="nhsuk-summary-list__row">
+                   <dt class="nhsuk-summary-list__key">
+                     Name
+                   </dt>
+                   <dd class="nhsuk-summary-list__value">
+                    Peteers
+                   </dd>
+                 </div>
+           
+                 <div class="nhsuk-summary-list__row">
+                   <dt class="nhsuk-summary-list__key">
+                     Given names
+                   </dt>
+                   <dd class="nhsuk-summary-list__value">
+                    Laura
+                   </dd>
+                 </div>
+           
+                 <div class="nhsuk-summary-list__row">
+                   <dt class="nhsuk-summary-list__key">
+                    Date of birth
+                   </dt>
+                   <dd class="nhsuk-summary-list__value">
+                     06/12/1988
+                   </dd>
+                 </div>
+           
+                 <div class="nhsuk-summary-list__row">
+                   <dt class="nhsuk-summary-list__key">
+                     Personal identification number
+                   </dt>
+                   <dd class="nhsuk-summary-list__value">
+                     280000000293
+                   </dd>
+                 </div>
+           
+                 <div class="nhsuk-summary-list__row">
+                   <dt class="nhsuk-summary-list__key">
+                     Identification number of the institution
+                   </dt>
+                   <dd class="nhsuk-summary-list__value">
+                    0206653946 - NIHDI
+                   </dd>
+                 </div>
+
+                 <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Name of the institution
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    The National Institute for Health and Disability Insurance
+                  </dd>
+                </div>
+           
+                 <div class="nhsuk-summary-list__row">
+                   <dt class="nhsuk-summary-list__key">
+                     Identification number of the card
+                   </dt>
+                   <dd class="nhsuk-summary-list__value">
+                     80724028000420000098
+                   </dd>
+                 </div>
+           
+                 <div class="nhsuk-summary-list__row">
+                   <dt class="nhsuk-summary-list__key">
+                     Expiry date
+                   </dt>
+                   <dd class="nhsuk-summary-list__value">
+                     04/08/2022
+                   </dd>
+                 </div>
+           
+                 <div class="nhsuk-summary-list__row">
+                   <dt class="nhsuk-summary-list__key">
+                    Laura Peteers is a student
+                   </dt>
+                   <dd class="nhsuk-summary-list__value">
+                     No
+                   </dd>
+                 </div>
+           
+               </dl>
+          
+               <dl class="nhsuk-summary-list">
+                <h2 class="nhsuk-label--m">Address details</h2>
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Home address
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    5 Boulevard de Waterloo<br>
+                    28005 Brussels<br>
+                    Belgium
+                  </dd>
+                </div>
+          
+              </dl>
+          
+               <dl class="nhsuk-summary-list">
+                <h2 class="nhsuk-label--m">Treatment details</h2>
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Treatment start date
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    10/03/2020
+                  </dd>
+                </div>
+          
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Treatment end date
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    11/04/2020
+                  </dd>
+                </div>
+          
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Treatment cost
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  £15,654.55
+                </dd>
+              </div>
+          
+            </dl>
+             
+                    
+                      </div>
+                  
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+

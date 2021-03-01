@@ -222,6 +222,7 @@
 .nhsBSA-sidebar-container {
     display: flex;
     flex-direction: column;
+    background-color: $color_nhsuk-grey-5;
     min-height: calc(100vh - 99px);
     margin: 0;
     padding: 0;
@@ -230,11 +231,11 @@
     }
     
     .nhsBSA-sidebar-wrapper {
-      flex: 1 0 auto;
+      flex: 1 0 300px;
       display: flex;
       
       .nhsBSA-sidebar-content {
-        flex: 1 0 auto;
+        flex: 1 0 300px;
         background-color: $color_nhsuk-grey-5;
         padding: 0px;
         margin: 0px;
@@ -1648,3 +1649,81 @@ TIMELINE
   .file-upload {
     font-size: 14pt;
     line-height: 1.15; } }
+
+    .nhsuk-details-1 {
+      color: #212b32;
+      margin-bottom: 16px;
+      font-size: 16px;
+      font-size: 1rem;
+      line-height: 1.5;
+      display: block; }
+      @media print {
+        .nhsuk-details-1 {
+          color: #212b32; } }
+      @media (min-width: 40.0625em) {
+        .nhsuk-details-1 {
+          margin-bottom: 24px; } }
+      @media (min-width: 40.0625em) {
+        .nhsuk-details-1 {
+          font-size: 19px;
+          font-size: 1.1875rem;
+          line-height: 1.47368; } }
+      @media print {
+        .nhsuk-details-1 {
+          font-size: 14pt;
+          line-height: 1.15; } }
+
+.nhsuk-details__summary-1 {
+  color: #005eb8;
+  /* [1] */
+  cursor: pointer;
+  display: inline-block;
+  /* [2] */
+  padding-left: 24px;
+  position: relative;
+  /* [3] */ }
+  .nhsuk-details__summary-1:hover {
+    color: #7C2855; }
+  .nhsuk-details__summary-1:before {
+    bottom: 0;
+    content: '';
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent;
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    border-width: 7px 0 7px 12.124px;
+    border-left-color: inherit; }
+  .nhsuk-details__summary-1:focus {
+    background-color: #ffeb3b;
+    box-shadow: 0 -2px #ffeb3b, 0 4px #212b32;
+    color: #212b32;
+    outline: 4px solid transparent;
+    text-decoration: none; }
+    .nhsuk-details__summary-1:focus .nhsuk-icon {
+      fill: #212b32; }
+  .nhsuk-details__summary-1:hover .nhsuk-details__summary-text-1, .nhsuk-details__summary-1:focus .nhsuk-details__summary-text-1 {
+    text-decoration: none; }
+
+.nhsuk-details-1[open] > .nhsuk-details__summary-1:before {
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+  clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+  border-width: 12.124px 7px 0 7px;
+  border-top-color: inherit; }
+
+.nhsuk-details__summary-text-1 {
+  text-decoration: underline;
+  /* [4] */ }
+
+.nhsuk-details__summary-1::-webkit-details-marker {
+  display: none;
+  /* [5] */ }
