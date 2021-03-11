@@ -13,6 +13,7 @@ router.use('/meo-journey', require('./views/meo-journey/_routes'));
 router.use('/version-2', require('./views/version-2/_routes'));
 router.use('/version-3', require('./views/version-3/_routes'));
 router.use('/version-4', require('./views/version-4/_routes'));
+router.use('/version-5', require('./views/version-5/_routes'));
 
 
 module.exports = router;
