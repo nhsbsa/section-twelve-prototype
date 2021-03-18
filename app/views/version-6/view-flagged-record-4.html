@@ -1,0 +1,315 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-sidebar.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+View flagged record
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container-fluid">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+    
+        <ol class="nhsuk-breadcrumb__list">
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="flagged-records">Flagged-records (New)</a></li>
+          <li class="nhsuk-breadcrumb__item">View flagged record (62555)</li>
+        </ol>
+
+      </div>
+    </div>
+
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
+
+  </div>
+</nav>
+
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+     <div class="nhsBSA-sidebar-content">
+        <div class="nhsuk-width-container-fluid">
+           <div class="nhsuk-main-wrapper" id="maincontent">
+              <div class="nhsuk-grid-row">
+                 <div class="nhsuk-grid-column-full">
+               
+                    <h1 class="nhsuk-heading-xl">
+                       Flagged record (62898)
+                    </h1>
+                 </div>
+              </div>
+              <hr style="border-bottom:4px solid #005eb8; margin:0">
+              <div class="nhsuk-scrollable-pane">
+        
+               <div class="nhsuk-inset-text">
+                <span class="nhsuk-u-visually-hidden">Information: </span>
+                <p>OVM has verified ordinary residence and approved that the cost is above £10,000 for this treatment.</p>
+              </div>
+
+               <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-one-half" >
+                   <div style="border: 5px solid grey; padding:20px 20px 1px 20px;">
+                      <h2 class="nhsuk-heading-m">
+                         OVM contact details
+                      </h2>
+                      <dl class="nhsuk-summary-list">
+                        <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                             Name
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                            Harry Adams
+                          </dd>
+                       </div>
+                         <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                               Email address:
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                              harry.adams@nhs.net
+                            </dd>
+                         </div>
+                         <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                               Phone number
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                              07466871403
+                            </dd>
+                         </div>
+                         <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                               Trust
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                               Airedale NHS Foundation Trust
+                            </dd>
+                         </div>
+                        </dl>
+
+                   </div>
+                </div>
+             </div>
+             <br>
+             <div class="nhsuk-grid-column-one-half">
+              <h2 class="nhsuk-heading-m">PRC details</h2>  
+              <h2 class="nhsuk-heading-s">Card holder related information</h2>  
+                          <dl class="nhsuk-summary-list">
+
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Issuing member state
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                Spain
+                              </dt>
+                              </dd>
+                            </div>
+
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Name
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                Vincent
+                              </dt>
+                              </dd>
+                            </div>
+                      
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Given names
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                Elise
+                              </dt>
+                              </dd>
+                            </div>
+                      
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                               Date of birth 
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                20/12/1981
+                              </dt>
+                              </dd>
+                            </div>
+                      
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Personal identification number
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                280000000293
+                              </dt>
+                              </dd>
+                            </div>
+
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Elise Vincent is a student
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                No
+                              </dt>
+                              </dd>
+                            </div>
+                          </dl>
+                      
+                          <h2 class="nhsuk-heading-s">Competent institution related information</h2>
+                          <dl class="nhsuk-summary-list">
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Identification number of the institution
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                01071 - CPAM ARDECH
+                              </dt>
+                              </dd>
+                            </div>
+
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Name of the institution
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                              Primary health insurance fund (CPAM) of Ardèche
+                              </dt>
+                              </dd>
+                            </div>
+                          </dl>  
+                    
+                          <h2 class="nhsuk-heading-s">Card related information</h2>
+                          <dl class="nhsuk-summary-list">
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Identification number of the card
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                80250000030100000110
+                              </dt>
+                              </dd>
+                            </div>
+                      
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Expiry date
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                05/11/2023
+                              </dt>
+                              </dd>
+                            </div>
+                          </dl>
+                      
+                          <h2 class="nhsuk-heading-s">Certificate details</h2>
+                          <dl class="nhsuk-summary-list">
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Validity period from
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                03/07/2020
+                              </dt>
+                              </dd>
+                            </div>
+                      
+                            <div class="nhsuk-summary-list__row">
+                              <dt class="nhsuk-summary-list__key">
+                                Validity period to
+                              </dt>
+                              <dd class="nhsuk-summary-list__value">
+                                05/08/2020
+                              </dt>
+                              </dd>
+                            </div>
+                    
+                          </dl>
+
+          
+               <dl class="nhsuk-summary-list">
+                <h2 class="nhsuk-label--m">Address details</h2>
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Home address
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    3A Calle de las Huertas<br>
+                    Madrid<br>
+                    Spain
+                  </dd>
+                </div>
+          
+              </dl>
+          
+               <dl class="nhsuk-summary-list">
+                <h2 class="nhsuk-label--m">Treatment details</h2>
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Treatment start date
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    05/07/2020
+                  </dd>
+                </div>
+          
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Treatment end date
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    05/06/2020
+                  </dd>
+                </div>
+          
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Treatment cost
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  £12,342.34.55
+                </dd>
+              </div>
+          
+            </dl>
+              <p><a href="entitlements-3">View patient record</a> for Elise Vincent.</p> 
+              <br>
+                        <div class="action-buttons">
+                           <a class="nhsuk-button nhsuk-button--primary" style="margin-right: 25px;" href="unflag-confirmation">Unflag</a>
+                           <a class="nhsuk-button nhsuk-button--secondary" href="cancel-flagged-record">Cancel</a>
+                        </div>
+                    
+                      </div>
+                  
+                    </div>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+

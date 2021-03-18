@@ -28,11 +28,10 @@ UK claims
         <div class="nhsuk-grid-column-full">
       
           <ol class="nhsuk-breadcrumb__list">
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">UK claims (Search)</a></li>
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="claim-list">Search results</a></li>
-      <li class="nhsuk-breadcrumb__item">Create new claim</li>
-          </ol>
+
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search (Person)</a></li>
+                <li class="nhsuk-breadcrumb__item">UK claims (Search by claim ID)</li>
+            </ol>
         </div>
       </div>
   
@@ -63,7 +62,7 @@ UK claims
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-two-thirds">
                 <h1 class="nhsuk-heading-xl">
-                 Create a new claim
+                 Search for UK claims
                 </h1>
                   
               </div>
@@ -100,87 +99,30 @@ UK claims
                 
                 
             </div>
+          
+            <nav class="nhsuk-secondary-navigation" aria-label="Primary navigation" style="background-color:#f0f4f5;">
+              <ul class="nhsuk-secondary-navigation__list">
+                <li class="nhsuk-secondary-navigation__item">
+                  <a class="nhsuk-secondary-navigation__link" href="uk-claims">Search</a>
+                </li>
+
+                <li class="nhsuk-secondary-navigation__item">
+                  <a class="nhsuk-secondary-navigation__link" aria-current="page" href="uk-claims-search">Search by claim ID</a>
+                </li>
+    
+              </ul>
+            </nav>
                   
-            <hr style="border-bottom:4px solid #005eb8; margin:0">
+                <hr style="border-bottom:1px solid #ccc; margin:0">
     <br><br>
-
-    <div class="nhsuk-form-group" style="display: inline-block; margin-right: 25px;">
-      <label class="nhsuk-label" for="select-1">
-        Year
-      </label>
-      <select class="nhsuk-select" id="select-1" name="select-1">
-        <option value="0">All years</option>
-        <option value="1" selected>2021</option>
-        <option value="2">2020</option>
-        <option value="3">2019</option>
-        <option value="4">2018</option>
-        <option value="5">2017</option>
-      </select>
-    </div>
-
-        <div class="nhsuk-form-group" style="display: inline-block;">
-          <label class="nhsuk-label" for="select-1">
-            Month
-          </label>
-          <select class="nhsuk-select" id="select-1" name="select-1">
-            <option value="0" selected>All months</option>
-            <option value="1">January</option>
-            <option value="2">February</option>
-            <option value="3">March</option>
-            <option value="4">April</option>
-            <option value="5">May</option>
-            <option value="6">June</option>
-            <option value="7">July</option>
-            <option value="8">August</option>
-            <option value="9">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-        </div>
-
-        <div class="nhsuk-form-group">
-
-          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-            <label class="nhsuk-label" for="example">
-              Entitlement - Article type
-            </label>
-        
-            <div class="nhsuk-radios">
-        
-              <div class="nhsuk-radios__item">
-                <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-                <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-                  EHIC and PRC - Article 62
-                </label>
-              </div>
-        
-              <div class="nhsuk-radios__item">
-                <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no" checked>
-                <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-                  S2 - Article 20
-                </label>
-              </div>
-
-              <div class="nhsuk-radios__item">
-                <input class="nhsuk-radios__input" id="example-3" name="example" type="radio" value="no">
-                <label class="nhsuk-label nhsuk-radios__label" for="example-3">
-                  All entitlements
-                </label>
-              </div>
-        
-            </div>
-          </fieldset>
-        
-        </div>
 
         <div class="nhsuk-grid-row">
           <div class="nhsuk-grid-column-one-third">
               <div class="nhsuk-form-group">
-              <label class="nhsuk-label" for="country">
-                Country
+              <label class="nhsuk-label" for="example">
+                Claim ID
               </label>
-              <input class="nhsuk-input nhsuk-u-width-full" id="country" name="country" type="text" value="France">
+              <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text">
             </div>
           </div>
             </div>
@@ -188,10 +130,10 @@ UK claims
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-full">
   
-                <a href="claim-treatment-forms">
+                <a href="claim-list-1">
   
                   <button class="nhsuk-button nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2" type="submit">
-                    Create claim
+                    Search
                   </button>
   
                 </a>
@@ -207,7 +149,7 @@ UK claims
 
       </div>
       
-     <!-- <div class="nhsBSA-sidebar-nav">
+       <div class="nhsBSA-sidebar-nav">
 
         <div class="side-nav">
     
@@ -231,8 +173,12 @@ UK claims
             </div>
           </ul>
 
+          <!-- <div class="action-buttons">
+                <button class="nhsuk-button nhsuk-button--secondary" type="submit">Add note</button>
+            </div> -->
+
     </div>
-  </div> -->
+  </div>
 
   </div>
 
