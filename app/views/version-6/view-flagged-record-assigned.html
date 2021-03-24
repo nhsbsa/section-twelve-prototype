@@ -28,7 +28,7 @@ View flagged record
     
         <ol class="nhsuk-breadcrumb__list">
           <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
-          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="flagged-records">Flagged-treatments (Cancelled)</a></li>
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="flagged-records">Flagged-treatments (New)</a></li>
           <li class="nhsuk-breadcrumb__item">View flagged treatment (62324)</li>
         </ol>
 
@@ -51,13 +51,22 @@ View flagged record
                 <h1 class="nhsuk-heading-l" style="display: inline-block;">
                   Flagged treatment (62324)
                 </h1>
-                <strong style="color: #354550; display: inline-block; margin-left: 20px;" class="nhsuk-tag no-caps nhsuk-tag--red">Cancelled</strong>
+                <a href="view-flagged-record"><button style="display: inline-block; margin-left:20px;" class="nhsuk-button nhsuk-button--secondary" type="submit">
+                  Assigned
+                </button></a>
+                <!--<p style="color:rgb(80, 80, 80); font-weight: 900; display: inline-block; margin-left:20px; ">Assigned</p> -->
               </div>  
 
               <div class="nhsuk-grid-column-one-half">
         
-                <p style="float:right;"><a href="#">
-                  <a href="#">View patient record</a>
+                <a href="cancel-flagged-record"><button  class="nhsuk-button nhsuk-button--secondary" type="submit" style="float:right; margin-left:20px;">
+                  Cancel treatment
+                </button></a>
+                <a href="unflag-confirmation"><button  class="nhsuk-button " type="submit" style="float:right; margin-left:20px;">
+                  Unflag
+                </button></a>
+                <p style="float:right; margin-top:15px;"><a href="#" >
+                  <a href="entitlements-2">View patient record</a>
                 </a></p>
               </div>
           </div>
@@ -65,7 +74,6 @@ View flagged record
                <div class="nhsuk-grid-row">
                 <div class="nhsuk-grid-column-one-half" >
                   <div style="border: 3px; border-style: solid; border-color:lightgray; background-color:rgb(252, 252, 252); padding:20px 20px 1px 20px;">
-                    <p><span style="font-size:22px; font-weight:900;">Cancelled reason: </span><b>The OVM entered the costs in error.</b></p>
                      <p><span style="font-size:22px; font-weight:900;">Flagged reason: </span>Ordinary Residence</p>
                      
                      <h2 class="nhsuk-heading-s">

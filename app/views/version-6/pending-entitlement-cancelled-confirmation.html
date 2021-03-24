@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-Cancelled flagged records
+Manage cost recovery
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -30,7 +30,7 @@ Cancelled flagged records
           <ol class="nhsuk-breadcrumb__list">
 
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
-                <li class="nhsuk-breadcrumb__item">Flagged treatments(Processed)</li>
+                <li class="nhsuk-breadcrumb__item">Pending entitlements (Cancelled)</li>
             </ol>
         </div>
       </div>
@@ -49,108 +49,73 @@ Cancelled flagged records
 
           <div class="nhsuk-main-wrapper" id="maincontent">
 
-            {# <div class="nhsuk-grid-row">
-                    <div class="nhsuk-grid-column-full">
-
-                        <div class="panel panel-border-wide alert-default">
-                            <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3">English is their second language. May require an interpreter.</h2>
-                        </div>
-
+            <div class="nhsuk-grid-row">
+              <div class="nhsuk-grid-column-full">
+                 <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                    <div class="govuk-notification-banner__header">
+                       <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                          Entitlement cancelled
+                       </h2>
                     </div>
-                </div> #}
-         
+                    <div class="govuk-notification-banner__content">
+                       <p class="govuk-notification-banner__heading">Entitlement for Laura Peeters has been cancelled. </p>
+                    </div>
+                 </div>
+              </div>
+           </div>
+      
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-two-thirds">
                 <h1 class="nhsuk-heading-xl">
-                 Flagged treatments
+                 Pending entitlements
                 </h1>
                   
               </div>
 
               <div class="nhsuk-grid-column-one-third">
-                <a href="filter-flagged-records"><button  class="nhsuk-button" type="submit" style="float:right">
-     Filter
-   </button></a>
+                
                    
-   </div>
-               <!-- <div class="nhsuk-grid-column-two-thirds">
-              
-<div class="nhsuk-form-group" style="float:right; margin-left:20px;">
-  <label class="nhsuk-label" for="select-1">
-    Reason for flagging
-  </label>
-  <select class="nhsuk-select" id="select-1" name="select-1">
-    <option value="1">All reasons</option>
-    <option value="2" selected>Cost above £10,000</option>
-    <option value="3">Additional costs</option>
-    <option value="4">Treatment dates beyond 6 months</option>
-    <option value="4">Ordinary residence</option>
-    <option value="4">Institution details to be approved</option>
-  </select>
-</div>
-          
-<div class="nhsuk-form-group" style="float:right">
-  <label class="nhsuk-label" for="select-1">
-    Entitlement
-  </label>
-  <select class="nhsuk-select" id="select-1" name="select-1">
-    <option value="1">All entitlements</option>
-    <option value="2" selected>EHIC</option>
-    <option value="3">PRC</option>
-    <option value="4">S2</option>
-  </select>
-</div>
-                
-</div> -->
-                
+              </div> 
                 
             </div>
-          
+            
             <nav class="nhsuk-secondary-navigation" aria-label="Primary navigation" style="background-color:#f0f4f5;">
               <ul class="nhsuk-secondary-navigation__list">
                 <li class="nhsuk-secondary-navigation__item">
-                  <a class="nhsuk-secondary-navigation__link" href="flagged-records">Flagged</a>
+                  <a class="nhsuk-secondary-navigation__link"  href="pending-entitlements">Pending</a>
                 </li>
 
                 <li class="nhsuk-secondary-navigation__item">
-                  <a class="nhsuk-secondary-navigation__link" aria-current="page" href="unflagged-records">Processed</a>
+                  <a class="nhsuk-secondary-navigation__link" href="pending-entitlement-processed">Processed</a>
+                </li>
+
+                <li class="nhsuk-secondary-navigation__item">
+                  <a class="nhsuk-secondary-navigation__link" aria-current="page" href="#">Cancelled</a>
                 </li>
     
-                <li class="nhsuk-secondary-navigation__item">
-                  <a class="nhsuk-secondary-navigation__link"  href="flagged-records-cancelled">Cancelled</a>
-                </li>
-  
               </ul>
             </nav>
                   
                 <hr style="border-bottom:1px solid #ccc; margin:0">
     <br><br>
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-third">
+
+
+      </div>
+
+
+    </div>
         
-        
-              
-  
-          <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-one-third">
 
-
-            </div>
-
-
-          </div>
-              
-              
-
-<table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
+<table id="sortable" class="nhsuk-table  nhsuk-table-u-margin-0 nhsuk-table-clickable main-table sortable">
 
                       <!-- TABLE START -->
                       <thead class="nhsuk-table__head">
                         <tr class="nhsuk-table__row">
 
-                            <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              Treatment ID
-
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                          <th class="nhsuk-table__header" scope="col">
                             First name
  
                            </th>
@@ -158,21 +123,22 @@ Cancelled flagged records
                             Last name
  
                            </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                        
+                          <th class="nhsuk-table__header" scope="col">
                            Entitlement
 
                           </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                          <th class="nhsuk-table__header"  scope="col">
                             Status
 
                           </th>
 
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            Unflagged by
 
+                          <th class="nhsuk-table__header" scope="col">
+                            Cancelled by
                           </th>
 
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                          <th class="nhsuk-table__header"  scope="col">
                             Action
 
                           </th>
@@ -180,16 +146,15 @@ Cancelled flagged records
                         </tr>
                       </thead>
 
-                      <tbody class="nhsuk-table__body nhsuk-body-">
+                      <tbody class="nhsuk-table__body ">
 
                         <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">62324</td>
                           <td class="nhsuk-table__cell">Laura</td>
                           <td class="nhsuk-table__cell">Peteers</td>
                           <td class="nhsuk-table__cell">EHIC</td>
-                          <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--green">Processed</strong></td> 
-                          <td class="nhsuk-table__cell">Sarah Mathew</td>  
-                          <td class="nhsuk-table__cell"><a href="view-flagged-record-processed">View<span class="nhsuk-u-visually-hidden">details</span></a></td>   
+                          <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--red">Cancelled</strong></td>
+                          <td class="nhsuk-table__cell">John Paul</td>     
+                          <td class="nhsuk-table__cell"><a href="view-pending-entitlement-cancelled">View<span class="nhsuk-u-visually-hidden">details</span></a></td>   
                           </tr>
 
                       </tbody>
@@ -219,15 +184,16 @@ Cancelled flagged records
               <p class="nhsuk-pagination__results">Showing <b>1</b> to <b>10</b> of <b>2,142</b> results</p>
             </nav>
 
-
           </div>
 
         </div>
 
       </div>
+      
        <div class="nhsBSA-sidebar-nav">
 
         <div class="side-nav">
+    
   
               <ul>
             <div id="options" class="options">
@@ -241,8 +207,8 @@ Cancelled flagged records
                             
                 <li>
                 <a href="account-requests" >Account requests<span class="notification-badge" style="background-color: #005eb8">2 </span></a>
-                    <a href="flagged-records" class="active">Flagged treatments</a>
-                    <a href="pending-entitlements">Pending entitlements</a>
+                    <a href="flagged-records">Flagged treatments<span class="notification-badge" style="background-color: #005eb8">4 </span></a>
+                    <a href="pending-entitlements" class="active">Pending entitlements</a>
                     <a href="uk-claims">UK claims</a>
               </li>
               
@@ -252,10 +218,12 @@ Cancelled flagged records
           <!-- <div class="action-buttons">
                 <button class="nhsuk-button nhsuk-button--secondary" type="submit">Add note</button>
             </div> -->
-                  
-        </div>
+
     </div>
+  </div>
 
   </div>
 
 {% endblock %}
+
+

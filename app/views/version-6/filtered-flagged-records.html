@@ -30,13 +30,13 @@ Filtered flagged records
           <ol class="nhsuk-breadcrumb__list">
 
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="flagged-records">Flagged records(New)</a></li>
-                <li class="nhsuk-breadcrumb__item">Filtered flagged records</li>
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="flagged-records">Flagged treatments(Flagged)</a></li>
+                <li class="nhsuk-breadcrumb__item">Filtered flagged treatments</li>
             </ol>
         </div>
       </div>
   
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="flagged-records">Flagged records(New)</a></p>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="flagged-records">Flagged treatments(New)</a></p>
 
     </div>
 </nav>
@@ -63,7 +63,7 @@ Filtered flagged records
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-two-thirds">
                 <h1 class="nhsuk-heading-xl">
-                 Flagged records
+                 Flagged treatments
                 </h1>
                   
               </div>
@@ -105,11 +105,11 @@ Filtered flagged records
             <nav class="nhsuk-secondary-navigation" aria-label="Primary navigation" style="background-color:#f0f4f5;">
               <ul class="nhsuk-secondary-navigation__list">
                 <li class="nhsuk-secondary-navigation__item">
-                  <a class="nhsuk-secondary-navigation__link" aria-current="page" href="flagged-records">New</a>
+                  <a class="nhsuk-secondary-navigation__link" aria-current="page" href="flagged-records">Flagged</a>
                 </li>
 
                 <li class="nhsuk-secondary-navigation__item">
-                  <a class="nhsuk-secondary-navigation__link" href="unflagged-records">Processed</a>
+                  <a class="nhsuk-secondary-navigation__link" href="#">Processed</a>
                 </li>
     
                 <li class="nhsuk-secondary-navigation__item">
@@ -138,99 +138,127 @@ Filtered flagged records
             <div class="nhsuk-grid-column-full">
               
               
-<table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
+              <table id="sortable" class="nhsuk-table  nhsuk-table-u-margin-0 nhsuk-table-clickable main-table sortable">
 
-                      <!-- TABLE START -->
-                      <thead class="nhsuk-table__head">
-                        <tr class="nhsuk-table__row">
+                <!-- TABLE START -->
+                <thead class="nhsuk-table__head">
+                  <tr class="nhsuk-table__row">
 
-                            <th class="nhsuk-table__header" scope="col">
-                              Treatment ID
+                      <th class="nhsuk-table__header" scope="col">
+                        Treatment ID
 
-                          </th>
-                          <th class="nhsuk-table__header" scope="col">
-                            First name
- 
-                           </th>
-                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            <button onclick="sortTable()" style="color:#212B32"; type="button" data-index="0">Last name</button>
- 
-                           </th>
-                        
-                          <th class="nhsuk-table__header" scope="col">
-                           Entitlement
+                    </th>
+                    <th class="nhsuk-table__header" scope="col">
+                      First name
 
-                          </th>
-                          <th class="nhsuk-table__header"  scope="col">
-                            Status
+                     </th>
+                     <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                      <button onclick="sortTable()" style="color:#212B32"; type="button" data-index="0">Last name</button>
 
-                          </th>
+                     </th>
+                  
+                    <th class="nhsuk-table__header" scope="col">
+                     Entitlement
+
+                    </th>
+                    <th class="nhsuk-table__header"  scope="col">
+                      Status
+
+                    </th>
+
+                    <th class="nhsuk-table__header" scope="col">
+                      Processed date
+
+                    </th>
+
+                    <th class="nhsuk-table__header" scope="col">
+                      Assigned to
+                    </th>
+
+                    <th class="nhsuk-table__header"  scope="col">
+                      Action
+
+                    </th>
+
+                  </tr>
+                </thead>
+
+                <tbody class="nhsuk-table__body ">
+
+                  <tr class="nhsuk-table__row">
+                    <td class="nhsuk-table__cell" style="align: center">62324 </td>
+                    <td class="nhsuk-table__cell">Laura</td>
+                    <td class="nhsuk-table__cell">Peteers</td>
+                    <td class="nhsuk-table__cell">EHIC</td>
+                    <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--orange">Flagged</strong></td>
+                    <td class="nhsuk-table__cell">15/03/2019</td>
+                    <td class="nhsuk-table__cell">-</td>     
+                    <td class="nhsuk-table__cell"><a href="view-flagged-record">View<span class="nhsuk-u-visually-hidden">details</span></a></td>   
+                    </tr>
 
 
-                          <th class="nhsuk-table__header" scope="col" style="width:20%">
-                            Reason for flagging
-
-                          </th>
-
-                          <th class="nhsuk-table__header"  scope="col">
-                            Action
-
-                          </th>
-
+                      <tr class="nhsuk-table__row">
+                        <td class="nhsuk-table__cell">62455</td>
+                        <td class="nhsuk-table__cell">Tony</td>
+                        <td class="nhsuk-table__cell">Smith</td>
+                        <td class="nhsuk-table__cell">S2</td>
+                        <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--orange">Flagged</strong></td>
+                        <td class="nhsuk-table__cell">20/04/2019</td>
+                        <td class="nhsuk-table__cell">John Mathew</td>   
+                        <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden">details</span></a></td>   
                         </tr>
-                      </thead>
-
-                      <tbody class="nhsuk-table__body ">
 
 
+                            <tr class="nhsuk-table__row">
+                              <td class="nhsuk-table__cell">62643</td>
+                              <td class="nhsuk-table__cell">Valentin</td>
+                              <td class="nhsuk-table__cell">Bertrand</td>
+                              <td class="nhsuk-table__cell">EHIC</td>
+                              <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--orange">Flagged</strong></td>
+                              <td class="nhsuk-table__cell">14/05/2019</td>
+                              <td class="nhsuk-table__cell">Sarah Philips</td>     
+                              <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden">details</span></a></td>   
+                              </tr>
+                            
                               <tr class="nhsuk-table__row">
-                                <td class="nhsuk-table__cell">62898</td>
-                                <td class="nhsuk-table__cell">Elise</td>
-                                <td class="nhsuk-table__cell">Vincent</td>
-                                <td class="nhsuk-table__cell">PRC</td>
+                                <td class="nhsuk-table__cell">62654</td>
+                                <td class="nhsuk-table__cell">Nora</td>
+                                <td class="nhsuk-table__cell">Rousseau</td>
+                                <td class="nhsuk-table__cell">S2</td>
                                 <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--orange">Flagged</strong></td>
-                                <td class="nhsuk-table__cell">Ordinary residence, Cost above £10,000</td>   
-                                <td class="nhsuk-table__cell"><a href="view-flagged-record-4">View<span class="nhsuk-u-visually-hidden">details</span></a></td>   
+                                <td class="nhsuk-table__cell">30/06/2019</td>
+                                <td class="nhsuk-table__cell">-</td>       
+                                <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden">details</span></a></td>   
                                 </tr>
-                              
-                                
-                                  <tr class="nhsuk-table__row">
-                                    <td class="nhsuk-table__cell">62234</td>
-                                    <td class="nhsuk-table__cell">Valentin</td>
-                                    <td class="nhsuk-table__cell">Bertrand</td>
-                                    <td class="nhsuk-table__cell">EHIC</td>
-                                    <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--orange">Flagged</strong></td>
-                                    <td class="nhsuk-table__cell">Ordinary residence</td>   
-                                    <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden">details</span></a></td>   
-                                    </tr>
-                                
+                     
 
-                      </tbody>
-                    </table>
-              
-              <nav class="nhsuk-pagination" id="pagination-label">
+                </tbody>
+              </table>
+        
+        <nav class="nhsuk-pagination" id="pagination-label">
 
-              <p class="nhsuk-u-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+        <p class="nhsuk-u-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
 
-              <ul class="nhsuk-pagination__list">
-                <li class="nhsuk-pagination__item  nhsuk-pagination__item--prev">
-                  <a class="nhsuk-pagination__link" href="">Previous<span class="nhsuk-u-visually-hidden"> set of
-                      pages</span></a>
-                </li>
+        <ul class="nhsuk-pagination__list">
+          <li class="nhsuk-pagination__item  nhsuk-pagination__item--prev">
+            <a class="nhsuk-pagination__link" href="">Previous<span class="nhsuk-u-visually-hidden"> set of
+                pages</span></a>
+          </li>
 
-                <li class="nhsuk-pagination__item nhsuk-pagination__item--active">1</li>
+          <li class="nhsuk-pagination__item nhsuk-pagination__item--active">1</li>
 
-                <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">2</a></li>
+          <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">2</a></li>
 
-                <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">3</a></li>
+          <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">3</a></li>
 
-                <li class="nhsuk-pagination__item  nhsuk-pagination__item--next">
-                  <a class="nhsuk-pagination__link" href="">Next<span class="nhsuk-u-visually-hidden"> set of
-                      pages</span></a>
-                </li>
-              </ul>
-              <p class="nhsuk-pagination__results">Showing <b>1</b> to <b>10</b> of <b>2,142</b> results</p>
-            </nav>
+          <li class="nhsuk-pagination__item  nhsuk-pagination__item--next">
+            <a class="nhsuk-pagination__link" href="">Next<span class="nhsuk-u-visually-hidden"> set of
+                pages</span></a>
+          </li>
+        </ul>
+        <p class="nhsuk-pagination__results">Showing <b>1</b> to <b>10</b> of <b>2,142</b> results</p>
+      </nav>
+
 
             </div>
             </div>
@@ -250,39 +278,7 @@ Filtered flagged records
   
           <div class="nhsuk-form-group" style="margin-left:30px;">
 
-            <fieldset class="nhsuk-fieldset">
-              <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
-                <h1 class="nhsuk-fieldset__heading">
-                  Entitlements
-                </h1>
-              </legend>
-          
-              <div class="nhsuk-checkboxes">
-          
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="ehic" name="entitlement" type="checkbox" value="email">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="ehic">
-                    EHIC
-                  </label>
-                </div>
-          
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="prc" name="entitlement" type="checkbox" value="phone">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="prc">
-                   PRC
-                  </label>
-                </div>
-          
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="s2" name="entitlement" type="checkbox" value="text message">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="s2">
-                    S2
-                  </label>
-                </div>
-          
-              </div>
-            </fieldset>
-            <br>
+    
             <fieldset class="nhsuk-fieldset">
               <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--s">
                 <h1 class="nhsuk-fieldset__heading">
@@ -291,18 +287,12 @@ Filtered flagged records
               </legend>
           
               <div class="nhsuk-checkboxes">
-          
+
+
                 <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="cost" name="reason" type="checkbox" value="email">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="cost">
-                    Cost above £10,000
-                  </label>
-                </div>
-          
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="add" name="reason" type="checkbox" value="phone">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="add">
-                    Additional costs
+                  <input class="nhsuk-checkboxes__input" id="or" name="reason" type="checkbox" value="text message" checked>
+                  <label class="nhsuk-label nhsuk-checkboxes__label" for="or">
+                    Ordinary residence
                   </label>
                 </div>
           
@@ -313,20 +303,6 @@ Filtered flagged records
                   </label>
                 </div>
 
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="or" name="reason" type="checkbox" value="text message" checked>
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="or">
-                    Ordinary residence
-                  </label>
-                </div>
-
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="insti" name="reason" type="checkbox" value="text message">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="insti">
-                    Institution details to be approved
-                  </label>
-                </div>
-          
               </div>
             </fieldset>
             <br>

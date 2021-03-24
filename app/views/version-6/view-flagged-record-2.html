@@ -28,8 +28,8 @@ View flagged record
     
         <ol class="nhsuk-breadcrumb__list">
           <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
-          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="flagged-records">Flagged-records (New)</a></li>
-          <li class="nhsuk-breadcrumb__item">View flagged record (62392)</li>
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="flagged-records">Flagged-treatments (New)</a></li>
+          <li class="nhsuk-breadcrumb__item">View flagged treatment (62324)</li>
         </ol>
 
       </div>
@@ -45,118 +45,242 @@ View flagged record
      <div class="nhsBSA-sidebar-content">
         <div class="nhsuk-width-container-fluid">
            <div class="nhsuk-main-wrapper" id="maincontent">
-              <div class="nhsuk-grid-row">
-                 <div class="nhsuk-grid-column-full">
-               
-                    <h1 class="nhsuk-heading-xl">
-                       Flagged record (62292)
-                    </h1>
-                 </div>
-              </div>
-              <hr style="border-bottom:4px solid #005eb8; margin:0">
-              <div class="nhsuk-scrollable-pane">
+
+            <div class="nhsuk-grid-row">
+              <div class="nhsuk-grid-column-one-half">
+                <h1 class="nhsuk-heading-l" style="display: inline-block;">
+                  Flagged treatment (62392)
+                </h1>
+              </div>  
+
+              <div class="nhsuk-grid-column-one-half">
         
-               <div class="nhsuk-inset-text">
-                <span class="nhsuk-u-visually-hidden">Information: </span>
-                <p>As the instituiton could not be found this treatment is pending.</p>
+                <a href="cancel-flagged-record"><button  class="nhsuk-button nhsuk-button--secondary" type="submit" style="float:right; margin-left:20px;">
+                  Cancel treatment
+                </button></a>
+                <a href="unflag-confirmation"><button  class="nhsuk-button " type="submit" style="float:right; margin-left:20px;">
+                  Unflag
+                </button></a>
+                <p style="float:right; margin-top:15px;"><a href="#" >
+                  <a href="entitlements-2">View patient record</a>
+                </a></p>
               </div>
-
-             <div class="nhsuk-grid-column-one-half">
-
-              <dl class="nhsuk-summary-list">
-                <h2 class="nhsuk-label--m">Institution details</h2>
-                 <div class="nhsuk-summary-list__row">
-                   <dt class="nhsuk-summary-list__key">
-                     Entitlement type
-                   </dt>
-                   <dd class="nhsuk-summary-list__value">
-                     S2
-                   </dd>
-                 </div>
-
-                 <div class="nhsuk-summary-list__row">
-                  <dt class="nhsuk-summary-list__key">
-                    Country of issue
-                  </dt>
-                  <dd class="nhsuk-summary-list__value">
-                    Belgium
-                  </dd>
-                </div>
-           
-                 <div class="nhsuk-summary-list__row">
-                   <dt class="nhsuk-summary-list__key">
-                     Institution ID
-                   </dt>
-                   <dd class="nhsuk-summary-list__value">
-                    020665
-                   </dd>
-                 </div>
-
-                 <div class="nhsuk-summary-list__row">
-                  <dt class="nhsuk-summary-list__key">
-                    Institution acronym
-                  </dt>
-                  <dd class="nhsuk-summary-list__value">
-                    NIHDI
-                  </dd>
-                </div>
-
-                <div class="nhsuk-summary-list__row">
-                  <dt class="nhsuk-summary-list__key">
-                    Institution name
-                  </dt>
-                  <dd class="nhsuk-summary-list__value">
-                    National Institute for Health and Disability Insurance
-                  </dd>
+          </div>
+            
+               <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-one-half" >
+                  <div style="border: 3px; border-style: solid; border-color:lightgray; background-color:rgb(252, 252, 252); padding:20px 20px 1px 20px;">
+                     <p><span style="font-size:22px; font-weight:900;">Flagged reason: </span>Treatment dates beyond 6 months.</p>
+                     <p><span style="font-size:22px; font-weight:900;">Flagged reason details: </span><b>As this treatment was a cancer treatment the dates are beyond 6 months.</b></p>
+                     <h2 class="nhsuk-heading-s">
+                      OVM contact details
+                    </h2>
+                     <dl class="nhsuk-summary-list">
+                      <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                           Name
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                          Harry Adams
+                        </dd>
+                     </div>
+                       <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                             Email address:
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                            harry.adams@nhs.net
+                          </dd>
+                       </div>
+                       <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                             Phone number
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                            07466871403
+                          </dd>
+                       </div>
+                       <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                             Trust
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                             Airedale NHS Foundation Trust
+                          </dd>
+                       </div>
+                    </dl>
+                  </div>
                 </div>
 
-                <div class="nhsuk-summary-list__row">
-                  <dt class="nhsuk-summary-list__key">
-                    Institution address
-                  </dt>
-                  <dd class="nhsuk-summary-list__value">
-                    3B Avenue Franklin Roosevelt<br>
-                    28005 Brussels
-                  </dd>
-                </div>
-           
-               </dl>
-
-               <p>Please raise a service request to the digital support team to add the missing institution details. Once the service request is confirmed you can enter the completion date and then unflag this record.</p>
-
-               <fieldset class="nhsuk-fieldset">
-                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
-                  <h2 class="nhsuk-fieldset__heading">
-                    Enter the service request details after completion of the request
-                  </h2>
-                </legend>
-              
-                <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="call-no">
-                    Service request call number
-                  </label>
-                  <input class="nhsuk-input nhsuk-input--width-20" id="call-no" name="call-no" type="text">
-                </div>
-              
-                <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="completion-date">
-                    Service request completion date
-                  </label>
-                  <input class="nhsuk-input nhsuk-input--width-20" id="date" name="date" type="text">
-                </div>
-              
-              </fieldset>
-          
-             
-                        <div class="action-buttons">
-                           <a class="nhsuk-button nhsuk-button--primary" style="margin-right: 25px;" href="unflag-confirmation-2">Unflag</a>
-                           <a class="nhsuk-button nhsuk-button--secondary" href="cancel-flagged-record">Cancel</a>
+                <div class="nhsuk-grid-column-one-half" >
+                  <div style="border: 3px; border-style: solid; border-color:lightgray; background-color:rgb(252, 252, 252); padding:20px 20px 1px 20px;">
+                     <h2 class="nhsuk-heading-s">Flagged treatment details</h2>
+                      <dl class="nhsuk-summary-list">
+                        <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                            First name
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                            Laura
+                          </dd>
                         </div>
-                    
+                        <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                            Last name
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                            Peeters
+                          </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                            Entitlement type
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                            EHIC
+                          </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                            Treatment provider
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                            Airedale NHS Foundation Trust
+                          </dd>
+                        </div>
+                        <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                            Treatment start date
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                            10/03/2020
+                          </dd>
+                        </div>
+                  
+                        <div class="nhsuk-summary-list__row">
+                          <dt class="nhsuk-summary-list__key">
+                            Treatment end date
+                          </dt>
+                          <dd class="nhsuk-summary-list__value">
+                            11/04/2020
+                          </dd>
+                        </div>
+                  
+                      <div class="nhsuk-summary-list__row">
+                        <dt class="nhsuk-summary-list__key">
+                          Treatment cost
+                        </dt>
+                        <dd class="nhsuk-summary-list__value">
+                          £15,654.55
+                        </dd>
                       </div>
                   
-                    </div>
-                 </div>
+                    </dl>
+
+                    <details class="nhsuk-details-1">
+                      <summary class="nhsuk-details__summary-1">
+                        <span class="nhsuk-details__summary-text-1">
+                          View EHIC details
+                        </span>
+                      </summary>
+                      <div class="nhsuk-details__text">
+                        <dl class="nhsuk-summary-list">
+                           <div class="nhsuk-summary-list__row">
+                             <dt class="nhsuk-summary-list__key">
+                               Issuing member state
+                             </dt>
+                             <dd class="nhsuk-summary-list__value">
+                               Belgium
+                             </dd>
+                           </div>
+                     
+                           <div class="nhsuk-summary-list__row">
+                             <dt class="nhsuk-summary-list__key">
+                               Name
+                             </dt>
+                             <dd class="nhsuk-summary-list__value">
+                              Peteers
+                             </dd>
+                           </div>
+                     
+                           <div class="nhsuk-summary-list__row">
+                             <dt class="nhsuk-summary-list__key">
+                               Given names
+                             </dt>
+                             <dd class="nhsuk-summary-list__value">
+                              Laura
+                             </dd>
+                           </div>
+                     
+                           <div class="nhsuk-summary-list__row">
+                             <dt class="nhsuk-summary-list__key">
+                              Date of birth
+                             </dt>
+                             <dd class="nhsuk-summary-list__value">
+                               06/12/1988
+                             </dd>
+                           </div>
+                     
+                           <div class="nhsuk-summary-list__row">
+                             <dt class="nhsuk-summary-list__key">
+                               Personal identification number
+                             </dt>
+                             <dd class="nhsuk-summary-list__value">
+                               280000000293
+                             </dd>
+                           </div>
+                     
+                           <div class="nhsuk-summary-list__row">
+                             <dt class="nhsuk-summary-list__key">
+                               Identification number of the institution
+                             </dt>
+                             <dd class="nhsuk-summary-list__value">
+                              0206653946 - NIHDI
+                             </dd>
+                           </div>
+          
+                           <div class="nhsuk-summary-list__row">
+                            <dt class="nhsuk-summary-list__key">
+                              Name of the institution
+                            </dt>
+                            <dd class="nhsuk-summary-list__value">
+                              The National Institute for Health and Disability Insurance
+                            </dd>
+                          </div>
+                     
+                           <div class="nhsuk-summary-list__row">
+                             <dt class="nhsuk-summary-list__key">
+                               Identification number of the card
+                             </dt>
+                             <dd class="nhsuk-summary-list__value">
+                               80724028000420000098
+                             </dd>
+                           </div>
+                     
+                           <div class="nhsuk-summary-list__row">
+                             <dt class="nhsuk-summary-list__key">
+                               Expiry date
+                             </dt>
+                             <dd class="nhsuk-summary-list__value">
+                               04/08/2022
+                             </dd>
+                           </div>
+                     
+                           <div class="nhsuk-summary-list__row">
+                             <dt class="nhsuk-summary-list__key">
+                              Laura Peteers is a student
+                             </dt>
+                             <dd class="nhsuk-summary-list__value">
+                               No
+                             </dd>
+                           </div>
+                     
+                         </dl>
+                      </div>
+                    </details>
+
+                  </div>
+
               </div>
            </div>
         </div>
