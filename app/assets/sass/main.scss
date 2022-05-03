@@ -2,34 +2,10 @@
 @import 'node_modules/nhsuk-frontend/packages/nhsuk';
 
 // Components that are not in the NHS.UK frontend library
+@import 'components/list-border';
 @import 'components/related-nav';
 
 ///////////////////////////////////////////
-// Add your custom CSS/Sass styles below... 
+// Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
-
-
-//NHS BSA Full Width Header
-
-.NHSBSA-full-width-header {
-
-    .nhsuk-width-container {
-        @include nhsuk-width-container-fluid;
-
-        @include mq($until: tablet) {
-            padding-left: nhsuk-spacing(0);
-            padding-right: nhsuk-spacing(0);
-        }
-    }
-    
-}
-
-//NHS BSA Full Width Footer
-
-.NHSBSA-full-width-footer {
-
-    .nhsuk-width-container {
-        @include nhsuk-width-container-fluid
-    }
-    
-}
+  

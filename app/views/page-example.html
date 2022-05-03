@@ -2,39 +2,43 @@
 {% extends 'layout.html' %}
 <!-- 
   In /views/layout.html you can:
-    - change the header and footer 
+    - edit the header and footer 
     - add custom CSS and JavaScript
 -->
 
-<!-- Set the page title inside the pageTitle block -->
+<!-- Set the page title -->
 {% block pageTitle %}
   Content page example - NHS.UK prototype kit
 {% endblock %}
 
-<!-- Breadcrumb goes inside the beforeContent block -->
-<!-- More info and code for the breadcrumb can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
 {% block beforeContent %}
-  <!-- Breadcrumb -->
   {{ breadcrumb({
     href: "/",
     text: "Home"
   }) }}
 {% endblock %}
 
-<!-- Your page content goes inside the content block -->
-<!-- More info and code for the page layout can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
 {% block content %}
 
   <div class="nhsuk-grid-row">
 
     <div class="nhsuk-grid-column-two-thirds">
 
-      <!-- Change the page title here -->
+      <!-- Change the page heading -->
       <h1>
         Page heading goes here
       </h1>
 
-      <!-- Add your content here -->
+      <!-- Add content here -->
       <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
       <p class="nhsuk-lede-text">
         This page example includes a selection of styles and components available to the prototype kit.
@@ -113,11 +117,11 @@
         "heading": "School, nursery or work",
         "HTML": "<p>Stay away from school, nursery or work until all the spots have crusted over. This is usually 5 days after the spots first appeared.</p>"
       }) }}
-
-      {{ reviewDate({
-        "lastReview": "12 February 2017",
-        "nextReview": "1 February 2020"
-      }) }}
+      
+      <p class="nhsuk-body-s nhsuk-u-secondary-text-color nhsuk-u-margin-top-7 nhsuk-u-margin-bottom-0">
+        Page last reviewed: 15 March 2021<br>
+        Next review due: 15 March 2024
+      </p>
 
       <!-- End of content -->
 
