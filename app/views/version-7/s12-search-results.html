@@ -12,7 +12,7 @@
 
 <!-- Set the page title inside the pageTitle block -->
 {% block pageTitle %}
-S12
+Section 12
 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
@@ -30,7 +30,7 @@ S12
           <ol class="nhsuk-breadcrumb__list">
 
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
-                <li class="nhsuk-breadcrumb__item">Flagged treatments(Processed)</li>
+                <li class="nhsuk-breadcrumb__item">Doctor List</li>
             </ol>
         </div>
       </div>
@@ -62,64 +62,26 @@ S12
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-two-thirds">
                 <h1 class="nhsuk-heading-xl">
-                 Flagged treatments
+                 Search Results
                 </h1>
                   
               </div>
 
-              <div class="nhsuk-grid-column-one-third">
-                <a href="filter-flagged-records"><button  class="nhsuk-button" type="submit" style="float:right">
-     Filter
-   </button></a>
-                   
-   </div>
-               <!-- <div class="nhsuk-grid-column-two-thirds">
-              
-<div class="nhsuk-form-group" style="float:right; margin-left:20px;">
-  <label class="nhsuk-label" for="select-1">
-    Reason for flagging
-  </label>
-  <select class="nhsuk-select" id="select-1" name="select-1">
-    <option value="1">All reasons</option>
-    <option value="2" selected>Cost above £10,000</option>
-    <option value="3">Additional costs</option>
-    <option value="4">Treatment dates beyond 6 months</option>
-    <option value="4">Ordinary residence</option>
-    <option value="4">Institution details to be approved</option>
-  </select>
-</div>
+ 
+
           
-<div class="nhsuk-form-group" style="float:right">
-  <label class="nhsuk-label" for="select-1">
-    Entitlement
-  </label>
-  <select class="nhsuk-select" id="select-1" name="select-1">
-    <option value="1">All entitlements</option>
-    <option value="2" selected>EHIC</option>
-    <option value="3">PRC</option>
-    <option value="4">S2</option>
-  </select>
-</div>
-                
-</div> -->
+
                 
                 
             </div>
           
             <nav class="nhsuk-secondary-navigation" aria-label="Primary navigation" style="background-color:#f0f4f5;">
               <ul class="nhsuk-secondary-navigation__list">
-                <li class="nhsuk-secondary-navigation__item">
-                  <a class="nhsuk-secondary-navigation__link" href="flagged-records">Flagged</a>
-                </li>
 
                 <li class="nhsuk-secondary-navigation__item">
-                  <a class="nhsuk-secondary-navigation__link" aria-current="page" href="unflagged-records">Processed</a>
+                  <a class="nhsuk-secondary-navigation__link" aria-current="page" href="s12-search-results">List View</a>
                 </li>
-    
-                <li class="nhsuk-secondary-navigation__item">
-                  <a class="nhsuk-secondary-navigation__link"  href="flagged-records-cancelled">Cancelled</a>
-                </li>
-  
+
               </ul>
             </nav>
                   
@@ -140,41 +102,35 @@ S12
               
               
 
-<table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
+                    <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
 
                       <!-- TABLE START -->
                       <thead class="nhsuk-table__head">
                         <tr class="nhsuk-table__row">
 
-                            <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              xreatment ID
-
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                              Doctor Name
                           </th>
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            First name
- 
-                           </th>
-                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            Last name
- 
-                           </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                           Entitlement
-
+                              PRN
                           </th>
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            Status
-
+                              Email address
                           </th>
-
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            Processed date
-
+                              Phone
                           </th>
-
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            Unflagged by
-
+                              Post Code
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                              Regular Working Hours
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                              Out of Hours
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                              Status
                           </th>
 
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
@@ -188,18 +144,69 @@ S12
                       <tbody class="nhsuk-table__body nhsuk-body-">
 
                         <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">62324</td>
-                          <td class="nhsuk-table__cell">Laura</td>
-                          <td class="nhsuk-table__cell">Peteers</td>
-                          <td class="nhsuk-table__cell">EHIC</td>
-                          <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--green">Processed</strong></td> 
-                          <td class="nhsuk-table__cell">30/03/2020</td>  
-                          <td class="nhsuk-table__cell">Sarah Mathew</td>  
-                          <td class="nhsuk-table__cell"><a href="view-flagged-record-processed">View<span class="nhsuk-u-visually-hidden">processed treatment for Laura peteers</span></a></td>   
-                          </tr>
+                          <td class="nhsuk-table__cell">Dr Richard Schivago</td>
+                          <td class="nhsuk-table__cell">1234567</td>
+                          <td class="nhsuk-table__cell">a@b.c</td>
+                          <td class="nhsuk-table__cell">07780 138231</td>
+                          <td class="nhsuk-table__cell">EH45 6TT</td>  
+                          <td class="nhsuk-table__cell">Yes</td>  
+                          <td class="nhsuk-table__cell">No</td>
+                          <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--blue">Archived and in Region</strong></td>    
+                          <td class="nhsuk-table__cell"><a href="s12-basic-details">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Dr Richard Bowley</td>
+                          <td class="nhsuk-table__cell">6543247</td>
+                          <td class="nhsuk-table__cell">d@e.c</td>
+                          <td class="nhsuk-table__cell">56432 156731</td>
+                          <td class="nhsuk-table__cell">BG1 5RR</td>  
+                          <td class="nhsuk-table__cell">No</td>  
+                          <td class="nhsuk-table__cell">Yes</td>
+                          <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--green">Current and in Region</strong></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Dr Richard Smith</td>
+                          <td class="nhsuk-table__cell">1212121</td>
+                          <td class="nhsuk-table__cell">f@g.c</td>
+                          <td class="nhsuk-table__cell">54545 490876</td>
+                          <td class="nhsuk-table__cell">DE12 6OI</td>  
+                          <td class="nhsuk-table__cell">Yes</td>  
+                          <td class="nhsuk-table__cell">Yes</td>
+                          <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--pink">Current and Out of Region</strong></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                       <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Dr Richard Walton</td>
+                          <td class="nhsuk-table__cell">5690876</td>
+                          <td class="nhsuk-table__cell">h@i.c</td>
+                          <td class="nhsuk-table__cell">09123 556677</td>
+                          <td class="nhsuk-table__cell">NE32 5HH</td>  
+                          <td class="nhsuk-table__cell">No</td>  
+                          <td class="nhsuk-table__cell">No</td>
+                          <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--yellow">Archived and Out of Region</strong></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden">processed treatment for Laura peteers</span></a></td>
+                        </tr>
 
                       </tbody>
                     </table>
+
+
               
               <nav class="nhsuk-pagination" id="pagination-label">
 
@@ -222,45 +229,35 @@ S12
                       pages</span></a>
                 </li>
               </ul>
-              <p class="nhsuk-pagination__results">Showing <b>1</b> to <b>10</b> of <b>2,142</b> results</p>
+              <p class="nhsuk-pagination__results">Showing <b>1</b> to <b>10</b> of <b>30</b> results</p>
             </nav>
 
-
+              <div class="action-buttons">
+                <button class="nhsuk-button nhsuk-button--secondary" type="submit">Add Doctor</button>
+            </div>
           </div>
 
         </div>
 
       </div>
-       <div class="nhsBSA-sidebar-nav">
 
+      <div class="nhsBSA-sidebar-nav">
         <div class="side-nav">
-  
-              <ul>
+          <ul>
             <div id="options" class="options">
-              <h3 class="nhsuk-heading-xs">Browse</h3>
+            
                 <li>
-                <a href="search">Search</a>
+                <a href="s12-home-page">Home</a>
+                <a href="s12-doctor-search" class="active">Doctor Search</a>
+                <a href="s12-reports">Reports</a>
+                <a href="#">Contacts</a>
+                <a href="#">Change Password</a>
+                <a href="#">Admin</a>
               </li>
-              
-                
-                   <h3 class="nhsuk-heading-xs">Actions</h3>
-                            
-                <li>
-                <a href="account-requests" >Account requests<span class="notification-badge" style="background-color: #005eb8">2 </span></a>
-                    <a href="flagged-records" class="active">Flagged treatments</a>
-                    <a href="pending-entitlements">Pending entitlements</a>
-                    <a href="uk-claims">UK claims</a>
-              </li>
-              
             </div>
-          </ul>
-
-          <!-- <div class="action-buttons">
-                <button class="nhsuk-button nhsuk-button--secondary" type="submit">Add note</button>
-            </div> -->
-                  
+          </ul>    
         </div>
-    </div>
+      </div>
 
   </div>
 
