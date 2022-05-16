@@ -508,22 +508,76 @@ Section 12
       </div>
 
 <br><br>      
-                        <td  class="test-case" style="overflow: visible">
-                          <div>
-                              <label class="nhsuk-label" for="example">
-                                Languages
-                              </label>
+<form>
 
-                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection" aria-required="true">
-                                  <option value="No">Select</option>
-                                  <option value="Yes">Arabic</option>
-                                  <option value="Yes">English</option>
-                                  <option value="Yes">French</option>
-                                  <option value="Yes">Italian</option>
-                                  <option value="Yes">Swedish</option>                       
-                              </select>
-                          </div>
-                        </td>
+  <div class="nhsuk-form-group">
+
+    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+      <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+        <label class="nhsuk-label" for="example">
+          Languages
+        </label>
+      </legend>
+
+      <div class="nhsuk-hint" id="example-hint">
+        Select all options that are relevant.
+      </div>
+
+      <div class="nhsuk-checkboxes">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+            Arabic
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="example-2" name="example" type="checkbox" value="phone">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-2">
+            English
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+            French
+          </label>
+        </div>
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+            Italian
+          </label>
+        </div>
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+            Swedish
+          </label>
+        </div>
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="example-3" name="example" type="checkbox" value="text message">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="example-3">
+            Other
+          </label>
+        </div>
+      </div>
+    </fieldset>
+
+  </div>
+  <div class="nhsuk-form-group">
+    <label class="nhsuk-label"
+         for="example">Enter full details</label> 
+    <textarea aria-describedby="example-hint"
+         class="nhsuk-textarea nhsuk-u-width-two-thirds"
+         id="example"
+         name="example"
+         rows="1"></textarea>
+  </div>
+</form>
+                       
     </fieldset>
               
   </div>
