@@ -11,9 +11,7 @@
 -->
 
 <!-- Set the page title inside the pageTitle block -->
-{% block pageTitle %}
-Section 12
-{% endblock %}
+{% block pageTitle %} Section 12 {% endblock %}
 
 <!-- Breadcrumb goes inside the beforeContent block -->
 {% block beforeContent %}{% endblock %}
@@ -23,198 +21,223 @@ Section 12
 {% block content %}
 
 <nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
-    <div class="nhsuk-width-container-fluid">
-      <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-full">
-            <ol class="nhsuk-breadcrumb__list">
-                <a class="nhsuk-secondary-navigation__link" href="s12-doctor-search">Back to Search</a>
-            </ol>
-        </div>
+  <div class="nhsuk-width-container-fluid">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+        <ol class="nhsuk-breadcrumb__list">
+          <a class="nhsuk-secondary-navigation__link" href="s12-doctor-search"
+            >Back to Search</a
+          >
+        </ol>
       </div>
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
     </div>
+    <p class="nhsuk-breadcrumb__back">
+      <a class="nhsuk-breadcrumb__backlink" href="search-results"
+        >Back to search results</a
+      >
+    </p>
+  </div>
 </nav>
 
-  <div class="nhsBSA-sidebar-container">
-
-    <div class="nhsBSA-sidebar-wrapper">
-      <div class="nhsBSA-sidebar-content">
-
-        <div class="nhsuk-width-container-fluid">
-
-          <div class="nhsuk-main-wrapper" id="maincontent">
-
-            {# <div class="nhsuk-grid-row">
-                    <div class="nhsuk-grid-column-full">
-
-                        <div class="panel panel-border-wide alert-default">
-                            <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3">English is their second language. May require an interpreter.</h2>
-                        </div>
-
-                    </div>
-                </div> #}
-         
-            <div class="nhsuk-grid-row">
-              <div class="nhsuk-grid-column-two-thirds">
-                <h1 class="nhsuk-heading-xl">
-                 Contact information for Dr Richard Schivago
-                </h1>
-                  
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+    <div class="nhsBSA-sidebar-content">
+      <div class="nhsuk-width-container-fluid">
+        <div class="nhsuk-main-wrapper" id="maincontent">
+          {#
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+              <div class="panel panel-border-wide alert-default">
+                <h2
+                  class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3"
+                >
+                  English is their second language. May require an interpreter.
+                </h2>
               </div>
-
- 
-
-          
-
-                
-                
             </div>
-          
-      <nav class="nhsuk-secondary-navigation" aria-label="Primary navigation" style="background-color:#f0f4f5;">
+          </div>
+          #}
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <h1 class="nhsuk-heading-xl">
+                Contact information for Dr Richard Schivago
+              </h1>
+            </div>
+          </div>
+
+          <nav
+            class="nhsuk-secondary-navigation"
+            aria-label="Primary navigation"
+            style="background-color: #f0f4f5"
+          >
             <ul class="nhsuk-secondary-navigation__list">
               <li class="nhsuk-secondary-navigation__item">
-                <a class="nhsuk-secondary-navigation__link" href="s12-basic-details">Basic Details</a>
+                <a
+                  class="nhsuk-secondary-navigation__link"
+                  href="s12-basic-details"
+                  >Basic Details</a
+                >
               </li>
               <li class="nhsuk-secondary-navigation__item">
-                <a class="nhsuk-secondary-navigation__link" aria-current="page" href="s12-contact-info">Contact Info</a>
+                <a
+                  class="nhsuk-secondary-navigation__link"
+                  aria-current="page"
+                  href="s12-contact-info"
+                  >Contact Info</a
+                >
               </li>
               <li class="nhsuk-secondary-navigation__item">
-                <a class="nhsuk-secondary-navigation__link" href="s12-approvals">Approvals</a>
+                <a class="nhsuk-secondary-navigation__link" href="s12-approvals"
+                  >Approvals</a
+                >
               </li>
               <li class="nhsuk-secondary-navigation__item">
-                <a class="nhsuk-secondary-navigation__link" href="s12-training">Training</a>
+                <a class="nhsuk-secondary-navigation__link" href="s12-training"
+                  >Training</a
+                >
               </li>
               <li class="nhsuk-secondary-navigation__item">
-                <a class="nhsuk-secondary-navigation__link" href="s12-documents">Documents</a>
+                <a class="nhsuk-secondary-navigation__link" href="s12-documents"
+                  >Documents</a
+                >
               </li>
               <li class="nhsuk-secondary-navigation__item">
-                <a class="nhsuk-secondary-navigation__link" href="#">Administration</a>
+                <a class="nhsuk-secondary-navigation__link" href="#"
+                  >Administration</a
+                >
               </li>
               <li class="nhsuk-secondary-navigation__item">
-                <a class="nhsuk-secondary-navigation__link" href="s12-gmc">GMC</a>
+                <a class="nhsuk-secondary-navigation__link" href="s12-gmc"
+                  >GMC</a
+                >
               </li>
               <li class="nhsuk-secondary-navigation__item">
-                <a class="nhsuk-secondary-navigation__link" href="s12-other-issues">Other issues</a>
+                <a
+                  class="nhsuk-secondary-navigation__link"
+                  href="s12-other-issues"
+                  >Other Issues</a
+                >
               </li>
             </ul>
-			</nav>
-                  
-                <hr style="border-bottom:1px solid #ccc; margin:0">
-    <br><br>
-        
-        
-              
-  
+          </nav>
+
+          <hr style="border-bottom: 1px solid #ccc; margin: 0" />
+          <br /><br />
+
           <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-one-third">
-
-
-            </div>
-
-
-          </div>
-              
-              
-<h3>Address Information</h3>
-                    <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
-
-                      <!-- TABLE START -->
-                      <thead class="nhsuk-table__head">
-                        <tr class="nhsuk-table__row">
-
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              Type
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              Address
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              
-                          </th>
-                          <th>
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-  
-                          </th>
-
-                        </tr>
-                      </thead>
-
-                      <tbody class="nhsuk-table__body nhsuk-body-">
-
-                        <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Work Address</td>
-                          <td class="nhsuk-table__cell">(Primary) Burnham Medical Centre, Love Lane, Somerset, TA8 1EU</td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>  
-                          <td class="nhsuk-table__cell"></td>  
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>    
-                          <td class="nhsuk-table__cell"></td>
-                        </tr>
-
-                      </tbody>
-
-                      <tbody class="nhsuk-table__body nhsuk-body-">
-
-                        <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Home Address</td>
-                          <td class="nhsuk-table__cell">Chandos Lodge, Brent Road, Berrow, Somerset, TA8 2JU</td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>  
-                          <td class="nhsuk-table__cell"></td>  
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>    
-                          <td class="nhsuk-table__cell"></td>
-                        </tr>
-
-                      </tbody>
-
-                    </table>
-
-              <div class="action-buttons">
-                <button class="nhsuk-button nhsuk-button" type="submit">Save Changes</button>
-              </div>
-              <div class="action-buttons">
-                <button class="nhsuk-button nhsuk-button--secondary" type="submit">New Document</button>
-              </div>
+            <div class="nhsuk-grid-column-one-third"></div>
           </div>
 
+          <h3>Address Information</h3>
+          <table
+            id="sortable"
+            class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table"
+          >
+            <!-- TABLE START -->
+            <thead class="nhsuk-table__head">
+              <tr class="nhsuk-table__row">
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Type
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Address
+                </th>
+                <th
+                  class="nhsuk-table__header"
+                  aria-sort="none"
+                  scope="col"
+                ></th>
+                <th></th>
+                <th
+                  class="nhsuk-table__header"
+                  aria-sort="none"
+                  scope="col"
+                ></th>
+                <th
+                  class="nhsuk-table__header"
+                  aria-sort="none"
+                  scope="col"
+                ></th>
+                <th
+                  class="nhsuk-table__header"
+                  aria-sort="none"
+                  scope="col"
+                ></th>
+                <th
+                  class="nhsuk-table__header"
+                  aria-sort="none"
+                  scope="col"
+                ></th>
+                <th
+                  class="nhsuk-table__header"
+                  aria-sort="none"
+                  scope="col"
+                ></th>
+              </tr>
+            </thead>
+
+            <tbody class="nhsuk-table__body nhsuk-body-">
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Work Address</td>
+                <td class="nhsuk-table__cell">
+                  (Primary) Burnham Medical Centre, Love Lane, Somerset, TA8 1EU
+                </td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+              </tr>
+            </tbody>
+
+            <tbody class="nhsuk-table__body nhsuk-body-">
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Home Address</td>
+                <td class="nhsuk-table__cell">
+                  Chandos Lodge, Brent Road, Berrow, Somerset, TA8 2JU
+                </td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="action-buttons">
+            <button class="nhsuk-button nhsuk-button" type="submit" style="margin-right: 10px;">
+              Save Changes
+            </button>
+            <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+              New Document
+            </button>
+          </div>
         </div>
-
       </div>
+    </div>
 
-      <div class="nhsBSA-sidebar-nav">
-        <div class="side-nav">
-          <ul>
-            <div id="options" class="options">
-            
-                <li>
-                <a href="s12-home-page">Home</a>
-                <a href="s12-doctor-search" class="active">Doctor Search</a>
-                <a href="s12-reports">Reports</a>
-                <a href="#">Contacts</a>
-                <a href="#">Admin</a>
-              </li>
-            </div>
-          </ul>    
-        </div>
+    <div class="nhsBSA-sidebar-nav">
+      <div class="side-nav">
+        <ul>
+          <div id="options" class="options">
+            <li>
+              <a href="s12-home-page">Home</a>
+              <a href="s12-doctor-search" class="active">Doctor Search</a>
+              <a href="s12-reports">Reports</a>
+              <a href="#">Contacts</a>
+              <a href="#">Admin</a>
+            </li>
+          </div>
+        </ul>
       </div>
-
+    </div>
   </div>
 
-{% endblock %}
+  {% endblock %}
+</div>
