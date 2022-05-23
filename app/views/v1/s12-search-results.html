@@ -1,0 +1,407 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-admin-interface.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Section 12
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container-fluid">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+      
+          <ol class="nhsuk-breadcrumb__list">
+
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="search">Search</a></li>
+                <li class="nhsuk-breadcrumb__item">Doctor List</li>
+            </ol>
+        </div>
+      </div>
+  
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
+
+    </div>
+</nav>
+
+<div class="nhsBSA-sidebar-container">
+
+  <div class="nhsBSA-sidebar-wrapper">
+    <div class="nhsBSA-sidebar-content">
+
+      <div class="nhsuk-width-container-fluid">
+
+        <div class="nhsuk-main-wrapper" id="maincontent">
+
+          {# <div class="nhsuk-grid-row">
+                  <div class="nhsuk-grid-column-full">
+
+                      <div class="panel panel-border-wide alert-default">
+                          <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3">English is their second language. May require an interpreter.</h2>
+                      </div>
+
+                  </div>
+              </div> #}
+       
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+              <h1 class="nhsuk-heading-xl">
+               Search Results
+              </h1>
+                
+            </div>
+
+
+
+        
+
+              
+              
+          </div>
+        
+          <nav class="nhsuk-secondary-navigation" aria-label="Primary navigation" style="background-color:#f0f4f5;">
+            <ul class="nhsuk-secondary-navigation__list">
+
+              <li class="nhsuk-secondary-navigation__item">
+                <a class="nhsuk-secondary-navigation__link" aria-current="page" href="s12-search-results">List View</a>
+              </li>
+
+            </ul>
+          </nav>
+                
+              <hr style="border-bottom:1px solid #ccc; margin:0">
+  <br><br>
+      
+      
+            
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-one-third">
+
+
+          </div>
+
+
+        </div>
+            
+            
+
+                  <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
+
+                    <!-- TABLE START -->
+                    <thead class="nhsuk-table__head">
+                      <tr class="nhsuk-table__row">
+
+                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            Doctor Name
+                        </th>
+                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            PRN
+                        </th>
+                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            Email address
+                        </th>
+                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            Phone
+                        </th>
+                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            Post Code
+                        </th>
+                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            Regular Working Hours
+                        </th>
+                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            Out of Hours
+                        </th>
+                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            Status
+                        </th>
+
+                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                          Action
+
+                        </th>
+
+                      </tr>
+                    </thead>
+
+                    <tbody class="nhsuk-table__body nhsuk-body-">
+
+                      <tr class="nhsuk-table__row">
+                        <td class="nhsuk-table__cell">Dr Richard Schivago</td>
+                        <td class="nhsuk-table__cell">1234567</td>
+                        <td class="nhsuk-table__cell">a@b.c</td>
+                        <td class="nhsuk-table__cell">07780 138231</td>
+                        <td class="nhsuk-table__cell">EH45 6TT</td>  
+                        <td class="nhsuk-table__cell">Yes</td>  
+                        <td class="nhsuk-table__cell">No</td>
+                        <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--blue">Archived and in Region</strong></td>    
+                        <td class="nhsuk-table__cell"><a href="s12-basic-details">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                      </tr>
+
+                    </tbody>
+
+                    <tbody class="nhsuk-table__body nhsuk-body-">
+
+                      <tr class="nhsuk-table__row">
+                        <td class="nhsuk-table__cell">Dr Richard Bowley</td>
+                        <td class="nhsuk-table__cell">6543247</td>
+                        <td class="nhsuk-table__cell">d@e.c</td>
+                        <td class="nhsuk-table__cell">56432 156731</td>
+                        <td class="nhsuk-table__cell">BG1 5RR</td>  
+                        <td class="nhsuk-table__cell">No</td>  
+                        <td class="nhsuk-table__cell">Yes</td>
+                        <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--green">Current and in Region</strong></td>    
+                        <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                      </tr>
+
+                    </tbody>
+
+                    <tbody class="nhsuk-table__body nhsuk-body-">
+
+                      <tr class="nhsuk-table__row">
+                        <td class="nhsuk-table__cell">Dr Richard Smith</td>
+                        <td class="nhsuk-table__cell">1212121</td>
+                        <td class="nhsuk-table__cell">f@g.c</td>
+                        <td class="nhsuk-table__cell">54545 490876</td>
+                        <td class="nhsuk-table__cell">DE12 6OI</td>  
+                        <td class="nhsuk-table__cell">Yes</td>  
+                        <td class="nhsuk-table__cell">Yes</td>
+                        <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--pink">Current and Out of Region</strong></td>    
+                        <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                      </tr>
+
+                    </tbody>
+
+                     <tbody class="nhsuk-table__body nhsuk-body-">
+
+                      <tr class="nhsuk-table__row">
+                        <td class="nhsuk-table__cell">Dr Richard Walton</td>
+                        <td class="nhsuk-table__cell">5690876</td>
+                        <td class="nhsuk-table__cell">h@i.c</td>
+                        <td class="nhsuk-table__cell">09123 556677</td>
+                        <td class="nhsuk-table__cell">NE32 5HH</td>  
+                        <td class="nhsuk-table__cell">No</td>  
+                        <td class="nhsuk-table__cell">No</td>
+                        <td class="nhsuk-table__cell "><strong strong style="color: #354550"; class="nhsuk-tag no-caps nhsuk-tag--yellow">Archived and Out of Region</strong></td>    
+                        <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden">processed treatment for Laura peteers</span></a></td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+
+            
+            <nav class="nhsuk-pagination" id="pagination-label">
+
+            <p class="nhsuk-u-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+            <ul class="nhsuk-pagination__list">
+              <li class="nhsuk-pagination__item  nhsuk-pagination__item--prev">
+                <a class="nhsuk-pagination__link" href="">Previous<span class="nhsuk-u-visually-hidden"> set of
+                    pages</span></a>
+              </li>
+
+              <li class="nhsuk-pagination__item nhsuk-pagination__item--active">1</li>
+
+              <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">2</a></li>
+
+              <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">3</a></li>
+
+              <li class="nhsuk-pagination__item  nhsuk-pagination__item--next">
+                <a class="nhsuk-pagination__link" href="">Next<span class="nhsuk-u-visually-hidden"> set of
+                    pages</span></a>
+              </li>
+            </ul>
+            <p class="nhsuk-pagination__results">Showing <b>1</b> to <b>10</b> of <b>30</b> results</p>
+          </nav>
+
+            <div class="action-buttons">
+              <button class="nhsuk-button nhsuk-button--secondary" type="submit">Add Doctor</button>
+          </div>
+     
+    
+    <div class="nhsBSA-sidebar-content">
+      <div class="nhsuk-width-container-fluid">
+        <div class="nhsuk-main-wrapper" id="maincontent">
+
+          {# <div class="nhsuk-grid-row">
+                  <div class="nhsuk-grid-column-full">
+
+                      <div class="panel panel-border-wide alert-default">
+                          <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3">English is their second language. May require an interpreter.</h2>
+                      </div>
+
+                  </div>
+              </div> #}
+
+              <form action="s12-search-results" method="get">
+                <div class="nhsuk-grid-row">
+                  <div class="nhsuk-grid-column-two-thirds">
+                    <br>
+
+              <h1 class="nhsuk-heading-xl">
+                Edit Search
+               </h1>
+
+               <form action="s12-search-results" method="get">
+                <div class="nhsuk-grid-row">
+                  <div class="nhsuk-grid-column-one-third">
+                    <br>
+                    <div class="nhsuk-form-group">
+                      <label class="nhsuk-label" for="searchfirstname"><strong class="bold">
+
+                  Name of doctor</strong>
+                </label>
+              <input class="nhsuk-input nhsuk-u-width-full" id="searchfirstname" name="searchfirstname" type="text">
+              </div>
+             
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="hospnumber"><strong class="bold">
+                Postcode</strong>
+                </label>
+                <input class="nhsuk-input nhsuk-u-width-full" id="hospnumber" name="hospnumber" type="text">
+              </div>
+             
+            </div>
+            <br> 
+            <div class="nhsuk-grid-column-one-third">
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="nhsnumber"><strong class="bold">
+                  Professional Registration Number</strong>
+                </label>
+                <input class="nhsuk-input nhsuk-u-width-full" id="nhsnumber" name="nhsnumber" type="text">
+              </div>
+              <td  class="test-case" style="overflow: visible">
+                <div>
+                    <label class="nhsuk-label" for="example">
+                      Range (Miles)
+                    </label>
+
+                    <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection" aria-required="true">
+                        <option value="No">1</option>
+                        <option value="Yes">5</option>
+                        <option value="Yes">10</option>
+                        <option value="Yes">25</option>
+                        <option value="Yes">50</option>
+                        <option value="Yes">100</option>                       
+                    </select>
+                </div>
+              </td>
+              
+            </div>
+            
+            <div class="nhsuk-grid-column-one-third">
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="nhsnumber"><strong class="bold">
+                  Town/County</strong>
+                </label>
+                <input class="nhsuk-input nhsuk-u-width-full" id="nhsnumber" name="nhsnumber" type="text">
+              </div>
+              
+             
+              
+            </div>
+  
+            
+            <div class="nhsuk-grid-column-one-third">
+              
+              <td  class="test-case" style="overflow: visible">
+                <div>
+                    <label class="nhsuk-label" for="example">
+                      Regions
+                    </label>
+
+                    <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection" aria-required="true">
+                        <option value="No">All Regions</option>
+                        <option value="Yes">North West</option>
+                        <option value="Yes">Midlands</option>
+                        <option value="Yes">North East</option>
+                        <option value="Yes">South</option>
+                        <option value="Yes">South East</option>                       
+                    </select>
+                </div>
+              </td>
+             
+              
+
+            </div>
+        </div>
+
+<br><br>
+
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-one-third">
+  <div class="nhsuk-form-group">
+    <button class="nhsuk-button nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0" type="submit">
+      Search
+    </button>
+
+ <!--  <button class="nhsuk-button nhsuk-button--secondary nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0 nhsuk-u-margin-left-3" type="reset">
+      Clear search
+    </button>-->
+  </div>
+</div>
+</div>
+
+</form>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+</div>
+
+                <div class="nhsuk-grid-row">
+                  <div class="nhsuk-grid-column-one-third">
+                  </div>
+                <div class="nhsuk-grid-column-one-third">
+
+          </div>
+        </div>
+<br><br>
+      </div>
+    </div>
+  </div>
+
+    <div class="nhsBSA-sidebar-nav">
+      <div class="side-nav">
+        <ul>
+          <div id="options" class="options">
+          
+              <li>
+              <a href="s12-home-page">Home</a>
+              <a href="s12-doctor-search" class="active">Doctor Search</a>
+              <a href="s12-reports">Reports</a>
+              <a href="#">Contacts</a>
+              <a href="#">Admin</a>
+            </li>
+          </div>
+        </ul>    
+      </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+{% endblock %}

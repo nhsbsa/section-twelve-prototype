@@ -1,0 +1,447 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-admin-interface.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Section 12
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container-fluid">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-doctor-search">Back to Search</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="s12-doctor-search">Back to Search</a></p>
+  </div>
+</nav>
+
+  <div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+      <div class="nhsBSA-sidebar-content">
+        <div class="nhsuk-width-container-fluid">
+          <div class="nhsuk-main-wrapper" id="maincontent">
+
+            {# <div class="nhsuk-grid-row">
+                    <div class="nhsuk-grid-column-full">
+
+                        <div class="panel panel-border-wide alert-default">
+                            <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3">English is their second language. May require an interpreter.</h2>
+                        </div>
+
+                    </div>
+                </div> #}
+
+            <div class="nhsuk-grid-row">
+              <div class="nhsuk-grid-column-two-thirds">
+                <h1 class="nhsuk-heading-xl">
+                  Basic details for Dr Richard Schivago
+                </h1>
+                <h4>
+                  Professional Registration #: 7367378
+                </h4>
+              </div>
+              <div class="nhsuk-grid-column-one-third">             
+              </div>
+            </div>
+              
+      <nav class="nhsuk-secondary-navigation" aria-label="Primary navigation" style="background-color:#f0f4f5;">
+            <ul class="nhsuk-secondary-navigation__list">
+              <li class="nhsuk-secondary-navigation__item">
+                <a class="nhsuk-secondary-navigation__link" aria-current="page" href="s12-basic-details">Basic Details</a>
+              </li>
+              <li class="nhsuk-secondary-navigation__item">
+                <a class="nhsuk-secondary-navigation__link" href="S12-contact-info">Contact Info</a>
+              </li>
+              <li class="nhsuk-secondary-navigation__item">
+                <a class="nhsuk-secondary-navigation__link" href="s12-approvals">Approvals</a>
+              </li>
+              <li class="nhsuk-secondary-navigation__item">
+                <a class="nhsuk-secondary-navigation__link" href="s12-training">Training</a>
+              </li>
+              <li class="nhsuk-secondary-navigation__item">
+                <a class="nhsuk-secondary-navigation__link" href="s12-documents">Documents</a>
+              </li>
+              <li class="nhsuk-secondary-navigation__item">
+                <a class="nhsuk-secondary-navigation__link" href="s12-administration">Administration</a>
+              </li>
+              <li class="nhsuk-secondary-navigation__item">
+                <a class="nhsuk-secondary-navigation__link" href="s12-gmc">GMC</a>
+              </li>
+              <li class="nhsuk-secondary-navigation__item">
+                <a class="nhsuk-secondary-navigation__link" href="s12-other-issues">Other Issues</a>
+              </li>
+            </ul>
+			</nav>
+
+            <hr style="border-bottom:1px solid #ccc; margin:0">
+<br><br>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third">
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Title
+                  </label>
+                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="Dr">
+                </div>
+            </div>
+          </div>
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third">
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    First Name
+                  </label>
+                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="Richard">
+                </div>
+            </div>
+          </div>
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third">
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Last Name
+                  </label>
+                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="Schivago">
+                </div>
+            </div>
+          </div>
+
+         
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third">
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Sex
+                  </label>
+                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="Male">
+                </div>
+            </div>
+          </div>
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third">
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Date of birth
+                  </label>
+                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="01 September 2076">
+                </div>
+            </div>
+          </div>
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third">
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Professional Registration # (including GMC number)
+                  </label>
+                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="7367378">
+                </div>
+            </div>
+          </div>
+
+              <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-one-third">
+
+                  <div class="nhsuk-form-group">
+                    <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                        <label class="nhsuk-label" for="example">
+                          Brought Forward Date
+                        </label>
+                      <div class="nhsuk-date-input" id="example">
+                        <div class="nhsuk-date-input__item">
+                          <div class="nhsuk-form-group">
+                            <label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+                              Day
+                            </label>
+                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-day" name="example-day" type="number" pattern="[0-9]*" value="">
+                          </div>
+                        </div>
+                        <div class="nhsuk-date-input__item">
+                          <div class="nhsuk-form-group">
+                            <label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+                              Month
+                            </label>
+                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2" id="example-month" name="example-month" type="number" pattern="[0-9]*" value="">
+                          </div>
+                        </div>
+                        <div class="nhsuk-date-input__item">
+                          <div class="nhsuk-form-group">
+                            <label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+                              Year
+                            </label>
+                            <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4" id="example-year" name="example-year" type="number" pattern="[0-9]*" value="">
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-one-third">
+                  <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Application Status
+                  </label>
+                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="Chased panel 21/4/22">
+                  </div>
+                </div>
+              </div>
+
+<form>
+
+  <div class="nhsuk-form-group">
+
+    <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+
+      <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-1" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+            Archive
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+            Regular Work Hours
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="text" aria-controls="conditional-contact-3" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-3">
+            Out of Hours
+          </label>
+        </div>
+
+      </div>
+    </fieldset>
+
+  </div>
+
+</form>
+
+              <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-one-third">
+                  <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Fee Paying Work Start Time
+                  </label>
+                    <input class="nhsuk-input nhsuk-input--width-3" id="example" name="example" type="text" value="9:00">
+                  </div>
+                </div>
+              </div>
+
+              <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-one-third">
+                  <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Fee Paying Work End Time
+                  </label>
+                    <input class="nhsuk-input nhsuk-input--width-3" id="example" name="example" type="text" value="16:00">
+                  </div>
+                </div>
+              </div>
+
+
+
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Comments
+                  </label>
+                  <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
+                </div>
+
+<form>
+
+  <div class="nhsuk-form-group">
+
+    <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+      <p> Regions</p>
+      <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-1" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+            East Midlands
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+            East of England
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="text" aria-controls="conditional-contact-3" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-3">
+            London
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-1" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+            North East
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+            North West
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="text" aria-controls="conditional-contact-3" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-3">
+            South Central
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-1" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+            South East
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+            South West
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="text" aria-controls="conditional-contact-3" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-3">
+            West Midlands
+          </label>
+        </div>
+
+        <div class="nhsuk-checkboxes__item">
+          <input class="nhsuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="text" aria-controls="conditional-contact-3" aria-expanded="false">
+          <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-3">
+            Yorkshire 
+          </label>
+        </div>
+<br>
+              <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-one-third">
+                  <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Primary Approving Region
+                  </label>
+                        <td  class="test-case" style="overflow: visible">
+                          <div>                            
+                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection" aria-required="true">
+                                  <option value="No">East of England</option>
+                                  <option value="Yes">Next 1</option>
+                                  <option value="Yes">Next 2</option>
+                              </select>
+                          </div>
+                        </td>
+                  </div>
+                </div>
+              </div>
+<br>
+              <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-one-third">
+                  <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Last Updated by
+                  </label>
+                  <input class="nhsuk-input" id="example" name="example" type="text" value="Douglas Caven on 4 May 2022 at 12:00">
+                  </div>
+                </div>
+              </div>
+
+      </div>
+    </fieldset>
+
+
+              
+  </div>
+
+</form>
+
+
+                  <div class="nhsuk-grid-row">
+                    <div class="nhsuk-grid-column-one-third">
+                    </div>
+                  <div class="nhsuk-grid-column-one-third">
+
+            </div>
+          </div>
+<br>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+              <a href="#">
+                <button class="nhsuk-button nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2" type="submit">
+                  Save changes
+                </button>
+              </a>
+              <br>
+              <br>
+              <a href="#">
+                <button class="nhsuk-button nhsuk-button--secondary" type="submit">
+                  Delete Doctor
+                </button>
+              </a>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+      <div class="nhsBSA-sidebar-nav">
+        <div class="side-nav">
+          <ul>
+            <div id="options" class="options">
+            
+                <li>
+                <a href="s12-home-page">Home</a>
+                <a href="s12-doctor-search" class="active">Doctor Search</a>
+                <a href="s12-reports">Reports</a>
+                <a href="#">Contacts</a>
+                <a href="#">Admin</a>
+              </li>
+            </div>
+          </ul>    
+        </div>
+      </div>
+
+  </div>
+
+{% endblock %}
