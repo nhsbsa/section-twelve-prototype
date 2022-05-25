@@ -24,12 +24,18 @@ Section 12
 {% block content %}
 
 <nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
-  <div class="nhsuk-width-container-fluid">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page">Home</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="s12-home-page">Home</a></p>
-  </div>
+    <div class="nhsuk-width-container-fluid">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+      
+          <ol class="nhsuk-breadcrumb__list">
+
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page-with-admin">Admin</a></li>
+            </ol>
+        </div>
+      </div>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="#">Back to search results</a></p>
+    </div>
 </nav>
 
 <div class="nhsBSA-sidebar-container">
@@ -67,16 +73,39 @@ Section 12
 
         <ul>
           <div id="options" class="options">
-            <li><a class="active" href="s12-home-page">Home</a></li>
-            <li><a href="s12-search-results">Doctor Search</a></li>
-            <li><a href="s12-reports">Reports</a></li>
+            <li><a href="s12-home-page">Home</a></li>
+            <li><a href="#">Doctor Search</a></li>
+            <li><a href="#">Reports</a></li>
             <li><a href="#">Contacts</a></li>
-            <li><a href="s12-home-page-with-admin">Admin</a></li>
+            <li><a class="active" href="s12-home-page-with-admin">Admin</a></li>
           </div>
         </ul>
+
+        <ul style="margin-left: 30px; margin-top: 10px">
+          <li><a href="#" style="text-decoration: none">Content Manager</a></li>
+          <li><a href="s12-admin-doctor-portal" style="text-decoration: none">Doctor Portal</a></li>
+          <li>
+            <a href="s12-admin-manage-archived-doctors" style="text-decoration: none">Manage Archived Doctors</a>
+          </li>
+          <li>
+            <a href="s12-admin-manage-organisations" style="text-decoration: none">Manage Organisations</a>
+          </li>
+          <li>
+            <a href="s12-admin-manage-user-organisations" style="text-decoration: none">Manage User Organisation</a>
+          </li>
+          <li><a href="s12-admin-reference-data-menu" style="text-decoration: none">Reference Data</a></li>
+          <li>
+            <a href="#" style="text-decoration: none">System Options</a>
+          </li>
+          <li><a href="#" style="text-decoration: none">Users</a></li>
+          <li><a href="#" style="text-decoration: none">View Events</a></li>
+        </ul>
       </div>
-
-
+<!-- 
+        <li>
+          <a href="s12-system-options" style="text-decoration: none; filter: brightness(30%)">System Options</a>
+        </li>
+-->
     </div>
   </div>
 
