@@ -24,12 +24,20 @@ Section 12
 {% block content %}
 
 <nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
-  <div class="nhsuk-width-container-fluid">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-doctor-search">Back to Search</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="s12-doctor-search">Back to Search</a></p>
-  </div>
+    <div class="nhsuk-width-container-fluid">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+      
+          <ol class="nhsuk-breadcrumb__list">
+
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page-with-admin">Admin</a></li>
+            
+                <li class="nhsuk-breadcrumb__item">Reference Data</li>
+            </ol>
+        </div>
+      </div>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
+    </div>
 </nav>
 
   <div class="nhsBSA-sidebar-container">
@@ -52,9 +60,9 @@ Section 12
                 </div> #}
         
             <div class="nhsuk-grid-row">
-              <div class="nhsuk-grid-column-two-thirds">
+              <div class="nhsuk-grid-column-full">
                 <h1 class="nhsuk-heading-xl">
-                  Reports
+                  Reference Data
                 </h1>
               </div>
             </div>                  
@@ -63,7 +71,7 @@ Section 12
             <div class="nhsuk-grid-column-one-third">
             </div>
           </div>
-          
+
                     <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
 
                       <!-- TABLE START -->
@@ -71,7 +79,7 @@ Section 12
                         <tr class="nhsuk-table__row">
 
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              Frequently Used
+                              Reference Data
                           </th>
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
                           
@@ -103,7 +111,23 @@ Section 12
                       <tbody class="nhsuk-table__body nhsuk-body-">
 
                         <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Brought Forward Report</td>
+                          <td class="nhsuk-table__cell">Acronyms</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="s12-admin-reference-data-acronyms">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Approval Types</td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
@@ -119,93 +143,7 @@ Section 12
                       <tbody class="nhsuk-table__body nhsuk-body-">
 
                         <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Doctors Due For Renewal</td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>  
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
-                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
-                        </tr>
-
-                      </tbody>
-
-                    </table>
-
-                    <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
-
-                      <!-- TABLE START -->
-                      <thead class="nhsuk-table__head">
-                        <tr class="nhsuk-table__row">
-
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              Doctor Lists
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                          
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                          </th>
-
-                          <th>
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-  
-                          </th>
-
-                        </tr>
-                      </thead>
-
-                      <tbody class="nhsuk-table__body nhsuk-body-">
-
-                        <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Full List Of Practitioners</td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>  
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
-                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
-                        </tr>
-
-                      </tbody>
-
-                      <tbody class="nhsuk-table__body nhsuk-body-">
-
-                        <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">List Of Archived Expired Section 12 Doctors</td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>  
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
-                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
-                        </tr>
-
-                      </tbody>
-
-                      <tbody class="nhsuk-table__body nhsuk-body-">
-
-                        <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">List Of Doctor Transfers</td>
+                          <td class="nhsuk-table__cell">Designation Groups</td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
@@ -221,7 +159,7 @@ Section 12
                         <tbody class="nhsuk-table__body nhsuk-body-">
 
                         <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">List Of Doctors With Conditions</td>
+                          <td class="nhsuk-table__cell">Languages</td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
@@ -237,7 +175,7 @@ Section 12
                       <tbody class="nhsuk-table__body nhsuk-body-">
 
                         <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">List Of Live Approved Clinicians</td>
+                          <td class="nhsuk-table__cell">Login Type</td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
@@ -253,7 +191,7 @@ Section 12
                       <tbody class="nhsuk-table__body nhsuk-body-">
 
                         <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Live Register</td>
+                          <td class="nhsuk-table__cell">Organisation Type</td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
@@ -269,7 +207,7 @@ Section 12
                       <tbody class="nhsuk-table__body nhsuk-body-">
 
                         <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Practitioner Availability Report</td>
+                          <td class="nhsuk-table__cell">Organisation Status</td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>
@@ -282,83 +220,168 @@ Section 12
 
                       </tbody>
 
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Panels</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Professional Registration Type</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Regions (SHAs)</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                        <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Report Header</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">S12 Web API Credentials</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Section 12 Contacts</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Specialities</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Sub Regions</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Training Course Type</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">Types of Letter</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
+                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                        </tr>
+
+                      </tbody>
 
 
                     </table>
-
-
-                  <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
-
-                      <!-- TABLE START -->
-                      <thead class="nhsuk-table__head">
-                        <tr class="nhsuk-table__row">
-
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              Audit and Exceptions Reports
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                          
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                          </th>
-
-                          <th>
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-  
-                          </th>
-
-                        </tr>
-                      </thead>
-
-                      <tbody class="nhsuk-table__body nhsuk-body-">
-
-                        <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">End User Report</td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>  
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
-                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
-                        </tr>
-
-                      </tbody>
-
-                      <tbody class="nhsuk-table__body nhsuk-body-">
-
-                        <tr class="nhsuk-table__row">
-                          <td class="nhsuk-table__cell">Exceptions Report</td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"></td>  
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>  
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>
-                          <td class="nhsuk-table__cell"><a href="#"><span class="nhsuk-u-visually-hidden"></span></a></td>    
-                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
-                        </tr>
-
-                      </tbody>
-
-
-                    </table>
-
-
           </div>
 
         </div>
@@ -369,16 +392,29 @@ Section 12
         <div class="side-nav">
           <ul>
             <div id="options" class="options">
-            
                 <li>
-                <a href="s12-home-page">Home</a>
-                <a href="s12-doctor-search">Doctor Search</a>
-                <a href="s12-reports" class="active">Reports</a>
+                <a href="s12-home-page-with-admin">Home</a>
+                <a href="#">Doctor Search</a>
+                <a href="#">Reports</a>
                 <a href="#">Contacts</a>
-                <a href="#">Admin</a>
+                <a href="s12-home-page-with-admin" class="active">Admin</a>
               </li>
             </div>
-          </ul>    
+          </ul> 
+          <ul style="margin-left: 30px; margin-top: 10px">
+              <li><a href="#" style="text-decoration: none">Content Manager</a></li>
+              <li><a href="s12-admin-doctor-portal" style="text-decoration: none">Doctor Portal</a></li>
+              <li><a href="s12-admin-manage-archived-doctors" style="text-decoration: none">Manage Archived Doctors</a></li>
+              <li><a href="s12-admin-manage-organisations" style="text-decoration: none">Manage Organisations</a></li>
+              <li><a href="s12-admin-manage-user-organisations" style="text-decoration: none">Manage User Organisation</a></li>
+              <li><a href="s12-admin-reference-data-menu" style="text-decoration: none; filter: brightness(30%)">Reference Data</a></li>
+              <li><a href="#" style="text-decoration: none">System Options</a></li>
+              <li><a href="#" style="text-decoration: none">Users</a></li>
+              <li><a href="#" style="text-decoration: none">View Events</a></li>
+           </ul> 
+
+
+
         </div>
       </div>
 
