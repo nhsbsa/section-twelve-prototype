@@ -24,12 +24,19 @@ Section 12
 {% block content %}
 
 <nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
-  <div class="nhsuk-width-container-fluid">
-    <ol class="nhsuk-breadcrumb__list">
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-doctor-search">Back to Search</a></li>
-    </ol>
-    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="s12-doctor-search">Back to Search</a></p>
-  </div>
+    <div class="nhsuk-width-container-fluid">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+      
+          <ol class="nhsuk-breadcrumb__list">
+
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page">Doctor Search</a></li>
+                <li class="nhsuk-breadcrumb__item">Training</li>
+            </ol>
+        </div>
+      </div>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="#">Back to search results</a></p>
+    </div>
 </nav>
 
   <div class="nhsBSA-sidebar-container">
@@ -161,12 +168,11 @@ Section 12
 
                       </tbody>
 
-
                     </table>
-
-              
+            
               <div class="action-buttons">
-                <button class="nhsuk-button nhsuk-button--secondary" type="submit">New Training Record</button>
+                <a href="s12-training-new-record">
+                <button class="nhsuk-button nhsuk-button--secondary" type="submit">New Training Record</button></a>
               </div>
           </div>
 
