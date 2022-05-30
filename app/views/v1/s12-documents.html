@@ -150,7 +150,7 @@ Section 12
                           <td class="nhsuk-table__cell"></td>
                           <td class="nhsuk-table__cell"></td>  
                           <td class="nhsuk-table__cell"><a href="#">Download<span class="nhsuk-u-visually-hidden"></span></a></td>  
-                          <td class="nhsuk-table__cell"><a href="#">Replace<span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="s12-documents-replace">Replace<span class="nhsuk-u-visually-hidden"></span></a></td>
                           <td class="nhsuk-table__cell"><a href="#">Delete<span class="nhsuk-u-visually-hidden"></span></a></td>    
                           <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
                         </tr>
@@ -209,7 +209,7 @@ Section 12
 
 
               <div class="action-buttons">
-                <button class="nhsuk-button nhsuk-button--secondary" type="submit">New Document</button>
+                <button class="nhsuk-button nhsuk-button--secondary" type="submit" onclick="document.location.href='s12-documents-new'">New Document</button>
             </div>
           </div>
 
@@ -220,17 +220,23 @@ Section 12
       <div class="nhsBSA-sidebar-nav">
         <div class="side-nav">
           <ul>
-            <div id="options" class="options">
-            
-                <li>
-                <a href="s12-home-page">Home</a>
-                <a href="s12-doctor-search" class="active">Doctor Search</a>
-                <a href="s12-reports">Reports</a>
-                <a href="#">Contacts</a>
-                <a href="#">Admin</a>
-              </li>
-            </div>
-          </ul>    
+            <li><a href="s12-home-page">Home</a></li>
+          </ul>
+        </div>
+
+        <ul style="margin-left: 30px; margin-top: 10px;">
+          <li><a href="s12-home-page" style="text-decoration: none">User Instructions</a></li>
+          <li><a href="s12-home-page" style="text-decoration: none">Trust Acronyms</a></li>
+          <li><a href="s12-home-page" style="text-decoration: none">National Section 12 <br>Contacts</a></li>
+        </ul>
+
+        <div class="side-nav">
+          <ul>
+            <li><a class="active" href="s12-doctor-search">Doctor Search</a></li>
+            <li><a href="s12-reports">Reports</a></li>
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">Admin</a></li>
+          </ul>
         </div>
       </div>
 

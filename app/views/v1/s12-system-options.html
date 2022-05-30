@@ -1,0 +1,195 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-admin-interface.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %} Section 12 {% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %} {% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+    <div class="nhsBSA-sidebar-content">
+      <div class="nhsuk-width-container-fluid">
+        <div class="nhsuk-main-wrapper" id="maincontent">
+          {#
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+              <div class="panel panel-border-wide alert-default"></div>
+            </div>
+          </div>
+          #}
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+              <h1 class="nhsuk-heading-xl">System Options</h1>
+            </div>
+          </div>
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third"></div>
+          </div>
+
+          <!-- TABLE START -->
+          <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable">
+            <thead class="nhsuk-table__head">
+              <tr class="nhsuk-table__row">
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Parameter
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Value
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Edit
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Delete
+                </th>
+              </tr>
+            </thead>
+
+            <tbody class="nhsuk-table__body nhsuk-body-">
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">AdminEmail</td>
+                <td class="nhsuk-table__cell">support@lablateral.com</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">ContactEmail</td>
+                <td class="nhsuk-table__cell">abc@dh.gsi.gov.uk</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">DefaultPageSize</td>
+                <td class="nhsuk-table__cell">10</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">DoctorDocumentFolder</td>
+                <td class="nhsuk-table__cell">C:/inetpub/wwwroot/NHSSection12/documents/</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">DocumentRoot</td>
+                <td class="nhsuk-table__cell">C:/inetpub/wwwroot/NHSSection12/documents/</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">MaxConnected</td>
+                <td class="nhsuk-table__cell">39</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">PCAAPIKey</td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">SendDoctorPortalEmail</td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">SenderEmail</td>
+                <td class="nhsuk-table__cell">noreply@lablateral.com</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">SystemName</td>
+                <td class="nhsuk-table__cell">NHS Section 12 Doctor Database</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">ItemsPerPage</td>
+                <td class="nhsuk-table__cell">15</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">SystemDomain</td>
+                <td class="nhsuk-table__cell">localhost</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">SystemVersion</td>
+                <td class="nhsuk-table__cell">0.9 UAT</td>
+                <td class="nhsuk-table__cell"><a href="#">Edit</a></td>
+                <td class="nhsuk-table__cell"><a href="#">Delete</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="nhsBSA-sidebar-nav">
+      <div class="side-nav">
+        <ul>
+          <li><a href="s12-home-page">Home</a></li>
+        </ul>
+      </div>
+
+      <ul style="margin-left: 30px; margin-top: 10px">
+        <li><a href="s12-home-page" style="text-decoration: none">User Instructions</a></li>
+        <li><a href="s12-home-page" style="text-decoration: none">Trust Acronyms</a></li>
+        <li><a href="s12-home-page" style="text-decoration: none">National Section 12 <br>Contacts</a></li>
+      </ul>
+
+      <div class="side-nav">
+        <ul>
+          <li><a href="s12-doctor-search">Doctor Search</a></li>
+          <li><a href="s12-reports">Reports</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a class="active" href="#">Admin</a></li>
+        </ul>
+      </div>
+
+      <ul style="margin-left: 30px; margin-top: 10px">
+        <li><a href="#" style="text-decoration: none">Content Manager</a></li>
+        <li><a href="#" style="text-decoration: none">Doctor Portal</a></li>
+        <li>
+          <a href="#" style="text-decoration: none">Manage Archived Doctors</a>
+        </li>
+        <li>
+          <a href="#" style="text-decoration: none">Manage Organisations</a>
+        </li>
+        <li>
+          <a href="#" style="text-decoration: none">Manage User Organisation</a>
+        </li>
+        <li><a href="#" style="text-decoration: none">Reference Data</a></li>
+        <li>
+          <a href="s12-system-options" style="text-decoration: none; filter: brightness(30%)">System Options</a>
+        </li>
+        <li><a href="#" style="text-decoration: none">Users</a></li>
+        <li><a href="#" style="text-decoration: none">View Events</a></li>
+      </ul>
+    </div>
+  </div>
+
+  {% endblock %}
+</div>
