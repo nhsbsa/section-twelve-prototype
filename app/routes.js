@@ -10,5 +10,12 @@ router.use(bodyParser.urlencoded({ extended: true })); // to support URL-encoded
 
 router.use('/v1', require('./views/v1/_routes'));
 
+router.get(/addAddress/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-contact-info-confirmation'); 
+    } else {
+      res.redirect('s12-contact-info-new');
+    }
+  });
 
 module.exports = router;
