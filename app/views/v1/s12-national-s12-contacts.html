@@ -1,0 +1,140 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-admin-interface.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Section 12
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container-fluid">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="s12-home-page">Home</a></p>
+  </div>
+</nav>
+
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+    <div class="nhsBSA-sidebar-content" style="width: 70%;">
+      <div class="nhsuk-width-container-fluid">
+
+        <div class="nhsuk-main-wrapper" id="maincontent">
+
+          <h1>Section 12 Contacts</h1>
+
+          <!-- SUMMARY LIST START -->
+          <dl class="nhsuk-summary-list">
+
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">
+                HEAD OFFICE CONTACTS
+              </dt>
+              <dd class="nhsuk-summary-list__value">
+                John Smith - Head of Section 12 <br>
+                A Wilson - Deputy of Section 12 <br>
+                Sarah Johnson - Deputy of Section 12
+              </dd>
+            </div>
+
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">
+                LONDON <br>
+                (London)
+              </dt>
+              <dd class="nhsuk-summary-list__value">
+                <strong>Approvals Panel</strong> <br>
+                John Smith - Head of Approvals Panel <br>
+                A Wilson - Deputy of Approvals Panel <br>
+                Sarah Johnson - Deputy of Approvals Panel <br> <br>
+                <strong>S12/AC Administrators</strong> <br>
+                John Smith - Head of S12/AC Administrators <br>
+                A Wilson - Deputy of S12/AC Administrators <br>
+                Sarah Johnson - Deputy of S12/AC Administrators <br> <br>
+                <strong>Panel Chair</strong> <br>
+                John Smith <br>
+              </dd>
+            </div>
+
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">
+                MIDLANDS AND EAST OF ENGLAND <br>
+                (East Midlands / East of England / West Midlands)
+              </dt>
+              <dd class="nhsuk-summary-list__value">
+                <strong>Approvals Panel</strong> <br>
+                John Smith - Head of Approvals Panel <br>
+                A Wilson - Deputy of Approvals Panel <br>
+                Sarah Johnson - Deputy of Approvals Panel <br> <br>
+                <strong>S12/AC Administrators</strong> <br>
+                John Smith - Head of S12/AC Administrators <br>
+                A Wilson - Deputy of S12/AC Administrators <br>
+                Sarah Johnson - Deputy of S12/AC Administrators <br> <br>
+                <strong>Panel Chair</strong> <br>
+                John Smith <br>
+              </dd>
+            </div>
+
+            <div class="nhsuk-summary-list__row">
+              <dt class="nhsuk-summary-list__key">
+                [Further areas] <br> <br>
+              </dt>
+              <dd class="nhsuk-summary-list__value">
+                <strong>[Further roles/names]</strong> <br> <br>
+              </dd>
+            </div>
+
+          </dl>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="nhsBSA-sidebar-nav">
+      <div class="side-nav">
+        <ul>
+          <li><a class="active" href="s12-home-page">Home</a></li>
+        </ul>
+      </div>
+
+      <ul style="margin-left: 30px; margin-top: 10px;">
+        <li><a href="s12-home-page" style="text-decoration: none">User Instructions</a></li>
+        <li><a href="s12-trust-acronyms" style="text-decoration: none">Trust Acronyms</a></li>
+        <li><a href="s12-national-s12-contacts" style="text-decoration: none">National Section 12 <br>Contacts</a></li>
+      </ul>
+
+      <div class="side-nav">
+        <ul>
+          <li><a href="s12-doctor-search">Doctor Search</a></li>
+          <li><a href="s12-reports">Reports</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="s12-home-page-with-admin">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+</div>
+
+{% endblock %}
