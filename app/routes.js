@@ -26,4 +26,20 @@ router.get(/addAddress/, function (req, res) {
     }
   });
   
+  router.get(/newLetter/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-administration-new-letter-confirmation'); 
+    } else {
+      res.redirect('s12-administration');
+    }
+  });
+
+  router.get(/newTransfer/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-administration-new-transfer-confirmation'); 
+    } else {
+      res.redirect('s12-administration');
+    }
+  });
+  
 module.exports = router;
