@@ -18,4 +18,12 @@ router.get(/addAddress/, function (req, res) {
     }
   });
 
+  router.get(/recDelete/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-basic-details-delete-confirmation'); 
+    } else {
+      res.redirect('s12-basic-details');
+    }
+  });
+  
 module.exports = router;
