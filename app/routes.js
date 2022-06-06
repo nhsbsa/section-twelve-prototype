@@ -41,5 +41,13 @@ router.get(/addAddress/, function (req, res) {
       res.redirect('s12-administration');
     }
   });
+
+  router.get(/newTrainingRecord/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-training-new-record-confirmation'); 
+    } else {
+      res.redirect('s12-training-new-record');
+    }
+  });
   
 module.exports = router;
