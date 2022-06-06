@@ -381,14 +381,15 @@ Section 12
                   </div>
                 </div>
               </div>
-<br>
+<br><br>
               <div class="nhsuk-grid-row">
-                <div class="nhsuk-grid-column-one-third">
+                <div class="nhsuk-grid-column-full">
                   <div class="nhsuk-form-group">
                   <label class="nhsuk-label" for="example">
-                    Last Updated by
+                    Last Updated by:
                   </label>
-                  <input class="nhsuk-input" id="example" name="example" type="text" value="Douglas Caven on 4 May 2022 at 12:00">
+                  <p>Douglas Caven on 4 May 2022 at 12:00</p>
+                  <!-- <input class="nhsuk-input" id="example" name="example" type="text" value="Douglas Caven on 4 May 2022 at 12:00"> -->
                   </div>
                 </div>
               </div>
@@ -410,22 +411,14 @@ Section 12
 
             </div>
           </div>
-<br>
-          <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
-              <a href="#">
-                <button class="nhsuk-button nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2" type="submit">
-                  Save changes
-                </button>
-              </a>
-              <br>
-              <br>
-              <a href="s12-basic-details-delete-q">
-                <button class="nhsuk-button nhsuk-button--secondary" type="submit">
-                  Delete Doctor
-                </button>
-              </a>
-            </div>
+          <div class="action-buttons">
+            <button class="nhsuk-button nhsuk-button" type="submit" style="margin-right: 10px;"
+            onclick="document.location.href='s12-basic-details'">
+              Save Changes
+            </button>
+            <button class="nhsuk-button nhsuk-button--secondary" type="submit" onclick="document.location.href='s12-basic-details-delete-q'">
+              Delete Doctor
+            </button>
           </div>
 
 
