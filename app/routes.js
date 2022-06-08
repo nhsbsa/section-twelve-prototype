@@ -49,6 +49,14 @@ router.get(/addAddress/, function (req, res) {
       res.redirect('s12-training-new-record');
     }
   });
+
+  router.get(/acronymDelete/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-admin-reference-data-acronyms-delete-confirmation'); 
+    } else {
+      res.redirect('s12-admin-reference-data-acronyms');
+    }
+  });
   
   router.get(/approvalsConfirm/, function (req, res) {
     if (req.query.radioInlineGroup === "Yes" ) {
