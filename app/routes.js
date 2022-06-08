@@ -50,4 +50,22 @@ router.get(/addAddress/, function (req, res) {
     }
   });
   
+  router.get(/approvalsConfirm/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-approvals-save-changes-confirmation'); 
+    } else {
+      res.redirect('s12-approvals');
+    }
+  });
+  
+  router.get(/otherissuesConfirm/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-other-issues-save-changes-confirmation'); 
+    } else {
+      res.redirect('s12-other-issues');
+    }
+  });
+  
+
+  
 module.exports = router;
