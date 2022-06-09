@@ -74,6 +74,12 @@ router.get(/addAddress/, function (req, res) {
     }
   });
   
-
+  router.get(/newUserOrganisation/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-admin-manage-user-organisations-new-confirmation'); 
+    } else {
+      res.redirect('s12-admin-manage-user-organisations-new');
+    }
+  });
   
 module.exports = router;

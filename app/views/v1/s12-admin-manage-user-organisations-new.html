@@ -31,8 +31,8 @@ Section 12
           <ol class="nhsuk-breadcrumb__list">
 
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page-with-admin">Admin</a></li>
-                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-admin-manage-user-organisations">Manage Organisations</a></li>
-                <li class="nhsuk-breadcrumb__item">Manage User Organisations - New</li>
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-admin-manage-user-organisations">Manage User Organisations</a></li>
+                <li class="nhsuk-breadcrumb__item">New User Organisation</li>
             </ol>
         </div>
       </div>
@@ -59,13 +59,11 @@ Section 12
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-full">
                 <h1 class="nhsuk-heading-xl">
-                  New Organisation
+                  New User Organisation
                 </h1>
               </div>  
             </div>
 
-            <hr style="border-bottom:1px solid #ccc; margin:0">
-<br>
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-full">
                 <div class="nhsuk-form-group">
@@ -136,24 +134,19 @@ Section 12
                 </div>
 <br>
           <div class="nhsuk-grid-row">
+
             <div class="nhsuk-grid-column-full">
-              <a href="#">
-                <button class="nhsuk-button nhsuk-u-margin-top-2 nhsuk-u-margin-bottom-2" type="submit">
+              <div class="action-buttons">
+                <button class="nhsuk-button nhsuk-button" type="submit" style="margin-right: 10px;"
+                onclick="document.location.href='s12-admin-manage-user-organisations-new-q'">
                   Save
                 </button>
-              </a>
-              <br>
-              <br>
-              <a href="s12-admin-manage-user-organisations">
-                <button class="nhsuk-button nhsuk-button--secondary" type="submit">
-                  Close
+                <button class="nhsuk-button nhsuk-button--secondary" type="submit" onclick="document.location.href='s12-admin-manage-user-organisations'">
+                  Cancel
                 </button>
-              </a>
-              <br>
+              </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
