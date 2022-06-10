@@ -1,6 +1,29 @@
-<!-- Use this page as the index for your project -->
 
-<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- IMPROVED LAYOUT OF ADVANCED SEARCH SECTION, BUT COULDNT GET IT TO FULLY WORK IN THE END. PLEASE IGNORE THIS FILE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Extends the layout from /views/layout.html -->
 {% extends 'layout-admin-interface.html' %}
@@ -140,14 +163,15 @@
                     <details class="nhsuk-details nhsuk-expander"
                       style="background-color: inherit; border: 0; margin-bottom: 0;">
 
-                      <summary class="nhsuk-details__summary" style="background-color: inherit; border: 0; padding: 0;">
+                      <summary class="nhsuk-details__summary"
+                        style="background-color: inherit; border: 0; padding: 0;">
                         <span class="nhsuk-details__summary-text">
                           Advanced Search options
                         </span>
                       </summary>
 
                       <!-- NEW ROW -->
-                      <div class="nhsuk-grid-row">
+                      <div class="nhsuk-grid-row"  style="bottom: -100px; top: 0; position: relative;"">
                         <div class="nhsuk-grid-column-one-third">
                           <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
                             <legend class="nhsuk-fieldset__legend nhsuk-label--l">
@@ -184,7 +208,7 @@
                         <div class="nhsuk-grid-column-one-third nhsuk-u-margin-top-4">
                           <label class="nhsuk-label" for="nhsnumber"><strong class="bold">Languages</strong>
                           </label>
-                          <select class="nhsuk-select" id="select-1" name="select-1" multiple style="height: 100px;">
+                          <select class="nhsuk-select" id="select-1" name="select-1" multiple style="height: 150px;">
                             <option value="1">Afrikaans</option>
                             <option value="2">Albanian</option>
                             <option value="3">Arabic</option>
@@ -196,7 +220,7 @@
 
                       <!-- NEW ROW -->
                       <div class="nhsuk-grid-row">
-                        <div class="nhsuk-grid-column-one-third" style="top: -50px; position: relative;">
+                        <div class="nhsuk-grid-column-one-third" style="top: -100px; position: relative;">
                           <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
                             <legend class="nhsuk-fieldset__legend nhsuk-label--l">
                             </legend>
@@ -212,7 +236,7 @@
                           </fieldset>
                         </div>
 
-                        <div class="nhsuk-grid-column-one-third" style="top: -50px; position: relative;">
+                        <div class="nhsuk-grid-column-one-third" style="top: -100px; position: relative;">
                           <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
                             <legend class="nhsuk-fieldset__legend nhsuk-label--l">
                             </legend>
@@ -231,7 +255,7 @@
                       </div>
 
                       <!-- NEW ROW -->
-                      <div class="nhsuk-grid-row">
+                      <div class="nhsuk-grid-row" style="top: -80px; position: relative;">
                         <div class="nhsuk-grid-column-one-quarter">
                           <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
                             <div class="nhsuk-checkboxes">
@@ -267,8 +291,7 @@
                                 <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
                                   value="email">
                                 <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                                  <strong class="bold" style="top: -16px; position: relative;">Regular Work
-                                    Hours</strong>
+                                  <strong class="bold">Regular Work Hours</strong>
                                 </label>
                               </div>
                             </div>
@@ -282,8 +305,7 @@
                                 <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
                                   value="email">
                                 <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                                  <strong class="bold" style="top: -16px; position: relative;">Out of Work
-                                    Hours</strong>
+                                  <strong class="bold">Out of Work Hours</strong>
                                 </label>
                               </div>
                             </div>
@@ -292,8 +314,8 @@
                       </div>
 
                     </details>
+                    <!-- ADVANCED SEARCH END -->
                   </div>
-                  <!-- ADVANCED SEARCH END -->
                 </form>
 
                 <br>

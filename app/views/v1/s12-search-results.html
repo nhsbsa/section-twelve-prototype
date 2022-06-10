@@ -68,7 +68,7 @@
                         <label class="nhsuk-label" for="searchfirstname"><strong class="bold"> Name of doctor</strong>
                         </label>
                         <input class="nhsuk-input nhsuk-u-width-full" id="searchfirstname" name="searchfirstname"
-                          type="text" value="Richard"/>
+                          type="text" value="Richard" />
                       </div>
 
                       <div class="nhsuk-form-group">
@@ -135,156 +135,165 @@
                   </div>
 
                   <!-- ADVANCED SEARCH START -->
-                  <div class="nhsuk-grid-row">
+                  <div class="nhsuk-grid-row" style="padding: 16px 16px 0px 16px;">
 
                     <details class="nhsuk-details nhsuk-expander"
                       style="background-color: inherit; border: 0; margin-bottom: 0;">
-                      <summary class="nhsuk-details__summary"
-                        style="background-color: inherit; border: 0; padding-left: 16px; padding-bottom: 0;">
+
+                      <summary class="nhsuk-details__summary" style="background-color: inherit; border: 0; padding: 0;">
                         <span class="nhsuk-details__summary-text">
                           Advanced Search options
                         </span>
                       </summary>
 
-                      <div class="nhsuk-grid-column-one-quarter">
-                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                          <legend class="nhsuk-fieldset__legend nhsuk-label--l">
-                          </legend>
-                          <label class="nhsuk-label" for="nhsnumber"><strong class="bold">DBS Issue Start</strong>
-                          </label>
-                          <div class="nhsuk-date-input" id="example">
-                            <div class="nhsuk-date-input__item">
-                              <div class="nhsuk-form-group">
-                                <input class="nhsuk-input nhsuk-date-input__input" type="date">
+                      <!-- NEW ROW -->
+                      <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-third">
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                            <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+                            </legend>
+                            <label class="nhsuk-label" for="nhsnumber"><strong class="bold">DBS Issue Start</strong>
+                            </label>
+                            <div class="nhsuk-date-input" id="example">
+                              <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                  <input class="nhsuk-input nhsuk-date-input__input" type="date">
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </fieldset>
-                      </div>
+                          </fieldset>
+                        </div>
 
-                      <div class="nhsuk-grid-column-one-quarter">
-                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                          <legend class="nhsuk-fieldset__legend nhsuk-label--l">
-                          </legend>
-                          <label class="nhsuk-label" for="nhsnumber"><strong class="bold">DBS Issue End</strong>
-                          </label>
-                          <div class="nhsuk-date-input" id="example">
-                            <div class="nhsuk-date-input__item">
-                              <div class="nhsuk-form-group">
-                                <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-40" type="date">
+                        <div class="nhsuk-grid-column-one-third">
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                            <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+                            </legend>
+                            <label class="nhsuk-label" for="nhsnumber"><strong class="bold">Approved Clinician
+                                Start</strong>
+                            </label>
+                            <div class="nhsuk-date-input" id="example">
+                              <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                  <input class="nhsuk-input nhsuk-date-input__input" type="date">
+                                </div>
                               </div>
                             </div>
-                          </div>
-                        </fieldset>
-                      </div>
+                          </fieldset>
+                        </div>
 
-                      <div class="nhsuk-grid-column-one-quarter">
-                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                          <legend class="nhsuk-fieldset__legend nhsuk-label--l">
-                          </legend>
-                          <label class="nhsuk-label" for="nhsnumber"><strong class="bold">Approved Clinician
-                              Start</strong>
+                        <div class="nhsuk-grid-column-one-third nhsuk-u-margin-top-4">
+                          <label class="nhsuk-label" for="nhsnumber"><strong class="bold">Languages</strong>
                           </label>
-                          <div class="nhsuk-date-input" id="example">
-                            <div class="nhsuk-date-input__item">
-                              <div class="nhsuk-form-group">
-                                <input class="nhsuk-input nhsuk-date-input__input" type="date">
-                              </div>
-                            </div>
-                          </div>
-                        </fieldset>
-                      </div>
-
-                      <div class="nhsuk-grid-column-one-quarter">
-                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
-                          <legend class="nhsuk-fieldset__legend nhsuk-label--l">
-                          </legend>
-                          <label class="nhsuk-label" for="nhsnumber"><strong class="bold">Approved Clinician
-                              End</strong>
-                          </label>
-                          <div class="nhsuk-date-input" id="example">
-                            <div class="nhsuk-date-input__item">
-                              <div class="nhsuk-form-group">
-                                <input class="nhsuk-input nhsuk-date-input__input" type="date">
-                              </div>
-                            </div>
-                          </div>
-                        </fieldset>
+                          <select class="nhsuk-select" id="select-1" name="select-1" multiple style="height: 100px;">
+                            <option value="1">Afrikaans</option>
+                            <option value="2">Albanian</option>
+                            <option value="3">Arabic</option>
+                            <option value="3">...</option>
+                            <option value="3">(Cmd/Ctrl to pick multple)</option>
+                          </select>
+                        </div>
                       </div>
 
                       <!-- NEW ROW -->
-                      <div class="nhsuk-grid-column-one-quarter">
-                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-                          <div class="nhsuk-checkboxes">
-                            <div class="nhsuk-checkboxes__item">
-                              <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
-                                value="email">
-                              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                                <strong class="bold">DoLs</strong>
-                              </label>
+                      <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-third" style="top: -50px; position: relative;">
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                            <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+                            </legend>
+                            <label class="nhsuk-label" for="nhsnumber"><strong class="bold">DBS Issue End</strong>
+                            </label>
+                            <div class="nhsuk-date-input" id="example">
+                              <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                  <input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-40" type="date">
+                                </div>
+                              </div>
                             </div>
-                          </div>
-                        </fieldset>
+                          </fieldset>
+                        </div>
+
+                        <div class="nhsuk-grid-column-one-third" style="top: -50px; position: relative;">
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                            <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+                            </legend>
+                            <label class="nhsuk-label" for="nhsnumber"><strong class="bold">Approved Clinician
+                                End</strong>
+                            </label>
+                            <div class="nhsuk-date-input" id="example">
+                              <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                  <input class="nhsuk-input nhsuk-date-input__input" type="date">
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
                       </div>
 
-                      <div class="nhsuk-grid-column-one-quarter">
-                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-                          <div class="nhsuk-checkboxes">
-                            <div class="nhsuk-checkboxes__item">
-                              <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
-                                value="email">
-                              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                                <strong class="bold">Show Expired</strong>
-                              </label>
+                      <!-- NEW ROW -->
+                      <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-one-quarter">
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                            <div class="nhsuk-checkboxes">
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
+                                  value="email">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                  <strong class="bold">DoLs</strong>
+                                </label>
+                              </div>
                             </div>
-                          </div>
-                        </fieldset>
-                      </div>
+                          </fieldset>
+                        </div>
 
-                      <div class="nhsuk-grid-column-one-quarter">
-                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-                          <div class="nhsuk-checkboxes">
-                            <div class="nhsuk-checkboxes__item">
-                              <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
-                                value="email">
-                              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                                <strong class="bold">Regular Work Hours</strong>
-                              </label>
+                        <div class="nhsuk-grid-column-one-quarter">
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                            <div class="nhsuk-checkboxes">
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
+                                  value="email">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                  <strong class="bold">Show Expired</strong>
+                                </label>
+                              </div>
                             </div>
-                          </div>
-                        </fieldset>
-                      </div>
+                          </fieldset>
+                        </div>
 
-                      <div class="nhsuk-grid-column-one-quarter">
-                        <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
-                          <div class="nhsuk-checkboxes">
-                            <div class="nhsuk-checkboxes__item">
-                              <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
-                                value="email">
-                              <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                                <strong class="bold">Out of Work Hours</strong>
-                              </label>
+                        <div class="nhsuk-grid-column-one-quarter">
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                            <div class="nhsuk-checkboxes">
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
+                                  value="email">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                  <strong class="bold">Regular Work
+                                    Hours</strong>
+                                </label>
+                              </div>
                             </div>
-                          </div>
-                        </fieldset>
-                      </div>
+                          </fieldset>
+                        </div>
 
-                      <div class="nhsuk-grid-column-one-quarter nhsuk-u-margin-top-3">
-
-                        <label class="nhsuk-label" for="nhsnumber"><strong class="bold">Languages</strong>
-                        </label>
-                        <select class="nhsuk-select" id="select-1" name="select-1">
-                          <option value="1">Afrikaans</option>
-                          <option value="2">Albanian</option>
-                          <option value="3">Arabic</option>
-                          <option value="3">...</option>
-                          <option value="3">(USER SHOULD BE ABLE TO TICK MULTIPLE)</option>
-                        </select>
+                        <div class="nhsuk-grid-column-one-quarter">
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint">
+                            <div class="nhsuk-checkboxes">
+                              <div class="nhsuk-checkboxes__item">
+                                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
+                                  value="email">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                                  <strong class="bold">Out of Work
+                                    Hours</strong>
+                                </label>
+                              </div>
+                            </div>
+                          </fieldset>
+                        </div>
                       </div>
 
                     </details>
-                    <!-- ADVANCED SEARCH END -->
                   </div>
+                  <!-- ADVANCED SEARCH END -->
                 </form>
 
                 <br>
@@ -294,7 +303,7 @@
                 </button>
               </div>
               <!-- SEARCH CONTROLS END -->
-              
+
             </div>
           </div>
 
