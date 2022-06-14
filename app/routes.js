@@ -106,4 +106,12 @@ router.get(/addAddress/, function (req, res) {
     }
   });
   
+  router.get(/newUserConfirm/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-new-user-confirmation'); 
+    } else {
+      res.redirect('s12-new-user');
+    }
+  });
+  
 module.exports = router;
