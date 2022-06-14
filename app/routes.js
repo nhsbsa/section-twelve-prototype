@@ -82,4 +82,12 @@ router.get(/addAddress/, function (req, res) {
     }
   });
   
+  router.get(/gmcConfirm/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-gmc-save-changes-confirmation'); 
+    } else {
+      res.redirect('s12-gmc');
+    }
+  });
+  
 module.exports = router;
