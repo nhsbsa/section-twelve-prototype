@@ -21,20 +21,21 @@
 {% block content %}
 
 <nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
-    <div class="nhsuk-width-container-fluid">
-      <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-full">
-      
-          <ol class="nhsuk-breadcrumb__list">
+  <div class="nhsuk-width-container-fluid">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
 
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-search-results">Search</a></li>
-                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-approvals">Approvals</a></li>
-                <li class="nhsuk-breadcrumb__item">Confirmation of Changes for Approvals</li>
-            </ol>
-        </div>
+        <ol class="nhsuk-breadcrumb__list">
+
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-search-results">Search</a></li>
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-basic-details">Basic Details</a></li>
+          <li class="nhsuk-breadcrumb__item">Save Changes for Basic Details</li>
+        </ol>
       </div>
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
     </div>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search
+        results</a></p>
+  </div>
 </nav>
 
 <div class="nhsBSA-sidebar-container">
@@ -57,7 +58,7 @@
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-full">
               <h1 class="nhsuk-heading-xl">
-                Approval changes complete
+                Confirm Basic Details Changes
               </h1>
             </div>
           </div>
@@ -67,54 +68,69 @@
 
             <div class="nhsuk-summary-list__row">
               <dt class="nhsuk-summary-list__key">
-                Section 12 Expiry Date
+                Brought Forward Date
               </dt>
               <dd class="nhsuk-summary-list__value">
-                6 June 2023
+                14 June 2022
               </dd>
             </div>
 
             <div class="nhsuk-summary-list__row">
               <dt class="nhsuk-summary-list__key">
-                Approved Clinician 
+                Application Status
               </dt>
               <dd class="nhsuk-summary-list__value">
-                Y
+                Did not with to renew
               </dd>
             </div>
 
             <div class="nhsuk-summary-list__row">
               <dt class="nhsuk-summary-list__key">
-                On Specialist Register
+                Region
               </dt>
               <dd class="nhsuk-summary-list__value">
-                Y
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Speciality 
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                General Practice
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Locum
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                Y
+                North East
               </dd>
             </div>
 
           </dl>
 
-          <button class="nhsuk-button nhsuk-button" type="submit" onclick="document.location.href='s12-approvals'">
-            Continue
-          </button>
+
+          <!-- START OF FORM -->
+          <form action="basicConfirm" class="form" method="get">
+            <div class="nhsuk-form-group">
+              <fieldset class="nhsuk-fieldset">
+
+                <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
+                  <h3>Do you confirm these changes?</h3>
+                </legend>
+
+                <div class="nhsuk-radios nhsuk-radios--inline">
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="example-inline-1" name="radioInlineGroup" type="radio"
+                      value="Yes">
+                    <label class="nhsuk-label nhsuk-radios__label" for="example-inline-1">
+                      Yes
+                    </label>
+                  </div>
+
+                  <div class="nhsuk-radios__item">
+                    <input class="nhsuk-radios__input" id="example-inline-2" name="radioInlineGroup" type="radio"
+                      value="No">
+                    <label class="nhsuk-label nhsuk-radios__label" for="example-inline-2">
+                      No (go back and amend)
+                    </label>
+                  </div>
+
+                </div>
+              </fieldset>
+            </div>
+
+            <button class="nhsuk-button" type="submit">
+              Continue
+            </button>
+          </form>
+
         </div>
       </div>
     </div>

@@ -21,20 +21,21 @@
 {% block content %}
 
 <nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
-    <div class="nhsuk-width-container-fluid">
-      <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-full">
-      
-          <ol class="nhsuk-breadcrumb__list">
+  <div class="nhsuk-width-container-fluid">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
 
-      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-search-results">Search</a></li>
-                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-approvals">Approvals</a></li>
-                <li class="nhsuk-breadcrumb__item">Confirmation of Changes for Approvals</li>
-            </ol>
-        </div>
+        <ol class="nhsuk-breadcrumb__list">
+
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-search-results">Search</a></li>
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-basic-details">Basic Details</a></li>
+          <li class="nhsuk-breadcrumb__item">Save Changes for Basic Details Confirmation</li>
+        </ol>
       </div>
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
     </div>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search
+        results</a></p>
+  </div>
 </nav>
 
 <div class="nhsBSA-sidebar-container">
@@ -57,7 +58,7 @@
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-full">
               <h1 class="nhsuk-heading-xl">
-                Approval changes complete
+                Basic Details Changes Confirmed
               </h1>
             </div>
           </div>
@@ -67,52 +68,34 @@
 
             <div class="nhsuk-summary-list__row">
               <dt class="nhsuk-summary-list__key">
-                Section 12 Expiry Date
+                Brought Forward Date
               </dt>
               <dd class="nhsuk-summary-list__value">
-                6 June 2023
+                14 June 2022
               </dd>
             </div>
 
             <div class="nhsuk-summary-list__row">
               <dt class="nhsuk-summary-list__key">
-                Approved Clinician 
+                Application Status
               </dt>
               <dd class="nhsuk-summary-list__value">
-                Y
+                Did not wish to renew
               </dd>
             </div>
 
             <div class="nhsuk-summary-list__row">
               <dt class="nhsuk-summary-list__key">
-                On Specialist Register
+                Regions
               </dt>
               <dd class="nhsuk-summary-list__value">
-                Y
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Speciality 
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                General Practice
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Locum
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                Y
+                North East
               </dd>
             </div>
 
           </dl>
 
-          <button class="nhsuk-button nhsuk-button" type="submit" onclick="document.location.href='s12-approvals'">
+          <button class="nhsuk-button nhsuk-button" type="submit" onclick="document.location.href='s12-basic-details'">
             Continue
           </button>
         </div>

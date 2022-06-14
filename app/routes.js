@@ -89,5 +89,21 @@ router.get(/addAddress/, function (req, res) {
       res.redirect('s12-gmc');
     }
   });
+
+  router.get(/adminConfirm/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-administration-save-changes-confirmation'); 
+    } else {
+      res.redirect('s12-administration');
+    }
+  });
+
+  router.get(/basicConfirm/, function (req, res) {
+    if (req.query.radioInlineGroup === "Yes" ) {
+      res.redirect('s12-basic-details-save-changes-confirmation'); 
+    } else {
+      res.redirect('s12-basic-details');
+    }
+  });
   
 module.exports = router;
