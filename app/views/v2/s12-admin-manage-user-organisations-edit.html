@@ -31,12 +31,12 @@ Section 12
           <ol class="nhsuk-breadcrumb__list">
 
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page-with-admin">Admin</a></li>
-                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-admin-reference-data-menu">Reference Data</a></li>
-                <li class="nhsuk-breadcrumb__item">Acronyms - New Reference</li>
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-admin-manage-user-organisations">Manage User Organisations</a></li>
+                <li class="nhsuk-breadcrumb__item">Edit User Organisation</li>
             </ol>
         </div>
       </div>
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="#">Back to search results</a></p>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
     </div>
 </nav>
 
@@ -59,44 +59,66 @@ Section 12
             <div class="nhsuk-grid-row">
               <div class="nhsuk-grid-column-full">
                 <h1 class="nhsuk-heading-xl">
-                  Acronyms - New Reference
+                  Edit User Organisation
                 </h1>
               </div>  
             </div>
 
-              <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="input-width-5">
-                      Acronym Code
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Organisation Name
                   </label>
-                  <input class="nhsuk-input nhsuk-input--width-5" id="input-width-5" name="test-width-5" type="text">
-              </div>
-
-              <div class="nhsuk-form-group">
-                  <label class="nhsuk-label" for="input-width-20">
-                      Acronym Value
-                  </label>
-                  <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
-              </div>
+                  <input class="nhsuk-input nhsuk-u-width-full" id="example" name="example" type="text" value="QE2 Hopsital, Welwyn Garden City">
+                </div>
+            </div>
+          </div>
 
               <div class="nhsuk-grid-row">
                 <div class="nhsuk-grid-column-full">
                   <div class="nhsuk-form-group">
                   <label class="nhsuk-label" for="example">
-                    Acronym Parent
+                    Organisation Type
                   </label>
                         <td  class="test-case" style="overflow: visible">
                           <div>                            
                               <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection" aria-required="true">
-                                  <option value="No">North East</option>
-                                  <option value="Yes">North West</option>
-                                  <option value="Yes">Yorkshire</option>
+                                  <option value="No">Select a value</option>     
+                                  <option value="Yes">A&E</option>
+                                  <option value="Yes">Courts</option>
+                                  <option value="Yes">Finance</option>
+                                  <option value="Yes" selected>Hospital</option>
+                                  <option value="Yes">Police Force</option>
+                                  <option value="Yes">Social Workers</option>                      
+                              </select>
+                          </div>
+                        </td>
+                  </div>
+                </div>
+              </div>
+            
+
+              <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-full">
+                  <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Region
+                  </label>
+                        <td  class="test-case" style="overflow: visible">
+                          <div>                            
+                              <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection" aria-required="true">
+                                  <option value="No">Select a value</option>
+                                  <option value="Yes">East Midland</option>
                                   <option value="Yes">East of England</option>
-                                  <option value="Yes">West Midlands</option>
-                                  <option value="Yes">East Midlands</option>
                                   <option value="Yes">London</option>
+                                  <option value="Yes">Noth East</option>
+                                  <option value="Yes">North West</option>
                                   <option value="Yes">South Central</option>
+                                  <option value="Yes" selected>South East</option>
                                   <option value="Yes">South West</option>
-                                  <option value="Yes">South East</option>                         
+                                  <option value="Yes">West Midlands</option>
+                                  <option value="Yes">Yorkshire</option>                           
                               </select>
                           </div>
                         </td>
@@ -104,35 +126,27 @@ Section 12
                 </div>
               </div>
 
-              <br>
-              <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="input-width-2">
-                  Sequence
-                </label>
-                <span class="nhsuk-hint" id="date-of-birth-hint">
-                  <p>Values are listed in sequence, then alphabetically within records of the same sequence number.<br>
-                    For reference datasets that you want listed alphabetically, you can safely leave the sequence field blank.</p>
-                </span>
-                <input class="nhsuk-input nhsuk-input--width-2" id="input-width-2" name="test-width-2" type="text">
-              </div>
-
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="example">
+                    Notes
+                  </label>
+                  <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
+                </div>
 <br>
           <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
 
-            <div class="action-buttons">
-              <button class="nhsuk-button nhsuk-button" type="submit" style="margin-right: 10px;"
-              onclick="document.location.href='s12-admin-reference-data-acronyms'">
-                Save
-              </button>
-              <button class="nhsuk-button nhsuk-button--secondary" type="submit" onclick="document.location.href='s12-admin-reference-data-acronyms'">
-                Cancel
-              </button>
-            </div>
+            <div class="nhsuk-grid-column-full">
+              <div class="action-buttons">
+                <button class="nhsuk-button nhsuk-button" type="submit" style="margin-right: 10px;"
+                onclick="document.location.href='s12-admin-manage-user-organisations'">
+                  Save Changes
+                </button>
+                <button class="nhsuk-button nhsuk-button--secondary" type="submit" onclick="document.location.href='s12-admin-manage-user-organisations'">
+                  Cancel
+                </button>
+              </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -159,9 +173,9 @@ Section 12
                             <a href="s12-admin-manage-organisations" style="text-decoration: none">Manage Organisations</a>
                           </li>
                           <li>
-                            <a href="s12-admin-manage-user-organisations" style="text-decoration: none">Manage User Organisations</a>
+                            <a href="s12-admin-manage-user-organisations" style="text-decoration: none; filter: brightness(30%)">Manage User Organisations</a>
                           </li>
-                          <li><a href="s12-admin-reference-data-menu" style="text-decoration: none; filter: brightness(30%)">Reference Data</a></li>
+                          <li><a href="s12-admin-reference-data-menu" style="text-decoration: none">Reference Data</a></li>
                           <li>
                             <a href="s12-system-options" style="text-decoration: none">System Options</a>
                           </li>
