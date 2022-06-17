@@ -24,18 +24,20 @@ Section 12
 {% block content %}
 
 <nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
-    <div class="nhsuk-width-container-fluid">
-      <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-full">
-      
-          <ol class="nhsuk-breadcrumb__list">
-            <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page-with-admin">Admin</a></li>
-            <li class="nhsuk-breadcrumb__item">Manage Archived Doctors</li>
-          </ol>
-        </div>
+  <div class="nhsuk-width-container-fluid">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+        <ol class="nhsuk-breadcrumb__list">
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page-with-admin">Admin</a>
+          </li>
+          <li class="nhsuk-breadcrumb__item">Manage Archived Doctors</li>
+        </ol>
       </div>
-      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
     </div>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search
+        results</a></p>
+  </div>
 </nav>
 
 <div class="nhsBSA-sidebar-container">
@@ -44,247 +46,244 @@ Section 12
       <div class="nhsuk-width-container-fluid">
         <div class="nhsuk-main-wrapper" id="maincontent">
 
-<div class="nhsBSA-sidebar-content">
-                <div class="nhsuk-width-container-fluid">
-                  <div class="nhsuk-main-wrapper" id="maincontent">
-                        <form action="s12-search-results" method="get">
-                          <div class="nhsuk-grid-row">
-                            <div class="nhsuk-grid-column-two-thirds">
-                              <br>
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
 
-                                  <h1>
-                                    Manage Archived Doctors
-                                  </h1>
+              <h1>
+                Manage Archived Doctors
+              </h1>
 
-                                        <form action="s12-search-results" method="get">
-                                          <div class="nhsuk-grid-row">
-                                            
-<br> 
-                                            <div class="nhsuk-grid-column-one-third">
-                                                
-                                                <td  class="test-case" style="overflow: visible">
-                                                  <div>
-                                                      <label class="nhsuk-label" for="hospnumber"><strong class="bold">GMC Status</strong></label>
-                                                        <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection" aria-required="true">
-                                                            <option value="No">Select a value</option>
-                                                            <option value="Yes">Not Registered</option>
-                                                            <option value="Yes">Not Registered - Administrative Reason</option>
-                                                            <option value="Yes">Not Registered - Deceased</option>
-                                                            <option value="Yes">Not Registered - Erased after Fitness to Practice panel hearing</option>
-                                                            <option value="Yes">Not Registered - Erased for fraudulent application</option>
-                                                            <option value="Yes">Not Registered - Having relinquished registration</option>
-                                                            <option value="Yes">Not Registered - temporary registration expired</option>
-                                                            <option value="Yes">Registered - with Licence</option>
-                                                            <option value="Yes">Registered - without a Licence</option>
-                                                            <option value="Yes">Suspended</option>                           
-                                                        </select>
-                                                  </div>
-                                                </td>
-                                            </div>
-                                      
-                                            <div class="nhsuk-grid-column-one-third">
-                                                <div class="nhsuk-form-group">
-                                                  <button class="nhsuk-button nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0" type="submit">
-                                                    Search
-                                                  </button>
-                                                </div>
-                                            </div>
-                                          </div>
+              <form action="s12-search-results" method="get">
+                <div class="nhsuk-grid-row">
 
-                                        </form>
-                            </div>
-                          </div>    
+                  <div class="nhsuk-grid-column-one-third">
+
+                    <td class="test-case" style="overflow: visible">
+                      <div>
+                        <label class="nhsuk-label" for="hospnumber"><strong class="bold">GMC
+                            Status</strong></label>
+                        <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection"
+                          aria-required="true">
+                          <option value="No">Select a value</option>
+                          <option value="Yes">Not Registered</option>
+                          <option value="Yes">Not Registered - Administrative Reason</option>
+                          <option value="Yes">Not Registered - Deceased</option>
+                          <option value="Yes">Not Registered - Erased after Fitness to Practice panel hearing
+                          </option>
+                          <option value="Yes">Not Registered - Erased for fraudulent application</option>
+                          <option value="Yes">Not Registered - Having relinquished registration</option>
+                          <option value="Yes">Not Registered - temporary registration expired</option>
+                          <option value="Yes">Registered - with Licence</option>
+                          <option value="Yes">Registered - without a Licence</option>
+                          <option value="Yes">Suspended</option>
+                        </select>
+                      </div>
+                    </td>
+                  </div>
+
+                  <div class="nhsuk-grid-column-one-third">
+                    <div class="nhsuk-form-group">
+                      <button class="nhsuk-button nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0" type="submit">
+                        Search
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
+
+              </form>
+            </div>
+          </div>
+              
+          <br><br>
 
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-two-thirds">
               <h2>
                 Search Results
-              </h2>  
+              </h2>
             </div>
           </div>
 
-                
-              <hr style="border-bottom:1px solid #ccc; margin:0">
-  <br>
-      
-        <div class="nhsuk-grid-row">
-          <div class="nhsuk-grid-column-one-third">
+
+          <hr style="border-bottom:1px solid #ccc; margin:0">
+          <br>
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third">
+            </div>
           </div>
-        </div>
-            
-                  <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
-                    <!-- TABLE START -->
-                    <thead class="nhsuk-table__head">
-                      <tr class="nhsuk-table__row">
-                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            Doctor Name
-                        </th>
-                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            PRN
-                        </th>
-                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            Email address
-                        </th>
-                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            Phone
-                        </th>
-                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            Post Code
-                        </th>
-                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            GMC Status
-                        </th>
-                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                            
-                        </th>
-                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                             
-                        </th>
-                        <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                          Date Status Changed
-                        </th>
-                      </tr>
-                    </thead>
 
-                    <tbody class="nhsuk-table__body nhsuk-body-">
-                      <tr class="nhsuk-table__row">
-                        <td class="nhsuk-table__cell">Dr Richard Schivago</td>
-                        <td class="nhsuk-table__cell">1234567</td>
-                        <td class="nhsuk-table__cell">a@b.c</td>
-                        <td class="nhsuk-table__cell">07780 138231</td>
-                        <td class="nhsuk-table__cell">EH45 6TT</td>  
-                        <td class="nhsuk-table__cell">Registered with licence</td>  
-                        <td class="nhsuk-table__cell"></td>
-                        <td class="nhsuk-table__cell"></td>    
-                        <td class="nhsuk-table__cell">11 May 2022</td>
-                      </tr>
-                    </tbody>
+          <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
+            <!-- TABLE START -->
+            <thead class="nhsuk-table__head">
+              <tr class="nhsuk-table__row">
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Doctor Name
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  PRN
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Email address
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Phone
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Post Code
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  GMC Status
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
 
-                    <tbody class="nhsuk-table__body nhsuk-body-">
-                      <tr class="nhsuk-table__row">
-                        <td class="nhsuk-table__cell">Dr Richard Bowley</td>
-                        <td class="nhsuk-table__cell">6543247</td>
-                        <td class="nhsuk-table__cell">d@e.c</td>
-                        <td class="nhsuk-table__cell">56432 156731</td>
-                        <td class="nhsuk-table__cell">BG1 5RR</td>  
-                        <td class="nhsuk-table__cell">Registered with licence</td>  
-                        <td class="nhsuk-table__cell"></td>
-                        <td class="nhsuk-table__cell"></td>    
-                        <td class="nhsuk-table__cell">11 May 2022</td>
-                      </tr>
-                    </tbody>
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
 
-                    <tbody class="nhsuk-table__body nhsuk-body-">
-                      <tr class="nhsuk-table__row">
-                        <td class="nhsuk-table__cell">Dr Richard Smith</td>
-                        <td class="nhsuk-table__cell">1212121</td>
-                        <td class="nhsuk-table__cell">f@g.c</td>
-                        <td class="nhsuk-table__cell">54545 490876</td>
-                        <td class="nhsuk-table__cell">DE12 6OI</td>  
-                        <td class="nhsuk-table__cell">Registered with licence</td>  
-                        <td class="nhsuk-table__cell"></td>
-                        <td class="nhsuk-table__cell"></td>    
-                        <td class="nhsuk-table__cell">11 May 2022</td>
-                      </tr>
-                    </tbody>
+                </th>
+                <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                  Date Status Changed
+                </th>
+              </tr>
+            </thead>
 
-                    <tbody class="nhsuk-table__body nhsuk-body-">
-                      <tr class="nhsuk-table__row">
-                        <td class="nhsuk-table__cell">Dr Richard Walton</td>
-                        <td class="nhsuk-table__cell">5690876</td>
-                        <td class="nhsuk-table__cell">h@i.c</td>
-                        <td class="nhsuk-table__cell">09123 556677</td>
-                        <td class="nhsuk-table__cell">NE32 5HH</td>  
-                        <td class="nhsuk-table__cell">Registered with licence</td>  
-                        <td class="nhsuk-table__cell"></td>
-                        <td class="nhsuk-table__cell"></td>    
-                        <td class="nhsuk-table__cell">11 May 2022</td>
-                      </tr>
-                    </tbody>
-                    <!-- TABLE END -->
-                  </table>
-            
-                      <nav class="nhsuk-pagination" id="pagination-label">
-                        <p class="nhsuk-u-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
-                        <ul class="nhsuk-pagination__list">
-                          <li class="nhsuk-pagination__item  nhsuk-pagination__item--prev">
-                            <a class="nhsuk-pagination__link" href="">Previous<span class="nhsuk-u-visually-hidden"> set of
-                                pages</span></a>
-                          </li>
-                          <li class="nhsuk-pagination__item nhsuk-pagination__item--active">1</li>
-                          <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">2</a></li>
-                          <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">3</a></li>
-                          <li class="nhsuk-pagination__item  nhsuk-pagination__item--next">
-                            <a class="nhsuk-pagination__link" href="">Next<span class="nhsuk-u-visually-hidden"> set of
-                                pages</span></a>
-                          </li>
-                        </ul>
-                        <p class="nhsuk-pagination__results">Showing <b>1</b> to <b>10</b> of <b>30</b> results</p>
-                      </nav>
+            <tbody class="nhsuk-table__body nhsuk-body-">
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Dr Richard Schivago</td>
+                <td class="nhsuk-table__cell">1234567</td>
+                <td class="nhsuk-table__cell">a@b.c</td>
+                <td class="nhsuk-table__cell">07780 138231</td>
+                <td class="nhsuk-table__cell">EH45 6TT</td>
+                <td class="nhsuk-table__cell">Registered with licence</td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell">11 May 2022</td>
+              </tr>
+            </tbody>
 
-                    <div class="action-buttons">
-                      <button class="nhsuk-button nhsuk-button--secondary" type="submit">Export</button>
-                    </div>
+            <tbody class="nhsuk-table__body nhsuk-body-">
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Dr Richard Bowley</td>
+                <td class="nhsuk-table__cell">6543247</td>
+                <td class="nhsuk-table__cell">d@e.c</td>
+                <td class="nhsuk-table__cell">56432 156731</td>
+                <td class="nhsuk-table__cell">BG1 5RR</td>
+                <td class="nhsuk-table__cell">Registered with licence</td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell">11 May 2022</td>
+              </tr>
+            </tbody>
 
-              
+            <tbody class="nhsuk-table__body nhsuk-body-">
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Dr Richard Smith</td>
+                <td class="nhsuk-table__cell">1212121</td>
+                <td class="nhsuk-table__cell">f@g.c</td>
+                <td class="nhsuk-table__cell">54545 490876</td>
+                <td class="nhsuk-table__cell">DE12 6OI</td>
+                <td class="nhsuk-table__cell">Registered with licence</td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell">11 May 2022</td>
+              </tr>
+            </tbody>
 
-                <div class="nhsuk-grid-row">
-                  <div class="nhsuk-grid-column-one-third">
-                  </div>
-                <div class="nhsuk-grid-column-one-third">
+            <tbody class="nhsuk-table__body nhsuk-body-">
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell">Dr Richard Walton</td>
+                <td class="nhsuk-table__cell">5690876</td>
+                <td class="nhsuk-table__cell">h@i.c</td>
+                <td class="nhsuk-table__cell">09123 556677</td>
+                <td class="nhsuk-table__cell">NE32 5HH</td>
+                <td class="nhsuk-table__cell">Registered with licence</td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell"></td>
+                <td class="nhsuk-table__cell">11 May 2022</td>
+              </tr>
+            </tbody>
+            <!-- TABLE END -->
+          </table>
 
+          <nav class="nhsuk-pagination" id="pagination-label">
+            <p class="nhsuk-u-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+            <ul class="nhsuk-pagination__list">
+              <li class="nhsuk-pagination__item  nhsuk-pagination__item--prev">
+                <a class="nhsuk-pagination__link" href="">Previous<span class="nhsuk-u-visually-hidden"> set of
+                    pages</span></a>
+              </li>
+              <li class="nhsuk-pagination__item nhsuk-pagination__item--active">1</li>
+              <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">2</a></li>
+              <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">3</a></li>
+              <li class="nhsuk-pagination__item  nhsuk-pagination__item--next">
+                <a class="nhsuk-pagination__link" href="">Next<span class="nhsuk-u-visually-hidden"> set of
+                    pages</span></a>
+              </li>
+            </ul>
+            <p class="nhsuk-pagination__results">Showing <b>1</b> to <b>10</b> of <b>30</b> results</p>
+          </nav>
+
+          <div class="action-buttons">
+            <button class="nhsuk-button nhsuk-button--secondary" type="submit">Export</button>
+          </div>
+
+
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third">
+            </div>
+            <div class="nhsuk-grid-column-one-third">
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-                <div class="nhsBSA-sidebar-nav">
-                  <div class="side-nav">
-                    <ul>
-                      <div id="options" class="options">
-                          <li>
-                          <a href="s12-home-page-with-admin">Home</a>
-                          <a href="s12-doctor-search">Doctor Search</a>
-                          <a href="s12-reports">Reports</a>
-                          <a href="#">Contact</a>
-                          <a href="s12-home-page-with-admin" class="active">Admin</a>
-                        </li>
-                      </div>
-                    </ul> 
-                    <ul style="margin-left: 30px; margin-top: 10px">
-                          <li><a href="#" style="text-decoration: none">Content Manager</a></li>
-                          <li><a href="s12-admin-doctor-portal" style="text-decoration: none">Doctor Portal</a></li>
-                          <li>
-                            <a href="s12-admin-manage-archived-doctors" style="text-decoration: none; filter: brightness(30%)">Manage Archived Doctors</a>
-                          </li>
-                          <li>
-                            <a href="s12-admin-manage-organisations" style="text-decoration: none">Manage Organisations</a>
-                          </li>
-                          <li>
-                            <a href="s12-admin-manage-user-organisations" style="text-decoration: none">Manage User Organisations</a>
-                          </li>
-                          <li><a href="s12-admin-reference-data-menu" style="text-decoration: none">Reference Data</a></li>
-                          <li>
-                            <a href="s12-system-options" style="text-decoration: none">System Options</a>
-                          </li>
-                          <li><a href="s12-users" style="text-decoration: none">Users</a></li>
-                          <li><a href="s12-view-events-system-events" style="text-decoration: none">View Events</a></li>
-                    </ul>
-<!-- 
+    <div class="nhsBSA-sidebar-nav">
+      <div class="side-nav">
+        <ul>
+          <div id="options" class="options">
+            <li>
+              <a href="s12-home-page-with-admin">Home</a>
+              <a href="s12-doctor-search">Doctor Search</a>
+              <a href="s12-reports">Reports</a>
+              <a href="#">Contact</a>
+              <a href="s12-home-page-with-admin" class="active">Admin</a>
+            </li>
+          </div>
+        </ul>
+        <ul style="margin-left: 30px; margin-top: 10px">
+          <li><a href="#" style="text-decoration: none">Content Manager</a></li>
+          <li><a href="s12-admin-doctor-portal" style="text-decoration: none">Doctor Portal</a></li>
+          <li>
+            <a href="s12-admin-manage-archived-doctors" style="text-decoration: none; filter: brightness(30%)">Manage
+              Archived Doctors</a>
+          </li>
+          <li>
+            <a href="s12-admin-manage-organisations" style="text-decoration: none">Manage Organisations</a>
+          </li>
+          <li>
+            <a href="s12-admin-manage-user-organisations" style="text-decoration: none">Manage User Organisations</a>
+          </li>
+          <li><a href="s12-admin-reference-data-menu" style="text-decoration: none">Reference Data</a></li>
+          <li>
+            <a href="s12-system-options" style="text-decoration: none">System Options</a>
+          </li>
+          <li><a href="s12-users" style="text-decoration: none">Users</a></li>
+          <li><a href="s12-view-events-system-events" style="text-decoration: none">View Events</a></li>
+        </ul>
+        <!-- 
         <li>
           <a href="s12-system-options" style="text-decoration: none; filter: brightness(30%)">System Options</a>
         </li>
--->   
-                  </div>
-                </div>
-
-<!-- These div endings may not be required -->
+-->
       </div>
     </div>
+
+    <!-- These div endings may not be required -->
   </div>
+</div>
+</div>
 </div>
 {% endblock %}
