@@ -1,0 +1,135 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-admin-interface.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Section 12
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container-fluid">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page">Home</a></li>
+    </ol>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="s12-home-page">Home</a></p>
+  </div>
+</nav>
+
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+    <div class="nhsBSA-sidebar-content">
+      <div class="nhsuk-width-container-fluid">
+
+        <div class="nhsuk-main-wrapper" id="maincontent">
+
+          <h1>User instructions</h1>
+
+          <h2>Login</h2>
+
+         
+          
+            
+            <div class="nhsuk-details__text">
+              <p>To login:</p>
+              <ul>
+                <li>Enter the email address that you have assigned as your user ID.This should all be in lower case without spaces. </li>
+                <li>Enter the password that you have been given. </li>
+                <li>Ensure that the user option is highlighted and press sign in. </li>
+                <li>If you have forgotten your password, please use the“forgotten your password”option to recover your password to your registered email address. (Your approvals administrator will not be able to reset your password over the phone). </li>
+              </ul>
+            </div>
+          
+
+          <h2>Homepage</h2>
+          <div class="nhsuk-details__text">
+            <p>From the Homepage you are able to:</p>
+            <ul>
+              <li>View the contact information for approval offices in England. </li>
+              <li>Search for a practitioner. </li>
+              <li>Run and print a report. </li>
+              <li>Contact the Database Administartor. </li>
+              <li>Change the password (as explained above). </li>
+              <li>See news and updates and view the online user instruction manual. </li>
+            </ul>
+          </div>
+
+          <h2>Doctor search</h2>
+          <div class="nhsuk-details__text">
+            <p>To search for a particular practitioner use one of the following:</p>
+            <ul>
+              <li>Enter their last name in the name box.You can enter all or part of the name. Do not enter first names also, as this will narrow the search too much. We use the names that the practitioner has registered with their regulatory body.E.gGMC,NMC.
+                  Then press Search.
+                   </li>
+              <li>Enter their professional registration number,i.etheirGMC number and press Search. 
+                  
+              </li>
+              <li>Enter the Town and a range (you can choose either 1,2,3,4,5,10,25,or 50 Mile radius). This will give you a list of practitioners that meet those parameters. </li>
+              
+            </ul>
+          </div>
+         
+
+          <h2>Reports</h2>
+
+          <div class="nhsuk-details__text">
+            <p>There are 3 reports:</p>
+            <ul>
+              <li>Full Register (List of Approved Doctors). </li>
+              <li>List of Approved Clinicians. </li>
+              <li>List of DoLS Assessors. </li>
+              
+            </ul>
+          </div>
+
+         
+        </div>
+      </div>
+
+    </div>
+    <div class="nhsBSA-sidebar-nav">
+      <div class="side-nav">
+        <ul>
+          <li><a class="active" href="s12-home-page">Home</a></li>
+        </ul>
+      </div>
+
+      <ul style="margin-left: 30px; margin-top: 10px;">
+        <li><a href="s12-user-instructions" style="text-decoration: none">User Instructions</a></li>
+        <li><a href="s12-trust-acronyms" style="text-decoration: none">Trust Acronyms</a></li>
+        <li><a href="s12-national-s12-contacts" style="text-decoration: none">National Section 12 <br>Contacts</a></li>
+      </ul>
+
+      <div class="side-nav">
+        <ul>
+          <li><a href="s12-doctor-search">Doctor Search</a></li>
+          <li><a href="s12-reports">Reports</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="s12-home-page-with-admin">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+</div>
+
+{% endblock %}
