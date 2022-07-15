@@ -156,7 +156,7 @@ Section 12
                           <td class="nhsuk-table__cell"><a href="#">Download<span class="nhsuk-u-visually-hidden"></span></a></td>  
                           <td class="nhsuk-table__cell"><a href="s12-documents-replace">Replace<span class="nhsuk-u-visually-hidden"></span></a></td>
                           <td class="nhsuk-table__cell"><a href="#">Delete<span class="nhsuk-u-visually-hidden"></span></a></td>    
-                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>  
+                          <td class="nhsuk-table__cell"><a href="#" onclick="myFunction()">Move<span class="nhsuk-u-visually-hidden"></span></a></td>  
                           <td class="nhsuk-table__cell"><a href="s12-document-previous-versions">Previous Versions<span class="nhsuk-u-visually-hidden"></span></a></td>
                         </tr>
 
@@ -173,7 +173,7 @@ Section 12
                           <td class="nhsuk-table__cell"><a href="#">Download<span class="nhsuk-u-visually-hidden"></span></a></td>  
                           <td class="nhsuk-table__cell"><a href="#">Replace<span class="nhsuk-u-visually-hidden"></span></a></td>
                           <td class="nhsuk-table__cell"><a href="#">Delete<span class="nhsuk-u-visually-hidden"></span></a></td>    
-                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#">Move<span class="nhsuk-u-visually-hidden"></span></a></td>
                           <td class="nhsuk-table__cell"><a href="#">Previous Versions<span class="nhsuk-u-visually-hidden"></span></a></td>
                         </tr>
 
@@ -190,7 +190,7 @@ Section 12
                           <td class="nhsuk-table__cell"><a href="#">Download<span class="nhsuk-u-visually-hidden"></span></a></td>  
                           <td class="nhsuk-table__cell"><a href="#">Replace<span class="nhsuk-u-visually-hidden"></span></a></td>
                           <td class="nhsuk-table__cell"><a href="#">Delete<span class="nhsuk-u-visually-hidden"></span></a></td>    
-                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#">Move<span class="nhsuk-u-visually-hidden"></span></a></td>
                           <td class="nhsuk-table__cell"><a href="#">Previous Versions<span class="nhsuk-u-visually-hidden"></span></a></td>
                         </tr>
 
@@ -207,7 +207,7 @@ Section 12
                           <td class="nhsuk-table__cell"><a href="#">Download<span class="nhsuk-u-visually-hidden"></span></a></td>  
                           <td class="nhsuk-table__cell"><a href="#">Replace<span class="nhsuk-u-visually-hidden"></span></a></td>
                           <td class="nhsuk-table__cell"><a href="#">Delete<span class="nhsuk-u-visually-hidden"></span></a></td>    
-                          <td class="nhsuk-table__cell"><a href="#">View<span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td class="nhsuk-table__cell"><a href="#">Move<span class="nhsuk-u-visually-hidden"></span></a></td>
                           <td class="nhsuk-table__cell"><a href="#">Previous Versions<span class="nhsuk-u-visually-hidden"></span></a></td>
                         </tr>
 
@@ -219,6 +219,12 @@ Section 12
               <div class="action-buttons">
                 <button class="nhsuk-button nhsuk-button--secondary" type="submit" onclick="document.location.href='s12-documents-new'">New Document</button>
             </div>
+
+            <script>
+              function myFunction() {
+                confirm("Are you sure you want to move this document to the GMC tab?")
+              }
+              </script>
           </div>
 
         </div>
