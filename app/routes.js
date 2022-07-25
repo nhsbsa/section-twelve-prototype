@@ -20,7 +20,7 @@ router.get(/addAddress/, function (req, res) {
 
   router.get(/recDelete/, function (req, res) {
     if (req.query.radioInlineGroup === "Yes" ) {
-      res.redirect('s12-basic-details-delete-confirmation'); 
+      res.redirect('s12-search-results'); 
     } else {
       res.redirect('s12-basic-details');
     }
