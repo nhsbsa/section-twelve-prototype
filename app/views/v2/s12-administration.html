@@ -132,22 +132,22 @@ Section 12
                               Letter Content
                           </th>
                           <th>
-                             
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                             
-                          </th>
-                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                             
+                            
                           </th>
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
                             
                           </th>
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              Letter
+                            
                           </th>
                           <th class="nhsuk-table__header" aria-sort="none" scope="col">
-                              Transfer
+                            
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                              
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                              
                           </th>
 
                         </tr>
@@ -163,8 +163,13 @@ Section 12
                           <td class="nhsuk-table__cell"></td>  
                           <td class="nhsuk-table__cell"></td>  
                           <td class="nhsuk-table__cell"></td>
-                          <td class="nhsuk-table__cell"><a href="#">View Letter<span class="nhsuk-u-visually-hidden"></span></a></td>    
-                          <td class="nhsuk-table__cell"><a href="#">View Transfer<span class="nhsuk-u-visually-hidden"></span></a></td>
+                          <td></td>
+                          <td class="nhsuk-table__cell">
+                              <button class="nhsuk-button nhsuk-button" type="submit" style="margin-right: 10px;"
+                                onclick="document.location.href='s12-administration'">
+                                  Edit Letter
+                              </button>                          
+                          </td>    
                         </tr>
 
                       </tbody>
@@ -172,8 +177,73 @@ Section 12
 
                     </table>
 <h3>Transfer History</h3>
-<p>There is no transfer history for this person.</p>
+<p style ="color:red">If there are no records display: There is no transfer history for this person.</p>
 <br>
+
+
+
+
+                    <table id="sortable" class="nhsuk-table nhsuk-table-u-margin-0 nhsuk-table-clickable main-table">
+
+                      <!-- TABLE START -->
+                      <thead class="nhsuk-table__head">
+                        <tr class="nhsuk-table__row">
+
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                              Transferred From
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                              Transferred To
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                              Date Transferred
+                          </th>
+                          <th>
+                              Notes
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                              
+                          </th>
+                          <th class="nhsuk-table__header" aria-sort="none" scope="col">
+                            
+                          </th>
+
+                        </tr>
+                      </thead>
+
+                      <tbody class="nhsuk-table__body nhsuk-body-">
+
+                        <tr class="nhsuk-table__row">
+                          <td class="nhsuk-table__cell">19 April 2021</td>
+                          <td class="nhsuk-table__cell">Administrative</td>
+                          <td class="nhsuk-table__cell">letter acknowledging this doctor ...</td>
+                          <td class="nhsuk-table__cell"></td>
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"></td>  
+                          <td class="nhsuk-table__cell"></td>
+                          <td></td>
+
+                          <td class="nhsuk-table__cell">
+                              <button class="nhsuk-button nhsuk-button" type="submit" style="margin-right: 10px;"
+                                onclick="document.location.href='s12-administration'">
+                                  Edit Letter
+                              </button>                          
+                          </td>    
+
+                          </td>
+                        </tr>
+
+                      </tbody>
+
+
+                    </table>
 
 <div class="nhsuk-form-group">
   <label class="nhsuk-label" for="example">
