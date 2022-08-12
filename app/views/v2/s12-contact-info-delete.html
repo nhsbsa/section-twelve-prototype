@@ -28,8 +28,8 @@
           <ol class="nhsuk-breadcrumb__list">
 
       <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-search-results">Search</a></li>
-                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-basic-details">Basic Details</a></li>
-                <li class="nhsuk-breadcrumb__item">Confirm Record Deletion</li>
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-contact-info">Contact Info</a></li>
+                <li class="nhsuk-breadcrumb__item">Delete Address</li>
             </ol>
         </div>
       </div>
@@ -57,7 +57,7 @@
           <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-full">
               <h1 class="nhsuk-heading-xl">
-                Confirm Record Deletion
+                Delete Address
               </h1>
             </div>
           </div>
@@ -67,154 +67,19 @@
 
             <div class="nhsuk-summary-list__row">
               <dt class="nhsuk-summary-list__key">
-                Title
+                Type
               </dt>
               <dd class="nhsuk-summary-list__value">
-                Dr
+                Work Address
               </dd>
             </div>
 
             <div class="nhsuk-summary-list__row">
               <dt class="nhsuk-summary-list__key">
-                First Name
+                Address
               </dt>
               <dd class="nhsuk-summary-list__value">
-                Robby
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Last Name
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                Schivago
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Sex
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                Male
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Date of Birth
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                01 September 1978
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Professional Registration # (including GMC number)
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                123456789
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Brought Forward Date
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                30 May 2022
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Application Status
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                Chase panel 21/4/22
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Archive
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                No
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Regular Work Hours
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                Yes
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Out of Hours
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                No
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Fee Paying Work Start Time
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                9:00
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Fee Paying Work End Time
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                17:00
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Comments
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                None
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Regions
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                London, North East
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Primary Approving Region
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                East of England
-              </dd>
-            </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Last Updated By
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                Douglas Caven on 4 May at 12:00 
+                Burnham Medical Centre, Love Lane, Somerset, TA8 1EU
               </dd>
             </div>
 
@@ -227,7 +92,7 @@
               <fieldset class="nhsuk-fieldset">
 
                 <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--l">
-                  <h3>Do you confirm that you want to delete this record?</h3>
+                  <h3>Do you want to delete this Address?</h3>
                 </legend>
 
                 <div class="nhsuk-radios nhsuk-radios--inline">
@@ -250,11 +115,14 @@
                 </div>
               </fieldset>
             </div>
-            
-            <button class="nhsuk-button" type="submit">
+          </form>
+
+          <div class="action-buttons">
+            <button class="nhsuk-button nhsuk-button" type="submit"
+              onclick="document.location.href='s12-contact-info'">
               Confirm
             </button>
-          </form>
+          </div>
 
         </div>
       </div>
