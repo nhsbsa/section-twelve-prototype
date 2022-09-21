@@ -27,7 +27,7 @@
 
         <ol class="nhsuk-breadcrumb__list">
 
-          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-search-results2">Search</a></li>
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-search-results">Search</a></li>
           <li class="nhsuk-breadcrumb__item">Doctor List</li>
         </ol>
       </div>
@@ -60,7 +60,7 @@
 
               <!-- SEARCH CONTROLS START -->
               <div style="border: 1px solid rgb(190, 190, 190); border-radius: 20px; padding: 10px 20px 35px 20px;">
-                <form action="s12-search-results2" method="get">
+                <form action="s12-search-results" method="get">
                   <div class="nhsuk-grid-row">
                     <div class="nhsuk-grid-column-one-third">
                       <br />
@@ -68,7 +68,7 @@
                         <label class="nhsuk-label" for="searchfirstname"><strong class="bold"> Name of doctor</strong>
                         </label>
                         <input class="nhsuk-input nhsuk-u-width-full" id="searchfirstname" name="searchfirstname"
-                          type="text" />
+                          type="text" value="Richard" />
                       </div>
 
                       <div class="nhsuk-form-group">
@@ -261,7 +261,7 @@
                                 <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
                                   value="email">
                                 <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                                  <strong class="bold" style="top: -16px; position: relative;">Regular Work
+                                  <strong class="bold">Regular Work
                                     Hours</strong>
                                 </label>
                               </div>
@@ -276,7 +276,7 @@
                                 <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox"
                                   value="email">
                                 <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                                  <strong class="bold" style="top: -16px; position: relative;">Out of Work
+                                  <strong class="bold">Out of Work
                                     Hours</strong>
                                 </label>
                               </div>
@@ -291,8 +291,8 @@
                 </form>
 
                 <br>
-                <button class="nhsuk-button nhsuk-u-margin-bottom-0" type="submit"
-                  onclick="document.location.href='s12-search-results2'">
+                <button class="nhsuk-button nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0" type="submit"
+                  onclick="document.location.href='s12-search-results'">
                   Search
                 </button>
               </div>
@@ -312,10 +312,23 @@
           </div>
 
 
-          <p style="text-align: center;"><strong>No results:</strong> Use the search fields above to search for doctors.
-          </p>
-
-          <br>
+          <nav class="nhsuk-pagination" id="pagination-label">
+            <p class="nhsuk-u-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+            <ul class="nhsuk-pagination__list">
+              <li class="nhsuk-pagination__item  nhsuk-pagination__item--prev">
+                <a class="nhsuk-pagination__link" href="">Previous<span class="nhsuk-u-visually-hidden"> set of
+                    pages</span></a>
+              </li>
+              <li class="nhsuk-pagination__item nhsuk-pagination__item--active">1</li>
+              <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">2</a></li>
+              <li class="nhsuk-pagination__item"><a class="nhsuk-pagination__link" href="#">3</a></li>
+              <li class="nhsuk-pagination__item  nhsuk-pagination__item--next">
+                <a class="nhsuk-pagination__link" href="">Next<span class="nhsuk-u-visually-hidden"> set of
+                    pages</span></a>
+              </li>
+            </ul>
+            <p class="nhsuk-pagination__results">Showing <b>1</b> to <b>10</b> of <b>30</b> results</p>
+          </nav>
 
           <div class="action-buttons">
             <button class="nhsuk-button nhsuk-button--secondary" type="submit"
