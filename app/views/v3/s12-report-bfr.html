@@ -1,0 +1,206 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-admin-interface.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Section 12
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
+  <div class="nhsuk-width-container-fluid">
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-full">
+
+        <ol class="nhsuk-breadcrumb__list">
+
+          <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-reports">Reports</a>
+          </li>
+          <li class="nhsuk-breadcrumb__item">Brought Forward Report</li>
+        </ol>
+      </div>
+    </div>
+    <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="#">Back to search results</a></p>
+  </div>
+</nav>
+
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+    <div class="nhsBSA-sidebar-content">
+      <div class="nhsuk-width-container-fluid">
+        <div class="nhsuk-main-wrapper" id="maincontent">
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+
+              <h1 class="nhsuk-heading-xl">
+                Brought Forward Report
+              </h1>
+
+              <form action="" method="get">
+                <div class="nhsuk-grid-row">
+
+                  <div class="nhsuk-grid-column-two-thirds">
+                    <td class="test-case" style="overflow: visible">
+                      <div>
+                        <label class="nhsuk-label" for="hospnumber"><strong class="bold">Panel</strong></label>
+                        <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection"
+                          aria-required="true">
+                          <option value="No">Select Panel</option>
+                          <option value="Yes">London</option>
+                          <option value="Yes">Midlands and East of England</option>
+                          <option value="Yes">North of England</option>
+                          <option value="Yes">South of England</option>
+                        </select>
+                      </div>
+                    </td>
+                    <br><br>
+                  </div>
+
+                  <div class="nhsuk-grid-column-two-thirds">
+                    <td class="test-case" style="overflow: visible">
+                      <div>
+                        <label class="nhsuk-label" for="hospnumber"><strong class="bold">Region</strong></label>
+                        <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection"
+                          aria-required="true">
+                          <option value="No">Select Region</option>
+                          <option value="Yes">East Midland</option>
+                          <option value="Yes">East of England</option>
+                          <option value="Yes">London</option>
+                          <option value="Yes">North East</option>
+                          <option value="Yes">North West</option>
+                          <option value="Yes">South Central</option>
+                          <option value="Yes">South East</option>
+                          <option value="Yes">South West</option>
+                          <option value="Yes">West Midlands</option>
+                          <option value="Yes">Yorkshire</option>
+                        </select>
+                      </div>
+                    </td>
+                    <br>
+                  </div>
+                  
+                  <div class="nhsuk-grid-column-two-thirds">               
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                            <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+                            </legend>
+                            <label class="nhsuk-label" for="nhsnumber"><strong class="bold">Brought Forward Date From</strong>
+                            </label>
+                            <div class="nhsuk-date-input" id="example">
+                              <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                  <input class="nhsuk-input nhsuk-date-input__input" type="date">
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                  </div>
+
+                  <div class="nhsuk-grid-column-two-thirds">               
+                          <fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group">
+                            <legend class="nhsuk-fieldset__legend nhsuk-label--l">
+                            </legend>
+                            <label class="nhsuk-label" for="nhsnumber"><strong class="bold">Brought Forward Date To</strong>
+                            </label>
+                            <div class="nhsuk-date-input" id="example">
+                              <div class="nhsuk-date-input__item">
+                                <div class="nhsuk-form-group">
+                                  <input class="nhsuk-input nhsuk-date-input__input" type="date">
+                                </div>
+                              </div>
+                            </div>
+                          </fieldset>
+                  </div>
+
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          
+          <br> <br>
+
+              
+          <div class="action-buttons">
+            <button class="nhsuk-button nhsuk-button" type="submit" style="margin-right: 10px;"
+              onclick="document.location.href='s12-report-bfr'">
+              Run Report
+            </button>
+            <button class="nhsuk-button nhsuk-button--reverse" type="submit" style="margin-right: 10px;"
+              onclick="document.location.href='s12-report-bfr'">
+              Print Report
+            </button>
+            <button class="nhsuk-button" type="submit" style="margin-right: 10px; background-color: #1d70b8"
+              onclick="document.location.href='s12-report-bfr'" onMouseOver="this.style.backgroundColor='#933223'"
+              onMouseOut="this.style.backgroundColor='#af3d2b'">
+              Export Report
+            </button>
+            <button class="nhsuk-button nhsuk-button--secondary" type="submit"
+              onclick="document.location.href='s12-reports'">
+              Close
+            </button>
+          </div>
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-third">
+            </div>
+            <div class="nhsuk-grid-column-one-third">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nhsBSA-sidebar-nav">
+      <div class="side-nav">
+        <ul>
+          <li><a href="s12-home-page">Home</a></li>
+        </ul>
+      </div>
+
+      <ul style="margin-left: 30px; margin-top: 10px">
+        <li>
+          <a href="s12-home-page" style="text-decoration: none">User Instructions</a>
+        </li>
+        <li>
+          <a href="s12-trust-acronyms" style="text-decoration: none">Trust Acronyms</a>
+        </li>
+        <li>
+          <a href="s12-national-s12-contacts" style="text-decoration: none">National Section 12 <br />Contacts</a>
+        </li>
+      </ul>
+
+      <div class="side-nav">
+        <ul>
+          <li><a href="s12-doctor-search">Doctor Search</a></li>
+          <li><a class="active" href="s12-reports">Reports</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- These div endings may not be required -->
+  </div>
+</div>
+</div>
+</div>
+{% endblock %}

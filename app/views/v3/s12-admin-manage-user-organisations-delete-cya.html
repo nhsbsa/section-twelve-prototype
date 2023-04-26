@@ -1,0 +1,191 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-admin-interface.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Section 12
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container-fluid">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+      
+          <ol class="nhsuk-breadcrumb__list">
+
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page-with-admin">Admin</a></li>
+                <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-admin-manage-user-organisations">Manage User Organisations</a></li>
+                <li class="nhsuk-breadcrumb__item">Delete User Organisation</li>
+            </ol>
+        </div>
+      </div>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
+    </div>
+</nav>
+
+  <div class="nhsBSA-sidebar-container">
+    <div class="nhsBSA-sidebar-wrapper">
+      <div class="nhsBSA-sidebar-content">
+        <div class="nhsuk-width-container-fluid">
+          <div class="nhsuk-main-wrapper" id="maincontent">
+
+            {# <div class="nhsuk-grid-row">
+                    <div class="nhsuk-grid-column-full">
+
+                        <div class="panel panel-border-wide alert-default">
+                            <h2 class="nhsuk-heading-s nhsuk-u-padding-top-3 nhsuk-u-margin-bottom-3">English is their second language. May require an interpreter.</h2>
+                        </div>
+
+                    </div>
+                </div> #}
+
+            <div class="nhsuk-grid-row">
+              <div class="nhsuk-grid-column-full">
+                <h1 class="nhsuk-heading-xl">
+                  Delete User Organisation
+                </h1>
+              </div>  
+            </div>
+
+            <h3>You have selected the following User Organisation to be deleted</h3>
+
+            <!-- SUMMARY LIST START -->
+            <dl class="nhsuk-summary-list">
+  
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Organisation Name
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  QE2 Hopsital, Welwyn Garden City
+                </dd>
+              </div>
+  
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Region
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  South East
+                </dd>
+              </div>
+  
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Organisation Type
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  Hospital
+                </dd>
+              </div>
+  
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Notes
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  Your notes
+                </dd>
+              </div>
+  
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  # of Users
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  6
+                </dd>
+              </div>
+  
+            </dl>
+  
+            <h3>Do you want to delete this User Organisation?</h3>
+  
+            <!-- START OF FORM -->
+            <form action="ppc-certificate-option" method="get" class="form">
+              <div class="nhsuk-form-group">
+                <div class="nhsuk-radios" style="display: flex">
+                  <div class="nhsuk-radios__item" style="margin-right: 30px; margin-bottom: 30px">
+                    <input class="nhsuk-radios__input" type="radio" id="0" name="x">
+                    <label class="nhsuk-label nhsuk-radios__label">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="nhsuk-radios__item" style="margin-right: 30px">
+                    <input class="nhsuk-radios__input" type="radio" id="1" name="y">
+                    <label class="nhsuk-label nhsuk-radios__label">
+                      No
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </form>
+  
+            <div class="action-buttons">
+              <button class="nhsuk-button nhsuk-button" type="submit" onclick="document.location.href='s12-admin-manage-user-organisations'">
+                Confirm
+              </button>
+            </div>
+
+
+        </div>
+      </div>
+    </div>
+
+      <div class="nhsBSA-sidebar-nav">
+        <div class="side-nav">
+          <ul>
+            <div id="options" class="options">
+            
+                <li>
+                <a href="s12-home-page-with-admin">Home</a>
+                <a href="#" >Doctor Search</a>
+                <a href="s12-reports">Reports</a>
+                <a href="#">Contact</a>
+                <a href="s12-home-page-with-admin" class="active">Admin</a>
+              </li>
+                      <ul style="margin-left: 30px; margin-top: 10px">
+                          <li><a href="#" style="text-decoration: none">Content Manager</a></li>
+                          <li><a href="s12-admin-doctor-portal" style="text-decoration: none">Doctor Portal</a></li>
+                          <li>
+                            <a href="s12-admin-manage-archived-doctors" style="text-decoration: none">Manage Archived Doctors</a>
+                          </li>
+                          <li>
+                            <a href="s12-admin-manage-organisations" style="text-decoration: none">Manage Organisations</a>
+                          </li>
+                          <li>
+                            <a href="s12-admin-manage-user-organisations" style="text-decoration: none; filter: brightness(30%)">Manage User Organisations</a>
+                          </li>
+                          <li><a href="s12-admin-reference-data-menu" style="text-decoration: none">Reference Data</a></li>
+                          <li>
+                            <a href="s12-system-options" style="text-decoration: none">System Options</a>
+                          </li>
+                          <li><a href="s12-users" style="text-decoration: none">Users</a></li>
+          <li><a href="s12-web-api-credentials" style="text-decoration: none">Web API Credentials</a></li>
+                          <li><a href="s12-view-events-system-events" style="text-decoration: none">View Events</a></li>
+                    </ul>
+            </div>
+          </ul>    
+        </div>
+      </div>
+
+  </div>
+
+{% endblock %}

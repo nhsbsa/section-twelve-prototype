@@ -1,0 +1,149 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout-admin-interface.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+Section 12
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+<nav class="nhsuk-breadcrumb nhsBSA-breadcrumb" aria-label="Breadcrumb">
+    <div class="nhsuk-width-container-fluid">
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+      
+          <ol class="nhsuk-breadcrumb__list">
+
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="s12-home-page-with-admin">Admin</a></li>
+                <li class="nhsuk-breadcrumb__item">Doctor Portal</li>
+            </ol>
+        </div>
+      </div>
+      <p class="nhsuk-breadcrumb__back"><a class="nhsuk-breadcrumb__backlink" href="search-results">Back to search results</a></p>
+    </div>
+</nav>
+
+<div class="nhsBSA-sidebar-container">
+  <div class="nhsBSA-sidebar-wrapper">
+
+    <div class="nhsBSA-sidebar-content">
+      <div class="nhsuk-width-container-fluid">
+        <div class="nhsuk-main-wrapper" id="maincontent">
+
+          <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+
+              <!-- ALTERNATE NHS WARNING CALLOUT STYLE NOTIFICATION -->
+              <!-- <div class="nhsuk-warning-callout" style="background-color: #f0f4f5; border: 5px solid #00703c; margin-top: 10px; margin-bottom: 48px;">
+                <h3 class="nhsuk-warning-callout__label" style="background-color: #00703c; border-color: #00703c; color: #f0f4f5; margin: 0 0 8px -37px">
+                  <span role="text">
+                    <span class="nhsuk-u-visually-hidden">Important: </span>
+                    Success
+                  </span>
+                </h3>
+                <p>Doctor portal link sent to all doctors in <strong class="bold">East Midland</strong> region.</p>
+              </div> -->
+
+              <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-full">
+                  <div style="background-color: #007f3b; display: flex; padding: 5px 10px 10px 10px; margin-bottom: 42px;">
+                    <img src="/images/done-tick.png" style="padding: 10px;">
+                    <h3 style="color: #f0f4f5; padding: 13px 5px 5px 5px; margin: 0;">
+                      Doctor Portal link sent to all doctors in <strong class="bold">East Midland</strong> region.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <h1>Doctor Portal</h1>
+
+              <p>To send all doctors the doctor portal link, choose a region below and click send.</p>
+              <p>This will send all Doctors that haven't been archived a link to update their availability details.</p>
+
+                <div class="nhsuk-grid-row">
+                  <div class="nhsuk-grid-column-one-third">
+                    <td  class="test-case" style="overflow: visible">
+                      <div>
+                          <select id="vaccines" class="typeahead js-hidden nhsuk-select" name="anonymous-collection" aria-required="true">
+                              <option value="No">Select a value</option>
+                              <option value="Yes">East Midland</option>
+                              <option value="Yes">East of England</option>
+                              <option value="Yes">London</option>
+                              <option value="Yes">North East</option>
+                              <option value="Yes">North West</option>
+                              <option value="Yes">South Central</option>
+                              <option value="Yes">South East</option>
+                              <option value="Yes">South West</option>
+                              <option value="Yes">West Midlands</option>
+                              <option value="Yes">Yorkshire</option>                           
+                          </select>
+                      </div>
+                    </td>                       
+                  </div> 
+                  <br> <br> <br>
+
+                    <div class="nhsuk-grid-column-full">
+                      <button class="nhsuk-button nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-0" type="submit">
+                        Send Doctor Portal link to all Doctors
+                      </button>
+                    </div>  
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nhsBSA-sidebar-nav">
+      <div class="side-nav">
+        <ul>
+          <div id="options" class="options">
+            <li><a href="s12-home-page-with-admin">Home</a></li>
+            <li><a href="s12-doctor-search">Doctor Search</a></li>
+            <li><a href="s12-reports">Reports</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a class="active" href="s12-home-page-with-admin">Admin</a></li>
+          </div>
+        </ul>
+          <ul style="margin-left: 30px; margin-top: 10px">
+              <li><a href="#" style="text-decoration: none">Content Manager</a></li>
+              <li><a href="s12-admin-doctor-portal" style="text-decoration: none;filter: brightness(30%)">Doctor Portal</a></li>
+              <li>
+                <a href="s12-admin-manage-archived-doctors" style="text-decoration: none">Manage Archived Doctors</a>
+              </li>
+              <li>
+                <a href="s12-admin-manage-organisations" style="text-decoration: none">Manage Organisations</a>
+              </li>
+              <li>
+                <a href="s12-admin-manage-user-organisations" style="text-decoration: none">Manage User Organisations</a>
+              </li>
+              <li><a href="s12-admin-reference-data-menu" style="text-decoration: none">Reference Data</a></li>
+              <li>
+                <a href="s12-system-options" style="text-decoration: none">System Options</a>
+              </li>
+              <li><a href="s12-users" style="text-decoration: none">Users</a></li>
+          <li><a href="s12-web-api-credentials" style="text-decoration: none">Web API Credentials</a></li>
+              <li><a href="s12-view-events-system-events" style="text-decoration: none">View Events</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
